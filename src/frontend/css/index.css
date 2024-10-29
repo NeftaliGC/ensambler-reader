@@ -7,7 +7,51 @@
     align-items: center;
 }
 
+:root {
+    --azul: #2F6690;
+    --azul_claro: #3A7CA5;
+    --cyan: #81C3D7;
+    --gris: #D9DCD6;
+    --azul_fuerte: #16425B;
+    --cyan_fuerte: #2A9D8F;
+    --fuente: "Poppins", sans-serif;
+}
+
+
 .titulo {
     text-align: center;
+    font-family: var(--fuente);
+    font-weight: 800;
+    font-style: normal;
+    color: var(--azul_fuerte);
+}
 
+.button-upload {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 10px 15px 10px;
+}
+
+.custom-file-upload {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--azul_claro);
+    font-family: var(--fuente);
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: var(--cyan_fuerte);
+}
+
+.custom-file-upload:active {
+    background-color: var(--azul_fuerte);
+}
+
+input[type="file"] {
+    display: none;
 }
