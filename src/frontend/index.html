@@ -3,9 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
         <title>Ensambler - Reader</title>
     </head>
     <body>
-        
+        <header>
+            <h1>Ensambler - Reader</h1>
+            <input type="file" id="file" accept=".asm">
+        </header>
+        <main>
+            <div id="code">
+                <section id="codigoFuente">
+                    <h2>Codigo Fuente</h2>
+                </section>
+                <section id="sepXElementos">
+                    <h2>Separacion de elementos</h2>
+                </section>
+                <section id="identificacion">
+                    <h2>Identificacion</h2>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <!---Botones adelante atras con simbolos-->
+            <button id="atras">Atras</button>
+            <button id="adelante">Adelante</button>
+        </footer>
     </body>
 </html>
