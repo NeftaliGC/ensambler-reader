@@ -1,10 +1,10 @@
 #code {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    background-color: var(--gris);
+    min-height: 300px;
 }
 
 :root {
@@ -17,6 +17,32 @@
     --fuente: "Poppins", sans-serif;
 }
 
+body {
+    background-color: var(--gris);
+}
+
+
+
+input[type="file"] {
+    display: none;
+}
+
+
+main {
+    display: grid;
+    min-height: 70dvh;
+    grid-template-rows: auto 1fr auto;
+    font-family: var(--fuente);
+
+}
+
+footer {
+    padding: 5% 5%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+}
 
 .titulo {
     text-align: center;
@@ -52,6 +78,65 @@
     background-color: var(--azul_fuerte);
 }
 
-input[type="file"] {
-    display: none;
+.botones {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-family: var(--fuente);
+    font-weight: 700;
+    font-style: normal;
+    padding: 20px 0;
+}
+
+#atras,
+#adelante {
+    padding: 10px 15px;
+    /* Aumenta el tamaño de los botones */
+    font-size: 1.2rem;
+    /* Aumenta el tamaño del texto */
+    border: none;
+    border-radius: 8px;
+    /* Más redondeo en las esquinas */
+    background-color: var(--azul_claro);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Añade sombra para hacerlos destacar */
+    transition: all 0.3s ease;
+    /* Efecto suave de transición */
+}
+
+#atras:hover,
+#adelante:hover {
+    background-color: var(--cyan_fuerte);
+    /* Cambia el color al pasar el mouse */
+    transform: scale(1.05);
+    /* Efecto de agrandamiento */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Aumenta la sombra */
+}
+
+#atras:active,
+#adelante:active {
+    background-color: var(--azul_fuerte);
+    /* Color al hacer clic */
+    transform: scale(0.95);
+    /* Pequeño efecto de compresión */
+}
+
+.column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.divider {
+    width: 2px;
+    /* Grosor de la línea */
+    background-color: var(--azul);
+    /* Color de la línea */
+    margin: 0 20px;
+    /* Espacio alrededor de la línea */
+    height: auto;
+    /* Ajusta la altura para que coincida con el contenedor */
 }
