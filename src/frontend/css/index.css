@@ -5,6 +5,7 @@
     padding: 20px;
     background-color: var(--gris);
     min-height: 300px;
+
 }
 
 :root {
@@ -19,8 +20,16 @@
 
 body {
     background-color: var(--gris);
+    font-family: var(--fuente);
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 10rem;
 }
 
+h2 {
+    text-align: center;
+}
 
 
 input[type="file"] {
@@ -32,7 +41,6 @@ main {
     display: grid;
     min-height: 70dvh;
     grid-template-rows: auto 1fr auto;
-    font-family: var(--fuente);
 
 }
 
@@ -46,7 +54,6 @@ footer {
 
 .titulo {
     text-align: center;
-    font-family: var(--fuente);
     font-weight: 800;
     font-style: normal;
     color: var(--azul_fuerte);
@@ -56,6 +63,7 @@ footer {
     display: inline-block;
     text-align: center;
     padding: 20px 10px 15px 10px;
+    margin-left: 2rem;
 }
 
 .custom-file-upload {
@@ -63,7 +71,6 @@ footer {
     border: none;
     border-radius: 8px;
     background-color: var(--azul_claro);
-    font-family: var(--fuente);
     font-weight: 600;
     color: white;
     cursor: pointer;
@@ -83,7 +90,6 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    font-family: var(--fuente);
     font-weight: 700;
     font-style: normal;
     padding: 20px 0;
@@ -131,12 +137,36 @@ footer {
 }
 
 .divider {
-    width: 2px;
+    width: 0.3rem;
     /* Grosor de la línea */
     background-color: var(--azul);
     /* Color de la línea */
     margin: 0 20px;
     /* Espacio alrededor de la línea */
-    height: auto;
+    height: 70dvh;
     /* Ajusta la altura para que coincida con el contenedor */
+    position: relative;
+    /* Necesario para que el pseudo-elemento se posicione en relación a este contenedor */
+}
+
+.divider::after {
+    content: "";
+    /* Pseudo-elemento vacío para la línea */
+    position: absolute;
+    bottom: 0;
+    /* Posiciona la línea en la parte inferior */
+    left: 50%;
+    /* Centra la línea horizontal */
+    transform: translateX(-50%);
+    /* Ajusta el centrado */
+    width: 200rem;
+    /* Ajusta la longitud de la línea horizontal */
+    height: 0.3rem;
+    /* Grosor de la línea horizontal */
+    background-color: var(--azul);
+    /* Color de la línea horizontal */
+    border-radius: 10px;
+    /* Opcional: redondea los extremos de la línea */
+    left: -10px;
+    right: -20px;
 }
