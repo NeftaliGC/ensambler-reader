@@ -34,10 +34,45 @@
                         </div>
                         <div class="code-body">
                             <pre><code>
-                // Aquí puedes poner código de ejemplo
-                function helloWorld() {
-                    console.log("Hello, World!");
-                }
+                                ; Este programa suma dos números y muestra el resultado
+
+.model small
+.stack 100h
+
+.data
+    num1 db 5         ; Primer número
+    num2 db 10        ; Segundo número
+    result db ?       ; Variable para almacenar el resultado
+    msg db 'El resultado es: $' ; Mensaje a mostrar
+
+.code
+main:
+    ; Inicializa el segmento de datos
+    mov ax, @data
+    mov ds, ax
+
+    ; Suma los dos números
+    mov al, num1      ; Carga el primer número en AL
+    add al, num2      ; Suma el segundo número a AL
+    mov result, al    ; Guarda el resultado
+
+    ; Mostrar el mensaje
+    mov ah, 09h       ; Función para mostrar cadena
+    lea dx, msg       ; Carga la dirección del mensaje
+    int 21h           ; Llama a la interrupción de DOS
+
+    ; Convertir el resultado a ASCII y mostrarlo
+    mov al, result    ; Carga el resultado
+    add al, 30h       ; Convierte a ASCII
+    mov ah, 02h       ; Función para mostrar un carácter
+    int 21h           ; Llama a la interrupción de DOS
+
+    ; Terminar el programa
+    mov ax, 4C00h     ; Función para terminar el programa
+    int 21h           ; Llama a la interrupción de DOS
+
+end main
+
                             </code></pre>
                         </div>
                     </div>
@@ -56,6 +91,7 @@
                 <section class="column" id="identificacion">
                     <h2>Identificación</h2>
                 </section>
+                <div class="horizontal-divider" id="horizontalDivider"></div>
             </div>
         </main>
         <footer>
@@ -65,5 +101,6 @@
                 <button id="adelante">--></button>
             </div>
         </footer>
+        <script src="js/Lineas.js"></script>
     </body>
 </html>

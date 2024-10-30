@@ -143,17 +143,12 @@ footer {
     /* Color de la línea */
     margin: 0 20px;
     /* Espacio alrededor de la línea */
-    height: 70dvh;
-    /* Ajusta la altura para que coincida con el contenedor */
-    position: relative;
-    /* Necesario para que el pseudo-elemento se posicione en relación a este contenedor */
 }
 
 .divider::after {
     content: "";
     /* Pseudo-elemento vacío para la línea */
     position: absolute;
-    bottom: 0;
     /* Posiciona la línea en la parte inferior */
     left: 50%;
     /* Centra la línea horizontal */
@@ -187,6 +182,8 @@ footer {
     margin-top: 15px;
     max-width: 100%;
     /* Asegura que el contenedor no exceda el ancho del contenedor */
+    max-height: 100%;
+    /* Aseguramos que el editor no limite la altura de la columna */
 }
 
 /* Barra superior del editor */
