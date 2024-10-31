@@ -1,106 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preload" href="css/index.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
-            rel="stylesheet">
-        <title>Ensambler - Reader</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="titulo">Ensambler - Reader</h1>
-            <div class="button-upload">
-                <input type="file" id="file" accept=".asm">
-                <label for="file" class="custom-file-upload">Elegir
-                    archivo</label>
-            </div>
-        </header>
-        <main>
-            <div id="code">
-                <section class="column" id="codigoFuente">
-                    <h2>Codigo Fuente</h2>
-                    <div class="code-editor">
-                        <div class="code-header">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="code-body">
-                            <pre><code>
-                                ; Este programa suma dos números y muestra el resultado
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preload" href="css/index.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Ensambler - Reader</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="titulo">Ensambler - Reader</h1>
+			<div class="button-upload">
+				<input type="file" id="file" accept=".asm" />
+				<label for="file" class="custom-file-upload"
+					>Elegir archivo</label
+				>
+			</div>
+		</header>
+		<main>
+			<div id="code">
+				<section class="column" id="codigoFuente">
+					<h2>Codigo Fuente</h2>
+					<div class="code-editor">
+						<div class="code-header">
+							<span class="dot red"></span>
+							<span class="dot yellow"></span>
+							<span class="dot green"></span>
+						</div>
+						<div class="code-body">
+							<pre>
+                                <code>
 
-.model small
-.stack 100h
+                                </code>
+                            </pre>
+						</div>
+					</div>
+				</section>
 
-.data
-    num1 db 5         ; Primer número
-    num2 db 10        ; Segundo número
-    result db ?       ; Variable para almacenar el resultado
-    msg db 'El resultado es: $' ; Mensaje a mostrar
+				<div class="divider"></div>
+				<!-- Línea divisoria sin contenido anidado -->
 
-.code
-main:
-    ; Inicializa el segmento de datos
-    mov ax, @data
-    mov ds, ax
+				<section class="column" id="sepXElementos">
+					<h2>Separación de elementos</h2>
+					<div class="code-editor">
+						<div class="code-header">
+							<span class="dot red"></span>
+							<span class="dot yellow"></span>
+							<span class="dot green"></span>
+						</div>
+						<div class="code-body">
+							<pre>
+                                <code>
+                                    
+                                </code>
+                            </pre>
+						</div>
+					</div>
+				</section>
 
-    ; Suma los dos números
-    mov al, num1      ; Carga el primer número en AL
-    add al, num2      ; Suma el segundo número a AL
-    mov result, al    ; Guarda el resultado
+				<div class="divider"></div>
+				<!-- Línea divisoria sin contenido anidado -->
 
-    ; Mostrar el mensaje
-    mov ah, 09h       ; Función para mostrar cadena
-    lea dx, msg       ; Carga la dirección del mensaje
-    int 21h           ; Llama a la interrupción de DOS
-
-    ; Convertir el resultado a ASCII y mostrarlo
-    mov al, result    ; Carga el resultado
-    add al, 30h       ; Convierte a ASCII
-    mov ah, 02h       ; Función para mostrar un carácter
-    int 21h           ; Llama a la interrupción de DOS
-
-    ; Terminar el programa
-    mov ax, 4C00h     ; Función para terminar el programa
-    int 21h           ; Llama a la interrupción de DOS
-
-end main
-
-                            </code></pre>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="divider"></div>
-                <!-- Línea divisoria sin contenido anidado -->
-
-                <section class="column" id="sepXElementos">
-                    <h2>Separación de elementos</h2>
-                </section>
-
-                <div class="divider"></div>
-                <!-- Línea divisoria sin contenido anidado -->
-
-                <section class="column" id="identificacion">
-                    <h2>Identificación</h2>
-                </section>
-                <div class="horizontal-divider" id="horizontalDivider"></div>
-            </div>
-        </main>
-        <footer>
-            <!---Botones adelante atras con simbolos-->
-            <div class="botones">
-                <button id="atras"><--</button>
-                <button id="adelante">--></button>
-            </div>
-        </footer>
-        <script src="js/Lineas.js"></script>
-    </body>
+				<section class="column" id="identificacion">
+					<h2>Identificación</h2>
+					<div class="code-editor">
+						<div class="code-header">
+							<span class="dot red"></span>
+							<span class="dot yellow"></span>
+							<span class="dot green"></span>
+						</div>
+						<div class="code-body">
+							<pre>
+                                <code>
+    
+                                </code>
+                            </pre>
+						</div>
+					</div>
+				</section>
+				<div class="horizontal-divider" id="horizontalDivider"></div>
+			</div>
+		</main>
+		<footer>
+			<!---Botones adelante atras con simbolos-->
+			<div class="botones">
+				<button id="atras"><--</button>
+				<button id="adelante">--></button>
+			</div>
+		</footer>
+		<script src="js/Lineas.js"></script>
+	</body>
 </html>
