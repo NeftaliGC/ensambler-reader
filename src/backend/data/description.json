@@ -1,110 +1,154 @@
 {
-    "Instrucciones": [
-      {
-        "AAM": {
-          "descripcion": "Ajuste BCD después de la multiplicación. Convierte el resultado de la multiplicación de dos números decimales en el formato BCD."
-        }
-      },
-      {
-        "AAS": {
-          "descripcion": "Ajuste BCD después de la resta. Ajusta el contenido de AL después de una resta de números BCD."
-        }
-      },
-      {
-        "IRET": {
-          "descripcion": "Retorno de interrupción. Restaura el puntero de instrucción y los registros de segmento después de una interrupción."
-        }
-      },
-      {
-        "LAHF": {
-          "descripcion": "Carga los registros de estado en AH. Transfiere el estado de los flags a AH."
-        }
-      },
-      {
-        "STD": {
-          "descripcion": "Establece el flag de dirección, utilizado para operaciones con cadenas hacia atrás."
-        }
-      },
-      {
-        "STI": {
-          "descripcion": "Establece el flag de interrupción, permitiendo que ocurran interrupciones de hardware."
-        }
-      },
-      {
-        "INT": {
-          "descripcion": "Genera una interrupción de software en un vector de interrupción específico."
-        }
-      },
-      {
-        "NOT": {
-          "descripcion": "Opera un NOT bit a bit, invirtiendo todos los bits del operando."
-        }
-      },
-      {
-        "IDIV": {
-          "descripcion": "Divide el operando (división entera con signo) almacenado en el registro por el divisor especificado."
-        }
-      },
-      {
-        "MUL": {
-          "descripcion": "Multiplica dos operandos sin signo y almacena el resultado en un registro de destino."
-        }
-      },
-      {
-        "RC": {
-          "descripcion": "Restaura la condición del carry en el procesador."
-        }
-      },
-      {
-        "RCL": {
-          "descripcion": "Rota a la izquierda con carry. Rota los bits del operando hacia la izquierda usando el carry."
-        }
-      },
-      {
-        "SHL": {
-          "descripcion": "Desplazamiento a la izquierda lógico, moviendo bits a la izquierda y llenando con ceros."
-        }
-      },
-      {
-        "XCHG": {
-          "descripcion": "Intercambia los valores de dos registros o un registro y una dirección de memoria."
-        }
-      },
-      {
-        "MOV": {
-          "descripcion": "Copia datos de un lugar a otro, como entre registros o de memoria a registro."
-        }
-      },
-      {
-        "JNA": {
-          "descripcion": "Salta si no es arriba o igual. Brinca si el resultado de una comparación es menor."
-        }
-      },
-      {
-        "JNC": {
-          "descripcion": "Salta si no hay carry. Se usa para control de flujo cuando no hay carry."
-        }
-      },
-      {
-        "JNL": {
-          "descripcion": "Salta si no es menor. Brinca si el resultado es mayor o igual en comparación."
-        }
-      },
-      {
-        "JO": {
-          "descripcion": "Salta si hay desbordamiento. Se usa para manejar desbordamientos en cálculos."
-        }
-      },
-      {
-        "LOOP": {
-          "descripcion": "Repite un bloque de instrucciones mientras CX es mayor que 0, decreciendo CX en cada iteración."
-        }
-      },
-      {
-        "JBE": {
-          "descripcion": "Salta si es menor o igual, utilizado en comparaciones cuando el resultado es menor o igual."
-        }
-      }
-    ]
-  }
-  
+	"Instrucciones": [
+		{
+			"AAM": {
+				"descripcion": "Ajuste BCD después de la multiplicación. Convierte el resultado de la multiplicación de dos números decimales en el formato BCD."
+			}
+		},
+		{
+			"AAS": {
+				"descripcion": "Ajuste BCD después de la resta. Ajusta el contenido de AL después de una resta de números BCD."
+			}
+		},
+		{
+			"IRET": {
+				"descripcion": "Retorno de interrupción. Restaura el puntero de instrucción y los registros de segmento después de una interrupción."
+			}
+		},
+		{
+			"LAHF": {
+				"descripcion": "Carga los registros de estado en AH. Transfiere el estado de los flags a AH."
+			}
+		},
+		{
+			"STD": {
+				"descripcion": "Establece el flag de dirección, utilizado para operaciones con cadenas hacia atrás."
+			}
+		},
+		{
+			"STI": {
+				"descripcion": "Establece el flag de interrupción, permitiendo que ocurran interrupciones de hardware."
+			}
+		},
+		{
+			"INT": {
+				"descripcion": "Genera una interrupción de software en un vector de interrupción específico."
+			}
+		},
+		{
+			"NOT": {
+				"descripcion": "Opera un NOT bit a bit, invirtiendo todos los bits del operando."
+			}
+		},
+		{
+			"IDIV": {
+				"descripcion": "Divide el operando (división entera con signo) almacenado en el registro por el divisor especificado."
+			}
+		},
+		{
+			"MUL": {
+				"descripcion": "Multiplica dos operandos sin signo y almacena el resultado en un registro de destino."
+			}
+		},
+		{
+			"RC": {
+				"descripcion": "Restaura la condición del carry en el procesador."
+			}
+		},
+		{
+			"RCL": {
+				"descripcion": "Rota a la izquierda con carry. Rota los bits del operando hacia la izquierda usando el carry."
+			}
+		},
+		{
+			"SHL": {
+				"descripcion": "Desplazamiento a la izquierda lógico, moviendo bits a la izquierda y llenando con ceros."
+			}
+		},
+		{
+			"XCHG": {
+				"descripcion": "Intercambia los valores de dos registros o un registro y una dirección de memoria."
+			}
+		},
+		{
+			"MOV": {
+				"descripcion": "Copia datos de un lugar a otro, como entre registros o de memoria a registro."
+			}
+		},
+		{
+			"JNA": {
+				"descripcion": "Salta si no es arriba o igual. Brinca si el resultado de una comparación es menor."
+			}
+		},
+		{
+			"JNC": {
+				"descripcion": "Salta si no hay carry. Se usa para control de flujo cuando no hay carry."
+			}
+		},
+		{
+			"JNL": {
+				"descripcion": "Salta si no es menor. Brinca si el resultado es mayor o igual en comparación."
+			}
+		},
+		{
+			"JO": {
+				"descripcion": "Salta si hay desbordamiento. Se usa para manejar desbordamientos en cálculos."
+			}
+		},
+		{
+			"LOOP": {
+				"descripcion": "Repite un bloque de instrucciones mientras CX es mayor que 0, decreciendo CX en cada iteración."
+			}
+		},
+		{
+			"JBE": {
+				"descripcion": "Salta si es menor o igual, utilizado en comparaciones cuando el resultado es menor o igual."
+			}
+		}
+	],
+	"pseudoinstrucciones": [
+		".stack segment",
+		".data segment",
+		".code segment",
+		".model small",
+		".8086",
+		".stack 100h",
+		".data",
+		".code",
+		"end",
+		"ends",
+		"endp",
+		".model tiny",
+		".model large",
+		".model medium",
+		".model compact",
+		".db", // Define byte(s)
+		".dw", // Define word(s)
+		".dd", // Define double word(s)
+		".equ", // Set constant value
+		".org", // Set origin of code/data
+		".align", // Aligns data at specified boundary
+		".byte", // Defines byte storage
+		".word", // Defines word storage
+		".resb", // Reserve bytes
+		".resw", // Reserve words
+		".macro", // Define macro
+		".endm", // End macro definition
+		".repeat", // Repeat block
+		".times", // Repeat instruction N times
+		".local", // Define local labels
+		".label", // Define label for code
+		".define", // Define a constant or macro
+		".extern", // Declare external symbols
+		".public", // Declare public symbols
+		".proc", // Begin procedure
+		".endproc", // End procedure
+		".seg", // Segment override prefix
+		".comment" // Begin comment block
+	],
+	"regexSimbol": [
+		"^[a-zA-Z_][a-zA-Z0-9_]*:?$", // etiqueta
+		"^[a-zA-Z_][a-zA-Z0-9_]*$", // variable, instrucción, directiva, constante
+		"^[0-9]+$" // número
+	]
+}
