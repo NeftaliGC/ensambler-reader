@@ -1,7 +1,17 @@
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from backend.separador import separator
 
 app = FastAPI()
+
+# Configuración de CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Permite todas las fuentes; usa ["http://localhost:3000"] para restringir a una en específico
+    allow_credentials=True,
+    allow_methods=["*"],  # Permite todos los métodos (GET, POST, etc.)
+    allow_headers=["*"],  # Permite todos los encabezados
+)
 
 @app.get("/")
 def read_root():
@@ -27,4 +37,4 @@ def proccesSeparador(file_name):
     sep.readASM()
     sep.normalice()
     sep.indentificador()
-    return sep.getMetaSegment(), sep.getStackSegment(), sep.getDataSegment(), sep.getCodeSegment()
+    return sep.getMetaSegment(), sep.getStackSegment(), sep.getDataSegment(), sep.getCodeSegment(), sep.getCompleteSegments()

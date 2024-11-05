@@ -10,6 +10,7 @@ class separator:
         self.stakSegment = []
         self.dataSegment = []
         self.codeSegment = []
+        self.completeSegments = []
         self.segment_map = {
             "meta": self.metaSegment,
             "stack": self.stakSegment,
@@ -66,6 +67,7 @@ class separator:
         self.stakSegment = self.segment_map["stack"]
         self.dataSegment = self.segment_map["data"]
         self.codeSegment = self.segment_map["code"]
+        self.completeSegments = [self.metaSegment.copy(), self.stakSegment.copy(), self.dataSegment.copy(), self.codeSegment.copy()]
 
     def indentificador(self):
         for segment in self.segment_map:
@@ -136,3 +138,6 @@ class separator:
 
     def getMetaSegment(self):
         return self.metaSegment
+
+    def getCompleteSegments(self):
+        return self.completeSegments
