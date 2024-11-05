@@ -146,6 +146,17 @@ footer {
 .column {
 	flex: 1;
 	padding: 0 5%;
+	flex: 1;
+	padding: 0 5%;
+}
+
+.divider {
+	width: 0.3rem;
+	/* Grosor de la línea */
+	background-color: var(--azul);
+	/* Color de la línea */
+	margin: 0 20px;
+	/* Espacio alrededor de la línea */
 }
 
 .divider {
