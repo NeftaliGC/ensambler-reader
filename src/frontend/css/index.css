@@ -145,7 +145,7 @@ footer {
 
 .column {
 	flex: 1;
-	padding: 0 10px;
+	padding: 0 5%;
 }
 
 .divider {
@@ -157,25 +157,46 @@ footer {
 	/* Espacio alrededor de la línea */
 }
 
+.divider {
+    width: 0.2rem;
+    /* Grosor de la línea */
+    background-color: var(--azul);
+    /* Color de la línea */
+    margin: 0 10px;
+    /* Espacio alrededor de la línea */
+}
+
 .divider::after {
-	content: '';
-	/* Pseudo-elemento vacío para la línea */
-	position: absolute;
-	/* Posiciona la línea en la parte inferior */
-	left: 50%;
-	/* Centra la línea horizontal */
-	transform: translateX(-50%);
-	/* Ajusta el centrado */
-	width: 200rem;
-	/* Ajusta la longitud de la línea horizontal */
-	height: 0.3rem;
-	/* Grosor de la línea horizontal */
-	background-color: var(--azul);
-	/* Color de la línea horizontal */
-	border-radius: 10px;
-	/* Opcional: redondea los extremos de la línea */
-	left: -10px;
-	right: -20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    /* Asegura que inicie desde el borde izquierdo */
+    right: 0;
+    /* Asegura que se extienda hasta el borde derecho */
+    width: 100%;
+    /* Ancho completo */
+    height: 0.5rem;
+    /* Grosor de la línea horizontal */
+    background-color: var(--azul);
+    /* Color de la línea horizontal */
+    border-radius: 10px;
+    /* Redondeo opcional */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .divider {
+        width: 0.15rem;
+        /* Línea más delgada en pantallas pequeñas */
+        margin: 0 5px;
+    }
+
+    .divider::after {
+        width: 90%;
+        /* Ancho relativo en pantallas pequeñas */
+        height: 0.25rem;
+        /* Reduce el grosor en pantallas pequeñas */
+    }
 }
 
 /* Editor de código estilo Visual Studio */
