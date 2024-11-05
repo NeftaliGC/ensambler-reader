@@ -1,6 +1,9 @@
 const API = 'http://127.0.0.1:8000';
 let RESPONSE = {};
 
+atras = document.getElementById('atras');
+adelante = document.getElementById('adelante');
+
 document.getElementById('file').addEventListener('change', async function () {
 	const fileInput = this;
 	const fileName = fileInput.files[0] ? fileInput.files[0].name : '';
@@ -36,14 +39,33 @@ document.getElementById('file').addEventListener('change', async function () {
 	}
 });
 
-function showSegments() {
+function showSegments(idSegment) {
 	const segmentos = RESPONSE.segmentos;
 	const codigoFuente = document.getElementById('codigoFuente');
+	const sepxelementos = document.getElementById('sepXElementos');
+	const identificacion = document.getElementById('identificacion');
 
 	// Limpiar el contenido actual
 	codigoFuente.innerHTML = '';
+	sepxelementos.innerHTML = '';
+	identificacion.innerHTML = '';
 
 	// mostrar en codigo fuente el quinto segmento
-	const segmento = segmentos[4];
-	codigoFuente.innerHTML = segmento[3];
+	const code = segmentos[4];
+	console.log(code);
+	code.forEach((element) => {
+		element.forEach((elem) => {
+			codigoFuente.innerHTML += elem + '</br>';
+		});
+	});
+
+	const sepelem = segmentos[0];
+	sepelem.forEach((element) => {
+		sepxelementos.innerHTML += element.line + '</br>';
+	});
+
+	const identifier = segmentos[0];
+	sepelem.forEach((element) => {
+		identificacion.innerHTML += element.classification + '</br>';
+	});
 }
