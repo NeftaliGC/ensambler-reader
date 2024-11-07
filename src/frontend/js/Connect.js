@@ -6,7 +6,14 @@ adelante = document.getElementById('adelante');
 
 document.getElementById('file').addEventListener('change', async function () {
 	const fileInput = this;
-	const fileName = fileInput.files[0] ? fileInput.files[0].name : '';
+	const file = fileInput.files[0];
+	const fileName = file ? file.name : '';
+
+	// Verificar que el archivo tenga la extensión .asm
+	if (!fileName.endsWith('.asm')) {
+		alert('Por favor, selecciona un archivo con extensión .asm');
+		return; // Detener el proceso si el archivo no es .asm
+	}
 	document.getElementById('file-name').textContent = fileName;
 
 	// Desplazarse a la sección "main"
@@ -14,7 +21,7 @@ document.getElementById('file').addEventListener('change', async function () {
 
 	// Crear un FormData y agregar el archivo
 	const formData = new FormData();
-	formData.append('file', fileInput.files[0]);
+	formData.append('file', file);
 
 	try {
 		const response = await fetch(`${API}/uploadfile/`, {
@@ -52,20 +59,25 @@ function showSegments(idSegment) {
 
 	// mostrar en codigo fuente el quinto segmento
 	const code = segmentos[4];
-	console.log(code);
 	code.forEach((element) => {
 		element.forEach((elem) => {
 			codigoFuente.innerHTML += elem + '</br>';
 		});
 	});
 
-	const sepelem = segmentos[0];
+	const sepelem = segmentos.slice(0, 4);
+	console.log(sepelem);
 	sepelem.forEach((element) => {
-		sepxelementos.innerHTML += element.line + '</br>';
+		element.forEach((elem) => {
+			sepxelementos.innerHTML += elem.line + '</br>';
+		});
+		/* sepxelementos.innerHTML += element.line + '</br>'; */
 	});
 
-	const identifier = segmentos[0];
+	const identifier = segmentos.slice(0, 4);
 	sepelem.forEach((element) => {
-		identificacion.innerHTML += element.classification + '</br>';
+		element.forEach((elem) => {
+			identificacion.innerHTML += elem.classification + '</br>';
+		});
 	});
 }

@@ -21,7 +21,7 @@ def read_root():
 async def upload_file(file: UploadFile = File(...)):
     contents = await file.read()  # Puedes leer el archivo o guardarlo directamente
     # Aquí puedes procesar el archivo como desees, por ejemplo guardarlo en disco:
-    if file.filename.endswith(".asm"):
+    if file.filename.endswith(".asm") or file.filename.endswith(".ens"):
         with open(f"archives/{file.filename}", "wb") as f:
             f.write(contents)
 
@@ -30,7 +30,7 @@ async def upload_file(file: UploadFile = File(...)):
         return {"filename": file.filename, "segmentos": segmentos}
     
     else:
-        return {"filename": file.filename, "error": "El archivo no es un archivo .asm"}
+        return {"filename": file.filename, "error": "El archivo no es un archivo ensamblador"}
 
 def proccesSeparador(file_name):
     sep = separator(file_name)
