@@ -1,7 +1,17 @@
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from backend.separador import separator
 
 app = FastAPI()
+
+# Configuración de CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Permite todas las fuentes; usa ["http://localhost:3000"] para restringir a una en específico
+    allow_credentials=True,
+    allow_methods=["*"],  # Permite todos los métodos (GET, POST, etc.)
+    allow_headers=["*"],  # Permite todos los encabezados
+)
 
 @app.get("/")
 def read_root():
@@ -11,7 +21,7 @@ def read_root():
 async def upload_file(file: UploadFile = File(...)):
     contents = await file.read()  # Puedes leer el archivo o guardarlo directamente
     # Aquí puedes procesar el archivo como desees, por ejemplo guardarlo en disco:
-    if file.filename.endswith(".asm"):
+    if file.filename.endswith(".asm") or file.filename.endswith(".ens"):
         with open(f"archives/{file.filename}", "wb") as f:
             f.write(contents)
 
@@ -20,11 +30,11 @@ async def upload_file(file: UploadFile = File(...)):
         return {"filename": file.filename, "segmentos": segmentos}
     
     else:
-        return {"filename": file.filename, "error": "El archivo no es un archivo .asm"}
+        return {"filename": file.filename, "error": "El archivo no es un archivo ensamblador"}
 
 def proccesSeparador(file_name):
     sep = separator(file_name)
     sep.readASM()
     sep.normalice()
     sep.indentificador()
-    return sep.getMetaSegment(), sep.getStackSegment(), sep.getDataSegment(), sep.getCodeSegment()
+    return sep.getMetaSegment(), sep.getStackSegment(), sep.getDataSegment(), sep.getCodeSegment(), sep.getCompleteSegments()

@@ -22,11 +22,13 @@
 				<label for="file" class="custom-file-upload"
 					>Elegir archivo</label
 				>
+				<div id="file-name" class="file-name"></div>
+				<!-- Aquí se mostrará el nombre del archivo -->
 			</div>
 		</header>
 		<main>
 			<div id="code">
-				<section class="column" id="codigoFuente">
+				<section class="column">
 					<h2>Codigo Fuente</h2>
 					<div class="code-editor">
 						<div class="code-header">
@@ -36,8 +38,8 @@
 						</div>
 						<div class="code-body">
 							<pre>
-                                <code>
-
+                                <code id="codigoFuente">
+									
                                 </code>
                             </pre>
 						</div>
@@ -47,7 +49,7 @@
 				<div class="divider"></div>
 				<!-- Línea divisoria sin contenido anidado -->
 
-				<section class="column" id="sepXElementos">
+				<section class="column">
 					<h2>Separación de elementos</h2>
 					<div class="code-editor">
 						<div class="code-header">
@@ -57,7 +59,7 @@
 						</div>
 						<div class="code-body">
 							<pre>
-                                <code>
+                                <code id="sepXElementos">
                                     
                                 </code>
                             </pre>
@@ -68,7 +70,7 @@
 				<div class="divider"></div>
 				<!-- Línea divisoria sin contenido anidado -->
 
-				<section class="column" id="identificacion">
+				<section class="column">
 					<h2>Identificación</h2>
 					<div class="code-editor">
 						<div class="code-header">
@@ -78,7 +80,7 @@
 						</div>
 						<div class="code-body">
 							<pre>
-                                <code>
+                                <code id="identificacion">
     
                                 </code>
                             </pre>
@@ -96,5 +98,6 @@
 			</div>
 		</footer>
 		<script src="js/Lineas.js"></script>
+		<script src="js/Connect.js"></script>
 	</body>
 </html>

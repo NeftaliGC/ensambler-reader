@@ -1,122 +1,123 @@
 {
 	"Instrucciones": [
 		{
-			"AAM": {
+			"CBW": {
 				"descripcion": "Ajuste BCD después de la multiplicación. Convierte el resultado de la multiplicación de dos números decimales en el formato BCD."
 			}
 		},
 		{
-			"AAS": {
+			"CLC": {
 				"descripcion": "Ajuste BCD después de la resta. Ajusta el contenido de AL después de una resta de números BCD."
 			}
 		},
 		{
-			"IRET": {
+			"LODSB": {
 				"descripcion": "Retorno de interrupción. Restaura el puntero de instrucción y los registros de segmento después de una interrupción."
 			}
 		},
 		{
-			"LAHF": {
+			"LODSW": {
 				"descripcion": "Carga los registros de estado en AH. Transfiere el estado de los flags a AH."
 			}
 		},
 		{
-			"STD": {
+			"STOSB": {
 				"descripcion": "Establece el flag de dirección, utilizado para operaciones con cadenas hacia atrás."
 			}
 		},
 		{
-			"STI": {
+			"STOSW": {
 				"descripcion": "Establece el flag de interrupción, permitiendo que ocurran interrupciones de hardware."
 			}
 		},
 		{
-			"INT": {
+			"DIV": {
 				"descripcion": "Genera una interrupción de software en un vector de interrupción específico."
 			}
 		},
 		{
-			"NOT": {
+			"IMUL": {
 				"descripcion": "Opera un NOT bit a bit, invirtiendo todos los bits del operando."
 			}
 		},
 		{
-			"IDIV": {
+			"INC": {
 				"descripcion": "Divide el operando (división entera con signo) almacenado en el registro por el divisor especificado."
 			}
 		},
 		{
-			"MUL": {
+			"NEG": {
 				"descripcion": "Multiplica dos operandos sin signo y almacena el resultado en un registro de destino."
 			}
 		},
 		{
-			"RC": {
+			"ADD": {
 				"descripcion": "Restaura la condición del carry en el procesador."
 			}
 		},
 		{
-			"RCL": {
+			"LDS": {
 				"descripcion": "Rota a la izquierda con carry. Rota los bits del operando hacia la izquierda usando el carry."
 			}
 		},
 		{
-			"SHL": {
+			"MOV": {
 				"descripcion": "Desplazamiento a la izquierda lógico, moviendo bits a la izquierda y llenando con ceros."
 			}
 		},
 		{
-			"XCHG": {
+			"ROR": {
 				"descripcion": "Intercambia los valores de dos registros o un registro y una dirección de memoria."
 			}
 		},
 		{
-			"MOV": {
+			"JNS": {
 				"descripcion": "Copia datos de un lugar a otro, como entre registros o de memoria a registro."
 			}
 		},
 		{
-			"JNA": {
+			"JS": {
 				"descripcion": "Salta si no es arriba o igual. Brinca si el resultado de una comparación es menor."
 			}
 		},
 		{
-			"JNC": {
+			"LOOPNE": {
 				"descripcion": "Salta si no hay carry. Se usa para control de flujo cuando no hay carry."
 			}
 		},
 		{
-			"JNL": {
+			"JG": {
 				"descripcion": "Salta si no es menor. Brinca si el resultado es mayor o igual en comparación."
 			}
 		},
 		{
-			"JO": {
+			"JMP": {
 				"descripcion": "Salta si hay desbordamiento. Se usa para manejar desbordamientos en cálculos."
 			}
 		},
 		{
-			"LOOP": {
+			"JNBE": {
 				"descripcion": "Repite un bloque de instrucciones mientras CX es mayor que 0, decreciendo CX en cada iteración."
-			}
-		},
-		{
-			"JBE": {
-				"descripcion": "Salta si es menor o igual, utilizado en comparaciones cuando el resultado es menor o igual."
 			}
 		}
 	],
 	"pseudoinstrucciones": [
 		".stack segment",
+		".STACK SEGMENT",
 		".data segment",
+		".DATA SEGMENT",
 		".code segment",
+		".CODE SEGMENT",
 		".model small",
+		".MODEL SMALL",
 		".8086",
 		".stack 100h",
 		".data",
 		".code",
 		"end",
+		"END",
 		"ends",
+		"ENDS",
 		"endp",
 		".model tiny",
 		".model large",
@@ -144,7 +145,11 @@
 		".proc",
 		".endproc",
 		".seg",
-		".comment"
+		".comment",
+		"DUP('0')",
+		"dup('0')",
+		"dup(0)",
+		"DUP(0)"
 	],
 	"regexSimbol": [
 		"^[a-zA-Z_][a-zA-Z0-9_]*:$",
@@ -152,6 +157,7 @@
 		"^[0-9]+$",
 		"^[0-9]+[a-zA-Z]*$",
 		"^[,()]$",
-		"[?\"!\"#$%&'()*+,-./:;<=>@[\\^_`{|}~]"
+		"[?\"!\"#$%&'()*+,-./:;<=>@[\\^_`{|}~]",
+		"([\"'])(?:(?=(\\\\?))\\2.)*?\\1"
 	]
 }

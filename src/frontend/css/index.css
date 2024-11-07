@@ -1,258 +1,281 @@
 #code {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 20px;
-    background-color: var(--gris);
-    min-height: 300px;
-
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 20px;
+	background-color: var(--gris);
+	min-height: 300px;
 }
 
 :root {
-    --azul: #2F6690;
-    --azul_claro: #3A7CA5;
-    --cyan: #81C3D7;
-    --gris: #D9DCD6;
-    --azul_fuerte: #16425B;
-    --cyan_fuerte: #2A9D8F;
-    --fuente: "Poppins", sans-serif;
+	--azul: #2f6690;
+	--azul_claro: #3a7ca5;
+	--cyan: #81c3d7;
+	--gris: #d9dcd6;
+	--azul_fuerte: #16425b;
+	--cyan_fuerte: #2a9d8f;
+	--fuente: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: var(--gris);
-    font-family: var(--fuente);
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin-left: 10rem;
+	background-color: var(--gris);
+	font-family: var(--fuente);
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	margin-left: 10rem;
 }
 
 h2 {
-    text-align: center;
+	text-align: center;
 }
 
-
-input[type="file"] {
-    display: none;
-}
-
-
-main {
-    display: grid;
-    min-height: 70dvh;
-    grid-template-rows: auto 1fr auto;
-
-}
-
-footer {
-    padding: 5% 5%;
-    display: flex;
-    justify-content: center;
-    border: none;
-    border-radius: 10px;
-}
-
-.titulo {
-    text-align: center;
-    font-weight: 800;
-    font-style: normal;
-    color: var(--azul_fuerte);
-}
-
-.button-upload {
-    display: inline-block;
-    text-align: center;
-    padding: 20px 10px 15px 10px;
-    margin-left: 2rem;
+input[type='file'] {
+	display: none;
 }
 
 .custom-file-upload {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--azul_claro);
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+.file-name {
+	margin: 1rem;
+	font-size: 1.5em; /* Tamaño de letra grande */
+	font-weight: bold;
+	color: #333; /* Color de texto */
+}
+
+main {
+	display: grid;
+	min-height: 70dvh;
+	grid-template-rows: auto 1fr auto;
+}
+
+footer {
+	padding: 5% 5%;
+	display: flex;
+	justify-content: center;
+	border: none;
+	border-radius: 10px;
+}
+
+.titulo {
+	text-align: center;
+	font-weight: 800;
+	font-style: normal;
+	color: var(--azul_fuerte);
+}
+
+.button-upload {
+	display: flex;
+	text-align: center;
+	margin: 1rem;
+	margin-left: 2rem;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.custom-file-upload {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 8px;
+	background-color: var(--azul_claro);
+	font-weight: 600;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 .custom-file-upload:hover {
-    background-color: var(--cyan_fuerte);
+	background-color: var(--cyan_fuerte);
 }
 
 .custom-file-upload:active {
-    background-color: var(--azul_fuerte);
+	background-color: var(--azul_fuerte);
 }
 
 .botones {
-    display: inline-block;
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    font-weight: 700;
-    font-style: normal;
-    padding: 20px 0;
+	display: inline-block;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	font-weight: 700;
+	font-style: normal;
+	padding: 20px 0;
 }
 
 #atras,
 #adelante {
-    padding: 10px 15px;
-    /* Aumenta el tamaño de los botones */
-    font-size: 1.2rem;
-    /* Aumenta el tamaño del texto */
-    border: none;
-    border-radius: 8px;
-    /* Más redondeo en las esquinas */
-    background-color: var(--azul_claro);
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Añade sombra para hacerlos destacar */
-    transition: all 0.3s ease;
-    /* Efecto suave de transición */
+	padding: 10px 15px;
+	/* Aumenta el tamaño de los botones */
+	font-size: 1.2rem;
+	/* Aumenta el tamaño del texto */
+	border: none;
+	border-radius: 8px;
+	/* Más redondeo en las esquinas */
+	background-color: var(--azul_claro);
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	/* Añade sombra para hacerlos destacar */
+	transition: all 0.3s ease;
+	/* Efecto suave de transición */
 }
 
 #atras:hover,
 #adelante:hover {
-    background-color: var(--cyan_fuerte);
-    /* Cambia el color al pasar el mouse */
-    transform: scale(1.05);
-    /* Efecto de agrandamiento */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    /* Aumenta la sombra */
+	background-color: var(--cyan_fuerte);
+	/* Cambia el color al pasar el mouse */
+	transform: scale(1.05);
+	/* Efecto de agrandamiento */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	/* Aumenta la sombra */
 }
 
 #atras:active,
 #adelante:active {
-    background-color: var(--azul_fuerte);
-    /* Color al hacer clic */
-    transform: scale(0.95);
-    /* Pequeño efecto de compresión */
+	background-color: var(--azul_fuerte);
+	/* Color al hacer clic */
+	transform: scale(0.95);
+	/* Pequeño efecto de compresión */
 }
 
 .column {
-    flex: 1;
-    padding: 0 5%;
+	flex: 1;
+	padding: 0 5%;
+	flex: 1;
+	padding: 0 5%;
 }
 
 .divider {
-    width: 0.2rem;
-    /* Grosor de la línea */
-    background-color: var(--azul);
-    /* Color de la línea */
-    margin: 0 10px;
-    /* Espacio alrededor de la línea */
+	width: 0.3rem;
+	/* Grosor de la línea */
+	background-color: var(--azul);
+	/* Color de la línea */
+	margin: 0 20px;
+	/* Espacio alrededor de la línea */
+}
+
+.divider {
+	width: 0.2rem;
+	/* Grosor de la línea */
+	background-color: var(--azul);
+	/* Color de la línea */
+	margin: 0 10px;
+	/* Espacio alrededor de la línea */
 }
 
 .divider::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    /* Asegura que inicie desde el borde izquierdo */
-    right: 0;
-    /* Asegura que se extienda hasta el borde derecho */
-    width: 100%;
-    /* Ancho completo */
-    height: 0.5rem;
-    /* Grosor de la línea horizontal */
-    background-color: var(--azul);
-    /* Color de la línea horizontal */
-    border-radius: 10px;
-    /* Redondeo opcional */
+	content: '';
+	position: absolute;
+	left: 0;
+	/* Asegura que inicie desde el borde izquierdo */
+	right: 0;
+	/* Asegura que se extienda hasta el borde derecho */
+	width: 100%;
+	/* Ancho completo */
+	height: 0.5rem;
+	/* Grosor de la línea horizontal */
+	background-color: var(--azul);
+	/* Color de la línea horizontal */
+	border-radius: 10px;
+	/* Redondeo opcional */
 }
 
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
-    .divider {
-        width: 0.15rem;
-        /* Línea más delgada en pantallas pequeñas */
-        margin: 0 5px;
-    }
+	.divider {
+		width: 0.15rem;
+		/* Línea más delgada en pantallas pequeñas */
+		margin: 0 5px;
+	}
 
-    .divider::after {
-        width: 90%;
-        /* Ancho relativo en pantallas pequeñas */
-        height: 0.25rem;
-        /* Reduce el grosor en pantallas pequeñas */
-    }
+	.divider::after {
+		width: 90%;
+		/* Ancho relativo en pantallas pequeñas */
+		height: 0.25rem;
+		/* Reduce el grosor en pantallas pequeñas */
+	}
 }
 
 /* Editor de código estilo Visual Studio */
 .code-editor {
-    background-color: #1e1e1e;
-    /* Fondo oscuro */
-    border-radius: 8px;
-    color: #d4d4d4;
-    /* Color de texto */
-    font-family: 'Courier New', monospace;
-    /* Fuente monoespaciada */
-    padding: 15px;
-    overflow: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    /* Sombra para darle profundidad */
-    margin-top: 15px;
-    max-width: 100%;
-    /* Asegura que el contenedor no exceda el ancho del contenedor */
-    max-height: 100%;
-    /* Aseguramos que el editor no limite la altura de la columna */
+	background-color: #1e1e1e;
+	/* Fondo oscuro */
+	border-radius: 8px;
+	color: #d4d4d4;
+	/* Color de texto */
+	font-family: 'Courier New', monospace;
+	/* Fuente monoespaciada */
+	padding: 15px;
+	overflow: auto;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	/* Sombra para darle profundidad */
+	margin-top: 15px;
+	max-width: 100%;
+	/* Asegura que el contenedor no exceda el ancho del contenedor */
+	max-height: 100%;
+	/* Aseguramos que el editor no limite la altura de la columna */
 }
 
 /* Barra superior del editor */
 .code-header {
-    display: flex;
-    gap: 8px;
-    padding: 6px;
-    background-color: #333;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 10px;
+	display: flex;
+	gap: 8px;
+	padding: 6px;
+	background-color: #333;
+	border-radius: 8px 8px 0 0;
+	margin-bottom: 10px;
 }
 
 /* Botones de la barra de herramientas */
 .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
 }
 
 .red {
-    background-color: #ff5f56;
+	background-color: #ff5f56;
 }
 
 .yellow {
-    background-color: #ffbd2e;
+	background-color: #ffbd2e;
 }
 
 .green {
-    background-color: #27c93f;
+	background-color: #27c93f;
 }
 
 /* Área del cuerpo del código */
 .code-body {
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
+	padding: 10px;
+	border-radius: 0 0 8px 8px;
 }
 
 /* Estilos de código */
 pre,
 code {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--cyan_fuerte);
-    /* Color del texto */
-    white-space: pre-wrap;
-    /* Asegura que el texto se ajuste */
+	font-size: 0.95rem;
+	line-height: 1.5;
+	color: var(--cyan_fuerte);
+	/* Color del texto */
+	white-space: pre-wrap;
+	/* Asegura que el texto se ajuste */
 }
 
 pre {
-    margin: 0;
+	margin: 0;
 }
 
 .code-body {
-    background-color: #1e1e1e;
-    /* Fondo del editor */
-    color: #d4d4d4;
-    /* Color del texto */
-    border-radius: 8px;
+	background-color: #1e1e1e;
+	/* Fondo del editor */
+	color: #d4d4d4;
+	/* Color del texto */
+	border-radius: 8px;
 }
