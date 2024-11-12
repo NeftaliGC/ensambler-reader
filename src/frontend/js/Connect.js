@@ -60,8 +60,7 @@ function showSegments(idSegment) {
 	// mostrar en codigo fuente el quinto segmento
 	const code = segmentos[4];
 	code[0].forEach((element) => {
-		codigoFuente.innerHTML += elem + '</br>';
-		element.forEach((elem) => {});
+		codigoFuente.innerHTML += element + '</br>';
 	});
 
 	const sepelem = segmentos.slice(0, 4);
