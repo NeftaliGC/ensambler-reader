@@ -27,78 +27,51 @@
 			</div>
 		</header>
 		<main>
-			<div id="pestañas">
-				<div id="fase1" class="pestaña">
-					<h4 class="tituloPestaña">Fase 1</h4>
+			<div class="code-editor">
+				<div class="code-header">
+					<span class="dot red"></span>
+					<span class="dot yellow"></span>
+					<span class="dot green"></span>
+					<p>Tabla de Identificación de Elementos</p>
 				</div>
-				<div id="fase2" class="pestaña">
-					<h4 class="tituloPestaña">Fase 1</h4>
-				</div>
-				<div id="fase3" class="pestaña">
-					<h4 class="tituloPestaña">Fase 1</h4>
-				</div>
+				<table class="code-table" id="IdElementos">
+					<thead>
+						<tr>
+							<th class="cp-header">CP</th>
+							<th class="codigo-header">Código Fuente</th>
+							<th class="separacion-header">
+								Separación de Elementos
+							</th>
+							<th class="identificacion-header">
+								Identificación
+							</th>
+							<th class="codificacion-header">Codificación</th>
+							<th class="errores-header">Errores</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
 			</div>
-			<div id="code">
-				<section class="column">
-					<h2>Codigo Fuente</h2>
-					<div class="code-editor">
-						<div class="code-header">
-							<span class="dot red"></span>
-							<span class="dot yellow"></span>
-							<span class="dot green"></span>
-						</div>
-						<div class="code-body">
-							<pre>
-                                <code id="codigoFuente">
-									
-                                </code>
-                            </pre>
-						</div>
-					</div>
-				</section>
 
-				<div class="divider"></div>
-				<!-- Línea divisoria sin contenido anidado -->
-
-				<section class="column">
-					<h2>Separación de elementos</h2>
-					<div class="code-editor">
-						<div class="code-header">
-							<span class="dot red"></span>
-							<span class="dot yellow"></span>
-							<span class="dot green"></span>
-						</div>
-						<div class="code-body">
-							<pre>
-                                <code id="sepXElementos">
-                                    
-                                </code>
-                            </pre>
-						</div>
-					</div>
-				</section>
-
-				<div class="divider"></div>
-				<!-- Línea divisoria sin contenido anidado -->
-
-				<section class="column">
-					<h2>Identificación</h2>
-					<div class="code-editor">
-						<div class="code-header">
-							<span class="dot red"></span>
-							<span class="dot yellow"></span>
-							<span class="dot green"></span>
-						</div>
-						<div class="code-body">
-							<pre>
-                                <code id="identificacion">
-    
-                                </code>
-                            </pre>
-						</div>
-					</div>
-				</section>
-				<div class="horizontal-divider" id="horizontalDivider"></div>
+			<div class="code-editor">
+				<div class="code-header">
+					<span class="dot red"></span>
+					<span class="dot yellow"></span>
+					<span class="dot green"></span>
+					<p>Tabla de Símbolos</p>
+				</div>
+				<table class="code-table" id="Simbolos">
+					<thead>
+						<tr>
+							<th class="codigo-header">Nombre</th>
+							<th class="separacion-header">Tipo</th>
+							<th class="identificacion-header">Dirección</th>
+							<th class="codificacion-header">Valor</th>
+							<th class="cp-header">Comentario</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
 			</div>
 		</main>
 		<footer>

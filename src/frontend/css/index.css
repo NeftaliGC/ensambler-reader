@@ -241,7 +241,7 @@ footer {
 	border-radius: 8px;
 	color: #d4d4d4;
 	/* Color de texto */
-	font-family: 'Courier New', monospace;
+	font-family: 'Hack Nerd Font small', monospace;
 	/* Fuente monoespaciada */
 	padding: 15px;
 	overflow: auto;
@@ -262,6 +262,51 @@ footer {
 	background-color: #333;
 	border-radius: 8px 8px 0 0;
 	margin-bottom: 10px;
+	align-items: center;
+	margin: 0;
+}
+
+.code-header p {
+	margin: 0;
+}
+
+.code-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	font-size: 16px;
+}
+
+.code-table td,
+th {
+	color: white;
+	font-weight: normal;
+	padding: 10px 15px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/* Colores personalizados para los encabezados */
+.cp-header {
+	color: #1e90ff; /* Azul */
+}
+.codigo-header {
+	color: #32cd32; /* Verde */
+}
+.separacion-header {
+	color: #ffd700; /* Amarillo */
+}
+.identificacion-header {
+	color: #8a2be2; /* Púrpura */
+}
+.codificacion-header {
+	color: #ff4500; /* Naranja */
+}
+.errores-header {
+	color: #ff0000; /* Rojo */
+}
+.highlight-error {
+	background-color: #f8d7da;
 }
 
 /* Botones de la barra de herramientas */

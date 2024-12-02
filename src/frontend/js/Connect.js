@@ -48,34 +48,72 @@ document.getElementById('file').addEventListener('change', async function () {
 
 function showSegments(idSegment) {
 	const segmentos = RESPONSE.segmentos;
-	const codigoFuente = document.getElementById('codigoFuente');
-	const sepxelementos = document.getElementById('sepXElementos');
-	const identificacion = document.getElementById('identificacion');
+	// Referencia a la tabla donde se agregarán las filas
 
-	// Limpiar el contenido actual
-	codigoFuente.innerHTML = '';
-	sepxelementos.innerHTML = '';
-	identificacion.innerHTML = '';
+	populateTable(segmentos);
+}
 
-	// mostrar en codigo fuente el quinto segmento
-	const code = segmentos[4];
-	code[0].forEach((element) => {
-		codigoFuente.innerHTML += element + '</br>';
-	});
+// Función para agregar datos a la tabla
+function populateTable(data) {
+	// Referencia a la tabla donde se agregarán las filas
+	const tableBody = document.querySelector('#IdElementos tbody');
+	// Iteramos sobre cada segmento
+	data.forEach((segment) => {
+		// Iteramos sobre cada línea dentro del segmento
+		segment.forEach((line) => {
+			// Creamos una nueva fila
+			const row = document.createElement('tr');
 
-	const sepelem = segmentos.slice(0, 4);
-	console.log(sepelem);
-	sepelem.forEach((element) => {
-		element.forEach((elem) => {
-			sepxelementos.innerHTML += elem.line + '</br>';
-		});
-		/* sepxelementos.innerHTML += element.line + '</br>'; */
-	});
+			// Extraemos los datos necesarios
+			const cp = line.cp || '';
+			const complete = line.complete || '';
+			const lineContent = Array.isArray(line.line)
+				? line.line
+				: [line.line]; // Aseguramos que sea un array
+			const classification = Array.isArray(line.classification)
+				? line.classification
+				: [line.classification]; // Aseguramos que sea un array
+			const codificacion = line.codificacion || '';
+			const errores = line.errores || '';
 
-	const identifier = segmentos.slice(0, 4);
-	sepelem.forEach((element) => {
-		element.forEach((elem) => {
-			identificacion.innerHTML += elem.classification + '</br>';
+			// Creamos las celdas de la fila
+			const cpCell = `<td>${cp}</td>`;
+			const completeCell = `<td>${complete}</td>`;
+			const codificacionCell = `<td>${codificacion}</td>`;
+			const erroresCell = `<td>${errores}</td>`;
+
+			// Creamos la celda para Separación de Elementos con <br>
+			const lineCell = document.createElement('td');
+			lineContent.forEach((element) => {
+				const span = document.createElement('span');
+				span.textContent = element;
+				lineCell.appendChild(span);
+				lineCell.appendChild(document.createElement('br')); // Agregamos el <br>
+			});
+
+			// Creamos la celda para Identificación con <br>
+			const classificationCell = document.createElement('td');
+			classification.forEach((element) => {
+				const span = document.createElement('span');
+				span.textContent = element;
+				classificationCell.appendChild(span);
+				classificationCell.appendChild(document.createElement('br')); // Agregamos el <br>
+			});
+
+			// Construimos la fila completa
+			row.innerHTML = `
+                ${cpCell}
+                ${completeCell}
+            `;
+			row.appendChild(lineCell); // Agregamos la celda con separación de elementos
+			row.appendChild(classificationCell); // Agregamos la celda con identificación
+			row.innerHTML += `
+                ${codificacionCell}
+                ${erroresCell}
+            `;
+
+			// Agregamos la fila al cuerpo de la tabla
+			tableBody.appendChild(row);
 		});
 	});
 }
