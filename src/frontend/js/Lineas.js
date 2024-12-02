@@ -16,11 +16,9 @@ function adjustHorizontalDivider() {
 
 // Llama a la función cuando cargue la página y cada vez que se redimensione la ventana
 window.addEventListener("load", () => {
-    adjustDividerHeight();
     adjustHorizontalDivider();
 });
 window.addEventListener("resize", () => {
-    adjustDividerHeight();
     adjustHorizontalDivider();
 });
 

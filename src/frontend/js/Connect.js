@@ -1,5 +1,7 @@
 const API = 'http://127.0.0.1:8000';
 let RESPONSE = {};
+let currentPage = 0; //páginación actual
+const LINES_PER_PAGE = 10; // Cantidad de líneas por página
 
 atras = document.getElementById('atras');
 adelante = document.getElementById('adelante');
