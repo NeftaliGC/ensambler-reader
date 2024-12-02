@@ -37,4 +37,4 @@ def proccesSeparador(file_name):
     sep.readASM()
     sep.normalice()
     sep.indentificador()
-    return sep.getMetaSegment(), sep.getStackSegment(), sep.getDataSegment(), sep.getCodeSegment(), sep.getCompleteSegments()
+    return sep.getMetaSegment(), sep.getStackSegment(), sep.getDataSegment(), sep.getCodeSegment()

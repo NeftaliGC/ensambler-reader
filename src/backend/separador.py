@@ -78,14 +78,28 @@ class separator:
                 # Check if the whole line is a pseudo instruction
                 if self.isPsuedoInstruction(line):
                     classification = "Pseudo Instrucción"
-                    self.segment_map[segment][i] = {"line": line, "classification": classification}
+                    self.segment_map[segment][i] = {"cp": "","complete": line, "line": line, "classification": classification, "codificacion": "", "errores": ""}
                     i += 1  # Move to the next line
                 else:
                     # Remove the original line at index i
                     del self.segment_map[segment][i]
                     
+                    j = 0  # Index counter for words in the line
                     # Process each word individually and insert it at position i
+                    
                     for word in line.split():
+                        # Inicializamos el diccionario afuera del bucle
+                        if j == 0:  # Solo inicializamos el diccionario una vez por línea
+                            segment_data = {
+                                "cp": "",          # Contador de programa
+                                "complete": line,  # La línea completa
+                                "line": [],        # Una lista para almacenar las palabras (words)
+                                "classification": [],  # Lista de clasificaciones
+                                "codificacion": "",  # Código de máquina
+                                "errores": "",      # Errores
+                            }
+
+                        # Clasificamos la palabra
                         if self.isPsuedoInstruction(word):
                             classification = "Pseudo Instrucción"
                         elif self.isInstruction(word):
@@ -94,10 +108,16 @@ class separator:
                             classification = "Simbolo"
                         else:
                             classification = "No se reconoce"
-                        
-                        # Insert each word with its classification at index i
-                        self.segment_map[segment].insert(i, {"line": word, "classification": classification})
-                        i += 1  # Move to the next position for the next word
+
+                        # Agregamos la palabra a la lista 'line' y la clasificación a 'classification'
+                        segment_data["line"].append(word)
+                        segment_data["classification"].append(classification)
+
+                        j += 1
+                    # Una vez procesada la línea, insertamos el diccionario completo
+                    self.segment_map[segment].insert(i, segment_data)
+                    i += 1  # Move to the next position for the next word
+
 
     def isPsuedoInstruction(self, instruction):
         isPsuedoInstructions = self.readDescription("pseudoinstrucciones")
