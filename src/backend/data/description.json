@@ -2,102 +2,106 @@
 	"Instrucciones": [
 		{
 			"CBW": {
-				"descripcion": "Ajuste BCD después de la multiplicación. Convierte el resultado de la multiplicación de dos números decimales en el formato BCD."
+				"Sin operandos": "10011000"
 			}
 		},
 		{
 			"CLC": {
-				"descripcion": "Ajuste BCD después de la resta. Ajusta el contenido de AL después de una resta de números BCD."
+				"Sin operandos": "11111000"
 			}
 		},
 		{
-			"LODSB": {
-				"descripcion": "Retorno de interrupción. Restaura el puntero de instrucción y los registros de segmento después de una interrupción."
-			}
-		},
-		{
-			"LODSW": {
-				"descripcion": "Carga los registros de estado en AH. Transfiere el estado de los flags a AH."
-			}
-		},
-		{
-			"STOSB": {
-				"descripcion": "Establece el flag de dirección, utilizado para operaciones con cadenas hacia atrás."
-			}
-		},
-		{
-			"STOSW": {
-				"descripcion": "Establece el flag de interrupción, permitiendo que ocurran interrupciones de hardware."
+			"REP": {
+				"LODSB": "11110011 10101010",
+				"LODSW": "11110011 10101011",
+				"STOSB": "11110010 10101010",
+				"STOSW": "11110010 10101011"
 			}
 		},
 		{
 			"DIV": {
-				"descripcion": "Genera una interrupción de software en un vector de interrupción específico."
+				"Reg/Mem": "1111011w mod 110 r/m"
 			}
 		},
 		{
 			"IMUL": {
-				"descripcion": "Opera un NOT bit a bit, invirtiendo todos los bits del operando."
+				"Reg/Mem": "1111011w mod 101 r/m"
 			}
 		},
 		{
 			"INC": {
-				"descripcion": "Divide el operando (división entera con signo) almacenado en el registro por el divisor especificado."
+				"Reg/Mem": "1111111w mod 000 r/m",
+				"Reg (corta)": "01000 reg"
 			}
 		},
 		{
 			"NEG": {
-				"descripcion": "Multiplica dos operandos sin signo y almacena el resultado en un registro de destino."
+				"Reg/Mem": "1111011w mod 011 r/m"
 			}
 		},
 		{
 			"ADD": {
-				"descripcion": "Restaura la condición del carry en el procesador."
+				"Reg, Reg": "000000dw mod reg r/m",
+				"Mem, Reg": "0000000w mod reg r/m",
+				"Reg, Mem": "0000001w mod reg r/m",
+				"Reg/Mem, Inm": "100000sw mod 000 r/m",
+				"Acum, Inm (corta)": "0000010w"
 			}
 		},
 		{
 			"LDS": {
-				"descripcion": "Rota a la izquierda con carry. Rota los bits del operando hacia la izquierda usando el carry."
+				"Reg, Mem": "11000101 mod reg r/m"
 			}
 		},
 		{
 			"MOV": {
-				"descripcion": "Desplazamiento a la izquierda lógico, moviendo bits a la izquierda y llenando con ceros."
+				"Reg/Mem, Reg": "1000100w mod reg r/m",
+				"Reg, Reg/Mem": "1000101w mod reg r/m",
+				"Reg/Mem, Inm": "1100011w mod 000 r/m",
+				"Reg, Inm (corta)": "1011w reg",
+				"Acum, Mem (corta)": "1010000w",
+				"Acum a Mem (corta)": "1010001w"
 			}
 		},
 		{
 			"ROR": {
-				"descripcion": "Intercambia los valores de dos registros o un registro y una dirección de memoria."
+				"Reg/Mem, 1": "1101000w mod 001 r/m",
+				"Reg/Mem, CL": "1101001w mod 001 r/m",
+				"Reg/Mem, Inm.byte": "1100000w mod 001 r/m"
 			}
 		},
 		{
 			"JNS": {
-				"descripcion": "Copia datos de un lugar a otro, como entre registros o de memoria a registro."
+				"Etiqueta corto (8 bits)": "01111001",
+				"Etiqueta completo (16 bits)": "00001111 10001001"
 			}
 		},
 		{
 			"JS": {
-				"descripcion": "Salta si no es arriba o igual. Brinca si el resultado de una comparación es menor."
+				"Etiqueta corto (8 bits)": "01111000",
+				"Etiqueta completo (16 bits)": "00001111 10001000"
 			}
 		},
 		{
 			"LOOPNE": {
-				"descripcion": "Salta si no hay carry. Se usa para control de flujo cuando no hay carry."
+				"Etiqueta": "11100000"
 			}
 		},
 		{
 			"JG": {
-				"descripcion": "Salta si no es menor. Brinca si el resultado es mayor o igual en comparación."
+				"Etiqueta corto (8 bits)": "01111111",
+				"Etiqueta completo (16 bits)": "00001111 10001111"
 			}
 		},
 		{
 			"JMP": {
-				"descripcion": "Salta si hay desbordamiento. Se usa para manejar desbordamientos en cálculos."
+				"Etiqueta": "11101001"
 			}
 		},
 		{
 			"JNBE": {
-				"descripcion": "Repite un bloque de instrucciones mientras CX es mayor que 0, decreciendo CX en cada iteración."
+				"Etiqueta corto (8 bits)": "01110111",
+				"Etiqueta completo (16 bits)": "00001111 10000111"
 			}
 		}
 	],
