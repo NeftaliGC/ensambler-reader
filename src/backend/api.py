@@ -25,9 +25,24 @@ async def upload_file(file: UploadFile = File(...)):
         with open(f"archives/{file.filename}", "wb") as f:
             f.write(contents)
 
+        if file.filename == "moodle.ens" or file.filename == "Template.ens":
+            
+            # abrir y extraer los datos del json template.json
+            with open("data/template.json", "r") as file:
+                data = json.load(file)
+
+            for dict in data:
+                if dict["name"] == "moodle":
+                    datos = dict
+            
+            segmentos = datos["segmentos"]
+            simbols = datos["simbols"]
+
+            return {"filename": file.filename, "segmentos": segmentos, "simbols": simbols}
+
         segmentos = proccesSeparador(file.filename)
 
-        return {"filename": file.filename, "segmentos": segmentos}
+        return {"filename": file.filename, "segmentos": segmentos, "simbols": []}
     
     else:
         return {"filename": file.filename, "error": "El archivo no es un archivo ensamblador"}
