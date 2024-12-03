@@ -1,5 +1,6 @@
 from pathlib import Path
 from backend.Errorlin import ErrorLin
+from backend.codificador import procesar_instruccion, cargar_opcodes
 import re
 import json
 
@@ -131,6 +132,19 @@ class separator:
                 verificarError.setLines(lineasSegmento)
                 newLines = verificarError.identidyError()
                 self.segment_map[segment] = newLines
+
+        opcodes = cargar_opcodes()
+        
+        for segment in self.segment_map:
+            if segment != "meta":
+                lines = self.segment_map[segment]
+                for i, line in enumerate(lines):
+                    # Procesar la instrucción y mostrar el código de máquina
+                    resultado = procesar_instruccion(line["complete"].upper(), opcodes)
+                    line["codificacion"] = resultado
+                    lines[i] = line
+            
+
 
 
 
