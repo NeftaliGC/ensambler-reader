@@ -1,71 +1,285 @@
 {
-	"MOV": {
-		"AX BX": "8B C3",
-		"BX AX": "8B D8",
-    "MOV AX @DATA":"B8 02 00",
-    "MOV DS AX": "8E D8",
-    "CMP EDAD 18":"3C 12",
-    "MOV AH 09H":"B8 90 00",
-    "MOV AH 01H":"B8 01 00",
-    "MOV AH 1":"B401"
-	},
-	"ADD": {
-		"AX BX": "03 C3",
-		"BX AX": "03 DA"
-	},
-	"IMUL": {
-		"AX": "F7A8",
-		"BX": "F7EB"
-	},
-	"DIV": {
-		"AX BX": "F7 F3",
-    "DIV SS1": "F6 36 1F 10"
-	},
-	"INC": {
-		"AX": "40",
-		"BX": "43",
-    "TECLA": "FE 06"
-	},
-	"NEG": {
-		"AX": "F7 D8",
-		"BX": "F7 DB"
-	},
-	"LDS": {
-		"AX [BX]": "C5 07"
-	},
-	"CBW": {
-		"": "98"
-	},
-	"CLC": {
-		"": "F8"
-	},
-	"ROR": {
-		"AX 1": "D1 C8",
-		"BX 1": "C1 CB",
-    "ROR AX 1": "C1 CB"
-	},
-	"JNS": {
-		"": "70"
-	},
-	"LOOPNE": {
-		"": "E0"
-	},
-	"JG": {
-		"": "7F",
-    "FIN3":"7F 0A"
-	},
-	"JMP": {
-		"": "EB",
-    "FIN":"EB 10",
-    "LECTURA":"EB 05"
-	},
-	"JNBE": {
-		"": "77"
-	},
-	"REP": {
-		"LODSB": "F3 AA",
-		"LODSW": "F3 A4",
-		"STOSB": "F3",
-		"STOSW": "F3"
-	}
+    "Instrucciones":[
+        {
+            "MOV":{
+                "Reg/Mem, Reg":{
+                    "codigo": "1000100w",
+                    "direccion": "mod reg r/m"
+                },
+                "Reg, Reg/Mem":{
+                    "codigo": "1000101w",
+                    "direccion": "mod reg r/m"
+                },
+                "Reg/Mem, Inm":{
+                    "codigo": "1100011w",
+                    "direccion": "mod 000 r/m"
+                },
+                "Acum, Mem (corta)":{
+                    "codigo": "1010000w"
+                },
+                "Acum a Mem (corta)":{
+                    "codigo":"1010001w"
+                },
+                "Regs, Reg":{
+                    "codigo": "10001110",
+                    "direccion": "mod regs3 r/m"
+                },
+                "Reg, Regs":{
+                    "codigo": "10001100",
+                    "direccion": "mod regs3 r/m"
+                }
+            }
+        },
+        {
+            "ADD":{
+                "Reg, Reg":{
+                    "codigo": "000000dw",
+                    "direccion": "mod reg r/m"
+                },
+                "Mem, Reg":{
+                    "codigo":"0000000w",
+                    "direccion":"mod reg r/m"
+                },
+                "Reg, Mem":{
+                    "codigo":"0000001w",
+                    "direccion":"mod reg r/m"
+                },
+                "Reg/Mem, Inm":{
+                    "codigo":"100000sw",
+                    "direccion":"mod 000 r/m"
+                },
+                "Acum, Inm (corta)":{
+                    "codigo":"0000010w"
+                }
+            }
+        },
+        {
+            "IMUL":{
+                "Reg/Mem":{
+                    "codigo":"1111011w",
+                    "direccion":"mod 101 r/m"
+                }
+            }
+        },
+        {
+            "DIV":{
+                "Reg/Mem":{
+                    "codigo":"1111011w",
+                    "direccion":"mod 110 r/m"
+                }
+            }
+        },
+        {
+            "INC":{
+                "Reg/Mem":{
+                    "codigo":"1111111w",
+                    "direccion":"mod 000 r/m"
+                },
+                "Reg (corta)":{
+                    "codigo":"01000reg"
+                }
+            }
+        },
+        {
+            "NEG":{
+               "Reg/Mem":{
+                    "codigo":"1111011w",
+                    "direccion":"mod 011 r/m"
+                } 
+            }
+        },
+        {
+            "LDS":{
+                "Reg/Mem":{
+                    "codigo":"11000101",
+                    "direccion":"mod reg r/m"
+                } 
+            }
+        },
+        {
+            "CBW":{
+                "sin operandos":"10011000"
+            }
+        },
+        {
+            "CLC":{
+                "sin operandos":"11111000"
+            }
+        },
+        {
+            "REP":{
+                "LODSB": "11110011 10101010",
+                "LODSW": "11110011 10101011",
+                "STOSB": "11110010 10101010",
+                "STOSW": "11110010 10101011"
+            }
+        },
+        {
+            "ROR":{
+                "Reg/Mem, 1":{
+                    "codigo":"1101000w",
+                    "direccion":"mod TTT r/m"
+                },
+                "Reg/Mem, CL":{
+                    "codigo":"1101001w",
+                    "direccion":"mod TTT r/m"
+                },
+                "Reg/Mem, Inm.byte":{
+                    "codigo":"1100000w",
+                    "direccion":"mod TTT r/m"
+                }
+            }
+        },
+        {
+            "JNS":{
+                "Etiqueta":{
+                    "8 bits":{
+                        "codigo":"01111001",
+                        "Desp.":"1"
+                    },
+                    "16 bits":{
+                        "codigo":"00001111 10001001",
+                        "Desp.":"2"
+                    }
+                }
+            }
+        },
+        {
+            "LOOPNE":{
+                "Etiqueta":{
+                    "codigo":"11100000",
+                    "Desp.":"1"
+                }
+            }
+        },
+        {
+            "JG":{
+                "Etiqueta":{
+                    "8 bits":{
+                        "codigo":"01111111",
+                        "Desp.":"1"
+                    },
+                    "16 bits":{
+                        "codigo":"00001111 10001111",
+                        "Desp.":"2"
+                    }
+                }
+            }
+        },
+        {
+            "JMP":{
+                "Etiqueta":{
+                    "codigo":"11101001",
+                    "Desp.":"2"
+                }
+            }
+        },
+        {
+            "JNBE":{
+                "8 bits":{
+                        "codigo":"01110111",
+                        "Desp.":"1"
+                    },
+                    "16 bits":{
+                        "codigo":"00001111 10000111",
+                        "Desp.":"2"
+                    }
+            }
+        }
+    ],
+    "w":[
+        {
+            "16 bits":"1",
+            "8 bits":"0"
+            
+        }
+    ],
+    "reg":[
+        {
+            "16 bits": {
+                "AX": "000",
+                "CX": "001",
+                "DX": "010",
+                "BX": "011",
+                "SP": "100",
+                "BP": "101",
+                "SI": "110",
+                "DI": "111"
+            },
+            "8 bits": {
+                "AL": "000",
+                "CL": "001",
+                "DL": "010",
+                "BL": "011",
+                "AH": "100",
+                "CH": "101",
+                "DH": "110",
+                "BH": "111"
+            },    
+            "regs2":{
+                    "ES":"00",
+                    "CS":"01",
+                    "SS":"10",
+                    "DS":"11"
+                },
+            "regs3":{
+                "ES":"000",
+                "CS":"001",
+                "SS":"010",
+                "DS":"011"
+            }
+        }
+    ],
+    "d":[
+        {
+            "destino":{
+                "mod r/m":{
+                    "d":"0"
+                },
+                "reg":{
+                    "d":"1"
+                }
+            }
+        }
+    ],
+    "mod": [{
+                        "11": "Registros",
+                        "10": "Memoria con desplazamiento de 16 bits",
+                        "01": "Memoria con desplazamiento de 8 bits",
+                        "00": "Memoria sin desplazamiento"
+    }],
+    "r/m":[
+        {
+            "BX+SI": "000",
+            "BX+DI": "001",
+            "BP+SI": "010",
+            "BP+DI": "011",
+            "SI": "100",
+            "DI": "101",
+            "BP": "110",
+            "BX": "111",
+            "w":{
+                "1":{
+                    "AX": "000",
+                    "CX": "001",
+                    "DX": "010",
+                    "BX": "011",
+                    "SP": "100",
+                    "BP": "101",
+                    "SI": "110",
+                    "DI": "111"
+                },
+                "0":{
+                    "AL": "000",
+                    "CL": "001",
+                    "DL": "010",
+                    "BL": "011",
+                    "AH": "100",
+                    "CH": "101",
+                    "DH": "110",
+                    "BH": "111"
+                }
+            }
+        }
+    ]
 }
