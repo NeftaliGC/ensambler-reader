@@ -1,6 +1,6 @@
 from pathlib import Path
 from backend.Errorlin import ErrorLin
-from backend.codificador import procesar_instruccion, cargar_opcodes
+from backend.Codificador import procesar_instruccion, cargar_opcodes
 import re
 import json
 
