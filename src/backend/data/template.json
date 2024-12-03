@@ -1,6 +1,6 @@
 [
 	{
-		"filename": "moodle.asm",
+		"filename": "moodle.ens",
 		"segmentos": [
 			[],
 			[
@@ -1000,64 +1000,63 @@
 		],
 		"simbols": [
 			{
-				"simbolo":"pkey",
-				"tipo":"variable",
-				"valor":"press any key...$",
-				"tamaño":"db"
+				"simbolo": "pkey",
+				"tipo": "variable",
+				"valor": "press any key...$",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"var1",
-				"tipo":"variable",
-				"valor":"hola",
-				"tamaño":"db"
+				"simbolo": "var1",
+				"tipo": "variable",
+				"valor": "hola",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"var2",
-				"tipo":"variable",
-				"valor":"0",
-				"tamaño":"dw"
+				"simbolo": "var2",
+				"tipo": "variable",
+				"valor": "0",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"tecla",
-				"tipo":"variable",
-				"valor":"0",
-				"tamaño":"db"
+				"simbolo": "tecla",
+				"tipo": "variable",
+				"valor": "0",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"simbolo",
-				"tipo":"variable",
-				"valor":"045H",
-				"tamaño":"dw"
+				"simbolo": "simbolo",
+				"tipo": "variable",
+				"valor": "045H",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"ss1",
-				"tipo":"variable",
-				"valor":"000011111b",
-				"tamaño":"db"
+				"simbolo": "ss1",
+				"tipo": "variable",
+				"valor": "000011111b",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"ss2",
-				"tipo":"variable",
-				"valor":"10101010b",
-				"tamaño":"db"
+				"simbolo": "ss2",
+				"tipo": "variable",
+				"valor": "10101010b",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"ss3",
-				"tipo":"variable",
-				"valor":"00000000b",
-				"tamaño":"dw"
+				"simbolo": "ss3",
+				"tipo": "variable",
+				"valor": "00000000b",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"ss2",
-				"tipo":"variable",
-				"valor":"10101010b",
-				"tamaño":"db"
+				"simbolo": "ss2",
+				"tipo": "variable",
+				"valor": "10101010b",
+				"tamano": "db"
 			}
-			
 		]
 	},
 	{
-		"filename": "Template.asm",
+		"filename": "Template.ens",
 		"segmentos": [
 			[],
 			[
@@ -1161,7 +1160,7 @@
 					"line": ["w_dec_b", "d", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "-",
-					"errores": ": Error en definicion de tamaño"
+					"errores": ": Error en definicion de tamano"
 				},
 				{
 					"cp": "000B",
@@ -1169,7 +1168,7 @@
 					"line": ["w_dec_w", "=", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "-",
-					"errores": ": Error en definicion de tamaño"
+					"errores": ": Error en definicion de tamano"
 				},
 				{
 					"cp": "000B",
@@ -1177,7 +1176,7 @@
 					"line": ["w_bin_b", "dw", "01010101b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "-",
-					"errores": ": Error en valor de tamaño"
+					"errores": ": Error en valor de tamano"
 				},
 				{
 					"cp": "000B",
@@ -1185,7 +1184,7 @@
 					"line": ["w_bin_w", "db", "0110100101100110b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "-",
-					"errores": ": Error en valor de tamaño"
+					"errores": ": Error en valor de tamano"
 				},
 				{
 					"cp": "000B",
@@ -1601,51 +1600,51 @@
 		],
 		"simbols": [
 			{
-				"simbolo":"dec_b",
-				"tipo":"variable",
-				"valor":"10",
-				"tamaño":"db"
+				"simbolo": "dec_b",
+				"tipo": "variable",
+				"valor": "10",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"dec_w",
-				"tipo":"variable",
-				"valor":"10",
-				"tamaño":"dw"
+				"simbolo": "dec_w",
+				"tipo": "variable",
+				"valor": "10",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"bin_b",
-				"tipo":"variable",
-				"valor":"01010101b",
-				"tamaño":"db"
+				"simbolo": "bin_b",
+				"tipo": "variable",
+				"valor": "01010101b",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"bin_w",
-				"tipo":"variable",
-				"valor":"0110100101100110b",
-				"tamaño":"dw"
+				"simbolo": "bin_w",
+				"tipo": "variable",
+				"valor": "0110100101100110b",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"hex_b",
-				"tipo":"variable",
-				"valor":"024h",
-				"tamaño":"db"
+				"simbolo": "hex_b",
+				"tipo": "variable",
+				"valor": "024h",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"hex_w",
-				"tipo":"variable",
-				"valor":"024fah",
-				"tamaño":"dw"
+				"simbolo": "hex_w",
+				"tipo": "variable",
+				"valor": "024fah",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"cons",
-				"tipo":"constante",
-				"valor":"12",
-				"tamaño":"dw"
+				"simbolo": "cons",
+				"tipo": "constante",
+				"valor": "12",
+				"tamano": "dw"
 			}
 		]
 	},
 	{
-		"filename": "Plantilla1.asm",
+		"filename": "Plantilla1.ens",
 		"segmentos": [
 			[
 				{
@@ -1941,16 +1940,16 @@
 					"complete": "jmp b21",
 					"line": ["jmp", "b21"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "-",
-					"errores": "-"
+					"codificacion": "EB FC",
+					"errores": ": Correcto"
 				},
 				{
 					"cp": "",
 					"complete": "mov ah009h",
 					"line": ["mov", "ah009h"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AH009H' no soportado para la instrucci\u00f3n 'MOV'.",
-					"errores": "-"
+					"codificacion": "-",
+					"errores": ": Error La instrucci\u00f3n 'mov' no soporta el operando 'ah009h'"
 				},
 				{
 					"cp": "",
@@ -2327,70 +2326,70 @@
 		],
 		"simbols": [
 			{
-				"simbolo":"var1",
-				"tipo":"variable",
-				"valor":"hola",
-				"tamaño":"db"
+				"simbolo": "var1",
+				"tipo": "variable",
+				"valor": "hola",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"cad2",
-				"tipo":"variable",
-				"valor":"programa de prueba",
-				"tamaño":"db"
+				"simbolo": "cad2",
+				"tipo": "variable",
+				"valor": "programa de prueba",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"var2",
-				"tipo":"variable",
-				"valor":"0",
-				"tamaño":"dw"
+				"simbolo": "var2",
+				"tipo": "variable",
+				"valor": "0",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"tecla",
-				"tipo":"variable",
-				"valor":"5",
-				"tamaño":"db"
+				"simbolo": "tecla",
+				"tipo": "variable",
+				"valor": "5",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"cons1",
-				"tipo":"constante",
-				"valor":"345",
-				"tamaño":"dw"
+				"simbolo": "cons1",
+				"tipo": "constante",
+				"valor": "345",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"cons2",
-				"tipo":"constante",
-				"valor":"345",
-				"tamaño":"dw"
+				"simbolo": "cons2",
+				"tipo": "constante",
+				"valor": "345",
+				"tamano": "dw"
 			},
 			{
-				"simbolo":"simbolo",
-				"tipo":"variable",
-				"valor":"045h",
-				"tamaño":"db"
+				"simbolo": "simbolo",
+				"tipo": "variable",
+				"valor": "045h",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"sb",
-				"tipo":"variable",
-				"valor":"11110000b",
-				"tamaño":"db"
+				"simbolo": "sb",
+				"tipo": "variable",
+				"valor": "11110000b",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"edad",
-				"tipo":"variable",
-				"valor":"15",
-				"tamaño":"db"
+				"simbolo": "edad",
+				"tipo": "variable",
+				"valor": "15",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"mayor",
-				"tipo":"variable",
-				"valor":"111ERES MAYOR DE EDAD...'$'",
-				"tamaño":"db"
+				"simbolo": "mayor",
+				"tipo": "variable",
+				"valor": "111ERES MAYOR DE EDAD...'$'",
+				"tamano": "db"
 			},
 			{
-				"simbolo":"menor",
-				"tipo":"variable",
-				"valor":"ERES MENOR DE EDAD...'$'",
-				"tamaño":"db"
+				"simbolo": "menor",
+				"tipo": "variable",
+				"valor": "ERES MENOR DE EDAD...'$'",
+				"tamano": "db"
 			}
 		]
 	},
