@@ -5,7 +5,7 @@
 			[],
 			[
 				{
-					"cp": "",
+					"cp": "0001",
 					"complete": ".stack segment",
 					"line": ".stack segment",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -13,7 +13,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0001",
 					"complete": ".stacks segment",
 					"line": [".stacks", "segment"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -21,7 +21,7 @@
 					"errores": "Error: Instrucci\u00f3n de inicio del segmento de pila incorrecta"
 				},
 				{
-					"cp": "",
+					"cp": "0002",
 					"complete": "dw 128 dup(0)",
 					"line": ["dw", "128", "dup(0)"],
 					"classification": [
@@ -33,7 +33,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0002",
 					"complete": "dw 128 dupy(0)",
 					"line": ["dw", "128", "dupy(0)"],
 					"classification": ["Simbolo", "Simbolo", "No se reconoce"],
@@ -41,7 +41,7 @@
 					"errores": "Error: Instrucci\u00f3n 'dup' no v\u00e1lida"
 				},
 				{
-					"cp": "",
+					"cp": "0002",
 					"complete": "120 db dup('a')",
 					"line": ["120", "db", "dup('a')"],
 					"classification": ["Simbolo", "Simbolo", "No se reconoce"],
@@ -49,7 +49,7 @@
 					"errores": "Error: Instrucci\u00f3n 'dup' no v\u00e1lida"
 				},
 				{
-					"cp": "",
+					"cp": "0003",
 					"complete": "db 100 dup('b')",
 					"line": ["db", "100", "dup('b')"],
 					"classification": [
@@ -61,7 +61,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0004",
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -69,7 +69,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0004",
 					"complete": "data segment",
 					"line": ["data", "segment"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -77,7 +77,7 @@
 					"errores": "Error: Instrucci\u00f3n no reconocida"
 				},
 				{
-					"cp": "",
+					"cp": "0004",
 					"complete": "datasegment",
 					"line": ["datasegment"],
 					"classification": ["Simbolo"],
@@ -87,7 +87,7 @@
 			],
 			[
 				{
-					"cp": "",
+					"cp": "0005",
 					"complete": ".data segment",
 					"line": ".data segment",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -95,7 +95,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0006",
 					"complete": "pkey db \"press any key...$\"",
 					"line": ["pkey", "db", "\"press any key...$\""],
 					"classification": [
@@ -109,7 +109,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0007",
 					"complete": "var1 db 'hola'",
 					"line": ["var1", "db", "'hola'"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -117,7 +117,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0007",
 					"complete": "pkey db \"presiona key...$ una vez",
 					"line": [
 						"pkey",
@@ -139,7 +139,7 @@
 					"errores": "Error: La variable 'pkey' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0007",
 					"complete": "frase db faltan comillas",
 					"line": ["frase", "db", "faltan", "comillas"],
 					"classification": [
@@ -149,10 +149,10 @@
 						"Simbolo"
 					],
 					"codificacion": "",
-					"errores": ": Correcto"
+					"errores": ": Error sintactico"
 				},
 				{
-					"cp": "",
+					"cp": "0008",
 					"complete": "var2 dw 0",
 					"line": ["var2", "dw", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -160,7 +160,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0009",
 					"complete": "tecla db 0",
 					"line": ["tecla", "db", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -168,7 +168,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0009",
 					"complete": "Vtecla BD 0",
 					"line": ["Vtecla", "BD", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -176,7 +176,7 @@
 					"errores": "Error: La variable 'Vtecla' no tiene un tipo de dato v\u00e1lido"
 				},
 				{
-					"cp": "",
+					"cp": "0009",
 					"complete": "7tecla Wd 0",
 					"line": ["7tecla", "Wd", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -184,7 +184,7 @@
 					"errores": ": Error: La variable 'Vtecla' no tiene un tipo de dato v\u00e1lido"
 				},
 				{
-					"cp": "",
+					"cp": "0009",
 					"complete": "tecla db 0",
 					"line": ["tecla", "db", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -192,7 +192,7 @@
 					"errores": "Error: La variable 'tecla' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "000A",
 					"complete": "simbolo db 045H",
 					"line": ["simbolo", "db", "045H"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -200,7 +200,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "000A",
 					"complete": "simbolo db 45H",
 					"line": ["simbolo", "db", "45H"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -208,7 +208,7 @@
 					"errores": "Error: La variable 'simbolo' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "000A",
 					"complete": "simbolo db 45",
 					"line": ["simbolo", "db", "45"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -216,7 +216,7 @@
 					"errores": "Error: La variable 'simbolo' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "000F",
 					"complete": "ss1 db 000011111b",
 					"line": ["ss1", "db", "000011111b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -224,7 +224,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0010",
 					"complete": "ss2 db 10101010b",
 					"line": ["ss2", "db", "10101010b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -232,7 +232,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0011",
 					"complete": "ss3 dw 00000000b",
 					"line": ["ss3", "dw", "00000000b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -240,7 +240,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0011",
 					"complete": "ss3 dw 1111000011110000b",
 					"line": ["ss3", "dw", "1111000011110000b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -248,7 +248,7 @@
 					"errores": "Error: La variable 'ss3' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0012",
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -258,7 +258,7 @@
 			],
 			[
 				{
-					"cp": "",
+					"cp": "0013",
 					"complete": ".code segment",
 					"line": ".code segment",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -266,7 +266,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0013",
 					"complete": "code",
 					"line": ["code"],
 					"classification": ["Simbolo"],
@@ -274,7 +274,7 @@
 					"errores": "Error: La etiqueta 'code' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0013",
 					"complete": "mov ah 1",
 					"line": ["mov", "ah", "1"],
 					"classification": [
@@ -286,7 +286,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0014",
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -294,7 +294,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0014",
 					"complete": "mov tecla al",
 					"line": ["mov", "tecla", "al"],
 					"classification": [
@@ -306,7 +306,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0014",
 					"complete": "mov ah 2",
 					"line": ["mov", "ah", "2"],
 					"classification": [
@@ -318,7 +318,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0014",
 					"complete": "mov dl simbolo",
 					"line": ["mov", "dl", "simbolo"],
 					"classification": [
@@ -330,7 +330,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001A",
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -338,7 +338,7 @@
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001A",
 					"complete": "inc tecla",
 					"line": ["inc", "tecla"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -346,7 +346,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'inc'"
 				},
 				{
-					"cp": "",
+					"cp": "001A",
 					"complete": "mov ah 7",
 					"line": ["mov", "ah", "7"],
 					"classification": [
@@ -358,7 +358,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001A",
 					"complete": "mov dl tecla",
 					"line": ["mov", "dl", "tecla"],
 					"classification": [
@@ -370,7 +370,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001A",
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -378,7 +378,7 @@
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "ret",
 					"line": ["ret"],
 					"classification": ["Simbolo"],
@@ -386,7 +386,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "mov msg[2] 034H",
 					"line": ["mov", "msg[2]", "034H"],
 					"classification": [
@@ -398,7 +398,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "mov dx offset msg",
 					"line": ["mov", "dx", "offset", "msg"],
 					"classification": [
@@ -411,7 +411,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "mov ah 9",
 					"line": ["mov", "ah", "9"],
 					"classification": [
@@ -423,7 +423,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -431,7 +431,7 @@
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "ret",
 					"line": ["ret"],
 					"classification": ["Simbolo"],
@@ -439,7 +439,7 @@
 					"errores": "Error: La etiqueta 'ret' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001C",
 					"complete": "msg db \"hello world $\"",
 					"line": ["msg", "db", "\"hello", "world", "$\""],
 					"classification": [
@@ -453,7 +453,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001D",
 					"complete": "lectura:",
 					"line": ["lectura:"],
 					"classification": ["etiqueta"],
@@ -461,7 +461,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001D",
 					"complete": "mov ah7",
 					"line": ["mov", "ah7"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -469,7 +469,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001D",
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -477,7 +477,7 @@
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001D",
 					"complete": "mov tecla al",
 					"line": ["mov", "tecla", "al"],
 					"classification": [
@@ -489,7 +489,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "001E",
 					"complete": "cmp al13",
 					"line": ["cmp", "al13"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -497,7 +497,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001E",
 					"complete": "jz fin:",
 					"line": ["jz", "fin:"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -505,7 +505,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001E",
 					"complete": "cmp tecla 122d",
 					"line": ["cmp", "tecla", "122d"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -513,7 +513,7 @@
 					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001F",
 					"complete": "ja fin3",
 					"line": ["ja", "fin3"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -521,7 +521,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001F",
 					"complete": "cmp tecla00001111b",
 					"line": ["cmp", "tecla00001111b"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -529,7 +529,7 @@
 					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0020",
 					"complete": "jng fin3",
 					"line": ["jng", "fin3"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -537,7 +537,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0021",
 					"complete": "sub tecla 32",
 					"line": ["sub", "tecla", "32"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -545,7 +545,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "fin3:",
 					"line": ["fin3:"],
 					"classification": ["Simbolo"],
@@ -553,7 +553,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "mov ah2",
 					"line": ["mov", "ah2"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -561,7 +561,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "add ax var1",
 					"line": ["add", "ax", "var1"],
 					"classification": [
@@ -573,7 +573,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'add'"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "mov dltecla",
 					"line": ["mov", "dltecla"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -581,7 +581,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -589,7 +589,7 @@
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "jmp lectura",
 					"line": ["jmp", "lectura"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -597,7 +597,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "jmp nex",
 					"line": ["jmp", "nex"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -605,7 +605,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
 				},
 				{
-					"cp": "",
+					"cp": "0023",
 					"complete": "fin:",
 					"line": ["fin:"],
 					"classification": ["Simbolo"],
@@ -613,7 +613,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0024",
 					"complete": "cld",
 					"line": ["cld"],
 					"classification": ["Simbolo"],
@@ -621,7 +621,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0024",
 					"complete": "cld ax",
 					"line": ["cld", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -629,7 +629,7 @@
 					"errores": "Error: La etiqueta 'cld' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0025",
 					"complete": "cli",
 					"line": ["cli"],
 					"classification": ["Simbolo"],
@@ -637,7 +637,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0025",
 					"complete": "cli 0x10",
 					"line": ["cli", "0x10"],
 					"classification": ["Simbolo", "No se reconoce"],
@@ -645,7 +645,7 @@
 					"errores": "Error: La etiqueta 'cli' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0025",
 					"complete": "movsb",
 					"line": ["movsb"],
 					"classification": ["Simbolo"],
@@ -653,7 +653,7 @@
 					"errores": "Error: etiqueta desconocida"
 				},
 				{
-					"cp": "",
+					"cp": "0025",
 					"complete": "movsb ax bx",
 					"line": ["movsb", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -661,7 +661,7 @@
 					"errores": "Error: La etiqueta 'movsb' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0026",
 					"complete": "movsw",
 					"line": ["movsw"],
 					"classification": ["Simbolo"],
@@ -669,7 +669,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0026",
 					"complete": "movsw bx ax",
 					"line": ["movsw", "bx", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -677,7 +677,7 @@
 					"errores": "Error: La etiqueta 'movsw' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0027",
 					"complete": "xlatb",
 					"line": ["xlatb"],
 					"classification": ["Simbolo"],
@@ -685,7 +685,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0027",
 					"complete": "xlatb bx",
 					"line": ["xlatb", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -693,7 +693,7 @@
 					"errores": "Error: La etiqueta 'xlatb' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0028",
 					"complete": "aaa",
 					"line": ["aaa"],
 					"classification": ["Simbolo"],
@@ -701,7 +701,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0028",
 					"complete": "aaa ax bx",
 					"line": ["aaa", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -709,7 +709,7 @@
 					"errores": "Error: La etiqueta 'aaa' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0029",
 					"complete": "pop ax",
 					"line": ["pop", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -717,7 +717,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0029",
 					"complete": "pop bx cx",
 					"line": ["pop", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -725,7 +725,7 @@
 					"errores": "Error: La etiqueta 'pop' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0029",
 					"complete": "mov ax 10",
 					"line": ["mov", "ax", "10"],
 					"classification": [
@@ -737,7 +737,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0029",
 					"complete": "mov bx 2",
 					"line": ["mov", "bx", "2"],
 					"classification": [
@@ -749,7 +749,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "002A",
 					"complete": "idiv bx",
 					"line": ["idiv", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -757,7 +757,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "002A",
 					"complete": "idiv ax bx",
 					"line": ["idiv", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -765,7 +765,7 @@
 					"errores": "Error: La etiqueta 'idiv' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "002B",
 					"complete": "push ax",
 					"line": ["push", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -773,7 +773,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "002B",
 					"complete": "push bx cx",
 					"line": ["push", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -781,7 +781,7 @@
 					"errores": "Error: La etiqueta 'push' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "002C",
 					"complete": "dec ax",
 					"line": ["dec", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -789,7 +789,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "002C",
 					"complete": "dec",
 					"line": ["dec"],
 					"classification": ["Simbolo"],
@@ -797,7 +797,7 @@
 					"errores": "Error: La etiqueta 'dec' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "002C",
 					"complete": "ror ax 1",
 					"line": ["ror", "ax", "1"],
 					"classification": [
@@ -809,7 +809,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'ror'"
 				},
 				{
-					"cp": "",
+					"cp": "002C",
 					"complete": "ror ax",
 					"line": ["ror", "ax"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -817,7 +817,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'ror'"
 				},
 				{
-					"cp": "",
+					"cp": "002C",
 					"complete": "sub ax bx",
 					"line": ["sub", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -825,7 +825,7 @@
 					"errores": "Error: La etiqueta 'sub' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "002C",
 					"complete": "sub ax",
 					"line": ["sub", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -833,7 +833,7 @@
 					"errores": "Error: La etiqueta 'sub' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "002D",
 					"complete": "xor ax ax",
 					"line": ["xor", "ax", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -841,7 +841,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "002D",
 					"complete": "xor ax",
 					"line": ["xor", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -849,7 +849,7 @@
 					"errores": "Error: La etiqueta 'xor' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "002E",
 					"complete": "and ax bx",
 					"line": ["and", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -857,7 +857,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "002E",
 					"complete": "and ax",
 					"line": ["and", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -865,7 +865,7 @@
 					"errores": "Error: La etiqueta 'and' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "002F",
 					"complete": "jae label",
 					"line": ["jae", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -873,7 +873,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "002F",
 					"complete": "jae",
 					"line": ["jae"],
 					"classification": ["Simbolo"],
@@ -881,7 +881,7 @@
 					"errores": "Error: La etiqueta 'jae' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0030",
 					"complete": "jcxz label",
 					"line": ["jcxz", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -889,7 +889,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0030",
 					"complete": "jcxz",
 					"line": ["jcxz"],
 					"classification": ["Simbolo"],
@@ -897,7 +897,7 @@
 					"errores": "Error: La etiqueta 'jcxz' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0031",
 					"complete": "jl label",
 					"line": ["jl", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -905,7 +905,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0031",
 					"complete": "jl",
 					"line": ["jl"],
 					"classification": ["Simbolo"],
@@ -913,7 +913,7 @@
 					"errores": "Error: La etiqueta 'jl' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0032",
 					"complete": "jnge label",
 					"line": ["jnge", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -921,7 +921,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0032",
 					"complete": "jnge",
 					"line": ["jnge"],
 					"classification": ["Simbolo"],
@@ -929,7 +929,7 @@
 					"errores": "Error: La etiqueta 'jnge' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0033",
 					"complete": "jnp label",
 					"line": ["jnp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -937,7 +937,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0033",
 					"complete": "jnp",
 					"line": ["jnp"],
 					"classification": ["Simbolo"],
@@ -945,7 +945,7 @@
 					"errores": "Error: La etiqueta 'jnp' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0034",
 					"complete": "jp label",
 					"line": ["jp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -953,7 +953,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0034",
 					"complete": "jp",
 					"line": ["jp"],
 					"classification": ["Simbolo"],
@@ -961,7 +961,7 @@
 					"errores": "Error: La etiqueta 'jp' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0035",
 					"complete": "label:",
 					"line": ["label:"],
 					"classification": ["Simbolo"],
@@ -969,7 +969,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0035",
 					"complete": "mov eax 1",
 					"line": ["mov", "eax", "1"],
 					"classification": [
@@ -981,7 +981,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0035",
 					"complete": "int 0x80",
 					"line": ["int", "0x80"],
 					"classification": ["Simbolo", "No se reconoce"],
@@ -989,7 +989,7 @@
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0036",
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -1062,7 +1062,7 @@
 			[],
 			[
 				{
-					"cp": "",
+					"cp": "0001",
 					"complete": ".stack segment",
 					"line": ".stack segment",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -1070,7 +1070,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0002",
 					"complete": "db 100 dup(0)",
 					"line": ["db", "100", "dup(0)"],
 					"classification": [
@@ -1082,7 +1082,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0003",
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -1092,7 +1092,7 @@
 			],
 			[
 				{
-					"cp": "",
+					"cp": "0004",
 					"complete": ".data segment",
 					"line": ".data segment",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -1100,7 +1100,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0005",
 					"complete": "dec_b db 10",
 					"line": ["dec_b", "db", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1108,7 +1108,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0006",
 					"complete": "dec_w dw 10",
 					"line": ["dec_w", "dw", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1116,7 +1116,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0007",
 					"complete": "bin_b db 01010101b",
 					"line": ["bin_b", "db", "01010101b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1124,7 +1124,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0008",
 					"complete": "bin_w dw 0110100101100110b",
 					"line": ["bin_w", "dw", "0110100101100110b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1132,7 +1132,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0009",
 					"complete": "hex_b db 024h",
 					"line": ["hex_b", "db", "024h"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1140,7 +1140,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "000A",
 					"complete": "hex_w dw 024fah",
 					"line": ["hex_w", "dw", "024fah"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1148,7 +1148,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "000B",
 					"complete": "cons equ 12",
 					"line": ["cons", "equ", "12"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1156,7 +1156,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "000B",
 					"complete": "w_dec_b d 10",
 					"line": ["w_dec_b", "d", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1164,7 +1164,7 @@
 					"errores": ": Error en definicion de tamaño"
 				},
 				{
-					"cp": "",
+					"cp": "000B",
 					"complete": "w_dec_w = 10",
 					"line": ["w_dec_w", "=", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1172,7 +1172,7 @@
 					"errores": ": Error en definicion de tamaño"
 				},
 				{
-					"cp": "",
+					"cp": "000B",
 					"complete": "w_bin_b dw 01010101b",
 					"line": ["w_bin_b", "dw", "01010101b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1180,7 +1180,7 @@
 					"errores": ": Error en valor de tamaño"
 				},
 				{
-					"cp": "",
+					"cp": "000B",
 					"complete": "w_bin_w db 0110100101100110b",
 					"line": ["w_bin_w", "db", "0110100101100110b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1188,7 +1188,7 @@
 					"errores": ": Error en valor de tamaño"
 				},
 				{
-					"cp": "",
+					"cp": "000B",
 					"complete": "equ w_constant 12",
 					"line": ["equ", "w_constant", "12"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1196,7 +1196,7 @@
 					"errores": ": Error sintactico"
 				},
 				{
-					"cp": "",
+					"cp": "000C",
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -1206,7 +1206,7 @@
 			],
 			[
 				{
-					"cp": "",
+					"cp": "000D",
 					"complete": ".code segment",
 					"line": ".code segment",
 					"classification": "Pseudo Instrucci\u00f3n",
@@ -1214,7 +1214,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "000E",
 					"complete": "cld",
 					"line": ["cld"],
 					"classification": ["Simbolo"],
@@ -1222,7 +1222,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "000F",
 					"complete": "cld ax",
 					"line": ["cld", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1230,7 +1230,7 @@
 					"errores": "Error: La etiqueta 'cld' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0010",
 					"complete": "cli",
 					"line": ["cli"],
 					"classification": ["Simbolo"],
@@ -1238,7 +1238,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0010",
 					"complete": "cli 0x10",
 					"line": ["cli", "0x10"],
 					"classification": ["Simbolo", "No se reconoce"],
@@ -1246,7 +1246,7 @@
 					"errores": "Error: La etiqueta 'cli' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0011",
 					"complete": "movsb",
 					"line": ["movsb"],
 					"classification": ["Simbolo"],
@@ -1254,7 +1254,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0011",
 					"complete": "movsb ax bx",
 					"line": ["movsb", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1262,7 +1262,7 @@
 					"errores": "Error: La etiqueta 'movsb' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0012",
 					"complete": "movsw",
 					"line": ["movsw"],
 					"classification": ["Simbolo"],
@@ -1270,7 +1270,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0012",
 					"complete": "movsw bx ax",
 					"line": ["movsw", "bx", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1278,7 +1278,7 @@
 					"errores": "Error: La etiqueta 'movsw' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0013",
 					"complete": "xlatb",
 					"line": ["xlatb"],
 					"classification": ["Simbolo"],
@@ -1286,7 +1286,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0013",
 					"complete": "xlatb bx",
 					"line": ["xlatb", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1294,7 +1294,7 @@
 					"errores": "Error: La etiqueta 'xlatb' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0014",
 					"complete": "aaa",
 					"line": ["aaa"],
 					"classification": ["Simbolo"],
@@ -1302,7 +1302,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0014",
 					"complete": "aaa ax bx",
 					"line": ["aaa", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1310,7 +1310,7 @@
 					"errores": "Error: La etiqueta 'aaa' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0015",
 					"complete": "pop ax",
 					"line": ["pop", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1318,7 +1318,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0015",
 					"complete": "pop bx cx",
 					"line": ["pop", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1326,7 +1326,7 @@
 					"errores": "Error: La etiqueta 'pop' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0015",
 					"complete": "mov ax 10",
 					"line": ["mov", "ax", "10"],
 					"classification": [
@@ -1338,7 +1338,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0015",
 					"complete": "mov bx 2",
 					"line": ["mov", "bx", "2"],
 					"classification": [
@@ -1350,7 +1350,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0016",
 					"complete": "idiv bx",
 					"line": ["idiv", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1358,7 +1358,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0016",
 					"complete": "idiv ax bx",
 					"line": ["idiv", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1366,7 +1366,7 @@
 					"errores": "Error: La etiqueta 'idiv' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0017",
 					"complete": "push ax",
 					"line": ["push", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1374,7 +1374,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0017",
 					"complete": "push bx cx",
 					"line": ["push", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1382,7 +1382,7 @@
 					"errores": "Error: La etiqueta 'push' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0018",
 					"complete": "dec ax",
 					"line": ["dec", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1390,7 +1390,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0018",
 					"complete": "dec",
 					"line": ["dec"],
 					"classification": ["Simbolo"],
@@ -1398,7 +1398,7 @@
 					"errores": "Error: La etiqueta 'dec' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0019",
 					"complete": "ror ax 1",
 					"line": ["ror", "ax", "1"],
 					"classification": [
@@ -1407,10 +1407,10 @@
 						"Simbolo"
 					],
 					"codificacion": "D1 C8",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'ror'"
+					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0019",
 					"complete": "ror ax",
 					"line": ["ror", "ax"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
@@ -1418,7 +1418,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'ror'"
 				},
 				{
-					"cp": "",
+					"cp": "001A",
 					"complete": "sub ax bx",
 					"line": ["sub", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1426,7 +1426,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001A",
 					"complete": "sub ax",
 					"line": ["sub", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1434,7 +1434,7 @@
 					"errores": "Error: La etiqueta 'sub' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "xor ax ax",
 					"line": ["xor", "ax", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1442,7 +1442,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001B",
 					"complete": "xor ax",
 					"line": ["xor", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1450,7 +1450,7 @@
 					"errores": "Error: La etiqueta 'xor' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001C",
 					"complete": "and ax bx",
 					"line": ["and", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
@@ -1458,7 +1458,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001C",
 					"complete": "and ax",
 					"line": ["and", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1466,7 +1466,7 @@
 					"errores": "Error: La etiqueta 'and' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001D",
 					"complete": "jae label",
 					"line": ["jae", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1474,7 +1474,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001D",
 					"complete": "jae",
 					"line": ["jae"],
 					"classification": ["Simbolo"],
@@ -1482,7 +1482,7 @@
 					"errores": "Error: La etiqueta 'jae' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001E",
 					"complete": "jcxz label",
 					"line": ["jcxz", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1490,7 +1490,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001E",
 					"complete": "jcxz",
 					"line": ["jcxz"],
 					"classification": ["Simbolo"],
@@ -1498,7 +1498,7 @@
 					"errores": "Error: La etiqueta 'jcxz' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "001F",
 					"complete": "jl label",
 					"line": ["jl", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1506,7 +1506,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "001F",
 					"complete": "jl",
 					"line": ["jl"],
 					"classification": ["Simbolo"],
@@ -1514,7 +1514,7 @@
 					"errores": "Error: La etiqueta 'jl' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0020",
 					"complete": "jnge label",
 					"line": ["jnge", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1522,7 +1522,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0020",
 					"complete": "jnge",
 					"line": ["jnge"],
 					"classification": ["Simbolo"],
@@ -1530,7 +1530,7 @@
 					"errores": "Error: La etiqueta 'jnge' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0021",
 					"complete": "jnp label",
 					"line": ["jnp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1538,7 +1538,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0022",
 					"complete": "jnp",
 					"line": ["jnp"],
 					"classification": ["Simbolo"],
@@ -1546,7 +1546,7 @@
 					"errores": "Error: La etiqueta 'jnp' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0023",
 					"complete": "jp label",
 					"line": ["jp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
@@ -1554,7 +1554,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0023",
 					"complete": "jp",
 					"line": ["jp"],
 					"classification": ["Simbolo"],
@@ -1562,7 +1562,7 @@
 					"errores": "Error: La etiqueta 'jp' ya ha sido declarada"
 				},
 				{
-					"cp": "",
+					"cp": "0024",
 					"complete": "label:",
 					"line": ["label:"],
 					"classification": ["Simbolo"],
@@ -1570,7 +1570,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0024",
 					"complete": "mov eax 1",
 					"line": ["mov", "eax", "1"],
 					"classification": [
@@ -1582,7 +1582,7 @@
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
-					"cp": "",
+					"cp": "0025",
 					"complete": "int 0x80",
 					"line": ["int", "0x80"],
 					"classification": ["Simbolo", "No se reconoce"],
@@ -1590,7 +1590,7 @@
 					"errores": ": Correcto"
 				},
 				{
-					"cp": "",
+					"cp": "0026",
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
