@@ -168,7 +168,7 @@
 					"complete": "Vtecla BD 0",
 					"line": ["Vtecla", "BD", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'VTECLA' no soportada.",
+					"codificacion": "",
 					"errores": ": Correcto"
 				},
 				{
@@ -176,7 +176,7 @@
 					"complete": "7tecla Wd 0",
 					"line": ["7tecla", "Wd", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n '7TECLA' no soportada.",
+					"codificacion": "",
 					"errores": ": Correcto"
 				},
 				{
@@ -184,7 +184,7 @@
 					"complete": "tecla db 0",
 					"line": ["tecla", "db", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'TECLA' no soportada.",
+					"codificacion": "",
 					"errores": "Error: La variable 'tecla' ya ha sido declarada"
 				},
 				{
@@ -1540,1430 +1540,961 @@
 			]
 		],
 		"simbols": []
-	}.
-    {
-        "filename": "Plantilla1.asm",
-        "segmentos": [
-            [
-                {
-                    "cp": "",
-                    "complete": ".model small",
-                    "line": ".model small",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "",
-                    "errores": ""
-                }
-            ],
-            [
-                {
-                    "cp": "",
-                    "complete": ".stack segment",
-                    "line": ".stack segment",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n '.STACK' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "dw 256 dup(0)",
-                    "line": [
-                        "dw",
-                        "256",
-                        "dup(0)"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Pseudo Instrucci\u00f3n"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'DW' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "ends",
-                    "line": "ends",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
-                    "errores": ": Correcto"
-                }
-            ],
-            [
-                {
-                    "cp": "",
-                    "complete": ".data segment",
-                    "line": ".data segment",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n '.DATA' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "var1 db 'hola'",
-                    "line": [
-                        "var1",
-                        "db",
-                        "'hola'"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'VAR1' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "cad2 db \"programa de prueba\"",
-                    "line": [
-                        "cad2",
-                        "db",
-                        "\"programa",
-                        "de",
-                        "prueba\""
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "No se reconoce"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'CAD2' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "var2 dw 0",
-                    "line": [
-                        "var2",
-                        "dw",
-                        "0"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'VAR2' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "tecla db 5",
-                    "line": [
-                        "tecla",
-                        "db",
-                        "5"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'TECLA' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "cons1 equ 45",
-                    "line": [
-                        "cons1",
-                        "equ",
-                        "45"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'CONS1' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "con2 equ 345",
-                    "line": [
-                        "con2",
-                        "equ",
-                        "345"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'CON2' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "simbolo db 045H",
-                    "line": [
-                        "simbolo",
-                        "db",
-                        "045H"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'SIMBOLO' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "tecla dw 045H",
-                    "line": [
-                        "tecla",
-                        "dw",
-                        "045H"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'TECLA' no soportada.",
-                    "errores": "Error: La variable 'tecla' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "sb db 11110000b",
-                    "line": [
-                        "sb",
-                        "db",
-                        "11110000b"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'SB' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "edad db 15",
-                    "line": [
-                        "edad",
-                        "db",
-                        "15"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'EDAD' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "var2 db 0",
-                    "line": [
-                        "var2",
-                        "db",
-                        "0"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'VAR2' no soportada.",
-                    "errores": "Error: La variable 'var2' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "mayor db 'ERES MAYOR DE EDAD...''$'",
-                    "line": [
-                        "mayor",
-                        "db",
-                        "'ERES",
-                        "MAYOR",
-                        "DE",
-                        "EDAD...''$'"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "No se reconoce"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'MAYOR' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "menor db 'ERES MENOR DE EDAD...''$'",
-                    "line": [
-                        "menor",
-                        "db",
-                        "'ERES",
-                        "MENOR",
-                        "DE",
-                        "EDAD...''$'"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "No se reconoce"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'MENOR' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "ends",
-                    "line": "ends",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
-                    "errores": ": Correcto"
-                }
-            ],
-            [
-                {
-                    "cp": "",
-                    "complete": ".code segment",
-                    "line": ".code segment",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n '.CODE' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ax bx",
-                    "line": [
-                        "mov",
-                        "ax",
-                        "bx"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "8B C3",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov dsax",
-                    "line": [
-                        "mov",
-                        "dsax"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'DSAX' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "b20:",
-                    "line": [
-                        "b20:"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'B20:' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov esax",
-                    "line": [
-                        "mov",
-                        "esax"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'ESAX' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "cmp edad18",
-                    "line": [
-                        "cmp",
-                        "edad18"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "jae b20",
-                    "line": [
-                        "jae",
-                        "b20"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'JAE' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah09h",
-                    "line": [
-                        "mov",
-                        "ah09h"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH09H' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "lea dxmenor",
-                    "line": [
-                        "lea",
-                        "dxmenor"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "b21:",
-                    "line": [
-                        "b21:"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'B21:' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 021h",
-                    "line": [
-                        "int",
-                        "021h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "jmp b21",
-                    "line": [
-                        "jmp",
-                        "b21"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'B21' no soportado para la instrucci\u00f3n 'JMP'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah009h",
-                    "line": [
-                        "mov",
-                        "ah009h"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH009H' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "lea dxmayor",
-                    "line": [
-                        "lea",
-                        "dxmayor"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
-                    "errores": "Error: La etiqueta 'lea' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ax04c00h",
-                    "line": [
-                        "mov",
-                        "ax04c00h"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AX04C00H' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah 1",
-                    "line": [
-                        "mov",
-                        "ah",
-                        "1"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH 1' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov tecla al",
-                    "line": [
-                        "mov",
-                        "tecla",
-                        "al"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah 2",
-                    "line": [
-                        "mov",
-                        "ah",
-                        "2"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH 2' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov dl simbolo",
-                    "line": [
-                        "mov",
-                        "dl",
-                        "simbolo"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'DL SIMBOLO' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "inc tecla",
-                    "line": [
-                        "inc",
-                        "tecla"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'TECLA' no soportado para la instrucci\u00f3n 'INC'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'inc'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah 7",
-                    "line": [
-                        "mov",
-                        "ah",
-                        "7"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH 7' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov dl tecla",
-                    "line": [
-                        "mov",
-                        "dl",
-                        "tecla"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'DL TECLA' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "ret",
-                    "line": [
-                        "ret"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'RET' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov msg[2] 34H",
-                    "line": [
-                        "mov",
-                        "msg[2]",
-                        "34H"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "No se reconoce",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'MSG[2] 34H' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov dx offset msg",
-                    "line": [
-                        "mov",
-                        "dx",
-                        "offset",
-                        "msg"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'DX OFFSET MSG' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah 9",
-                    "line": [
-                        "mov",
-                        "ah",
-                        "9"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH 9' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "ret",
-                    "line": [
-                        "ret"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'RET' no soportada.",
-                    "errores": "Error: La etiqueta 'ret' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "msg db \"hello world $\"",
-                    "line": [
-                        "msg",
-                        "db",
-                        "\"hello",
-                        "world",
-                        "$\""
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'MSG' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "lectura:",
-                    "line": [
-                        "lectura:"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'LECTURA:' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah7",
-                    "line": [
-                        "mov",
-                        "ah7"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH7' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov tecla al",
-                    "line": [
-                        "mov",
-                        "tecla",
-                        "al"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "cmp al13",
-                    "line": [
-                        "cmp",
-                        "al13"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
-                    "errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "jz fin:",
-                    "line": [
-                        "jz",
-                        "fin:"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'JZ' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "cmp tecla 122",
-                    "line": [
-                        "cmp",
-                        "tecla",
-                        "122"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
-                    "errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "ja fin3",
-                    "line": [
-                        "ja",
-                        "fin3"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'JA' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "cmp tecla96",
-                    "line": [
-                        "cmp",
-                        "tecla96"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
-                    "errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "jng fin3",
-                    "line": [
-                        "jng",
-                        "fin3"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'JNG' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "sub tecla 32",
-                    "line": [
-                        "sub",
-                        "tecla",
-                        "32"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "fin3:",
-                    "line": [
-                        "fin3:"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'FIN3:' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah2",
-                    "line": [
-                        "mov",
-                        "ah2"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH2' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "add ax var1",
-                    "line": [
-                        "add",
-                        "ax",
-                        "var1"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AX VAR1' no soportado para la instrucci\u00f3n 'ADD'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'add'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov dltecla",
-                    "line": [
-                        "mov",
-                        "dltecla"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'DLTECLA' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 21h",
-                    "line": [
-                        "int",
-                        "21h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "jmp lectura",
-                    "line": [
-                        "jmp",
-                        "lectura"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'LECTURA' no soportado para la instrucci\u00f3n 'JMP'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
-                },
-                {
-                    "cp": "",
-                    "complete": "fin:",
-                    "line": [
-                        "fin:"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'FIN:' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "ends",
-                    "line": "ends",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
-                    "errores": ": Correcto"
-                }
-            ]
-        ],
-        "simbols": []
-    },
-    {
-        "filename": "BaseExample.asm",
-        "segmentos": [
-            [
-                {
-                    "cp": "",
-                    "complete": ".model small",
-                    "line": ".model small",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "",
-                    "errores": ""
-                }
-            ],
-            [
-                {
-                    "cp": "",
-                    "complete": ".stack segment",
-                    "line": ".stack segment",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n '.STACK' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "dw 120 dup(0)",
-                    "line": [
-                        "dw",
-                        "120",
-                        "dup(0)"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Pseudo Instrucci\u00f3n"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'DW' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "ends",
-                    "line": "ends",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
-                    "errores": ": Correcto"
-                }
-            ],
-            [
-                {
-                    "cp": "",
-                    "complete": ".data segment",
-                    "line": ".data segment",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n '.DATA' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "message dw 'Resultado: $'",
-                    "line": [
-                        "message",
-                        "dw",
-                        "'Resultado:",
-                        "$'"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'MESSAGE' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "num1 db 5",
-                    "line": [
-                        "num1",
-                        "db",
-                        "5"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'NUM1' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "num2 db 10",
-                    "line": [
-                        "num2",
-                        "db",
-                        "10"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'NUM2' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "buffer db 20 dup(0)",
-                    "line": [
-                        "buffer",
-                        "db",
-                        "20",
-                        "dup(0)"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Pseudo Instrucci\u00f3n"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'BUFFER' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "ends",
-                    "line": "ends",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
-                    "errores": ": Correcto"
-                }
-            ],
-            [
-                {
-                    "cp": "",
-                    "complete": ".code segment",
-                    "line": ".code segment",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n '.CODE' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "start:",
-                    "line": [
-                        "start:"
-                    ],
-                    "classification": [
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'START:' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ax @data",
-                    "line": [
-                        "mov",
-                        "ax",
-                        "@data"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AX @DATA' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ds ax",
-                    "line": [
-                        "mov",
-                        "ds",
-                        "ax"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'DS AX' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov al byte ptr num1",
-                    "line": [
-                        "mov",
-                        "al",
-                        "byte",
-                        "ptr",
-                        "num1"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AL BYTE PTR NUM1' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "add al byte ptr num2",
-                    "line": [
-                        "add",
-                        "al",
-                        "byte",
-                        "ptr",
-                        "num2"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AL BYTE PTR NUM2' no soportado para la instrucci\u00f3n 'ADD'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'add'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov byte ptr buffer al",
-                    "line": [
-                        "mov",
-                        "byte",
-                        "ptr",
-                        "buffer",
-                        "al"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'BYTE PTR BUFFER AL' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah 009h",
-                    "line": [
-                        "mov",
-                        "ah",
-                        "009h"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH 009H' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "lea dx message",
-                    "line": [
-                        "lea",
-                        "dx",
-                        "message"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 021h",
-                    "line": [
-                        "int",
-                        "021h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": ": Correcto"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ah 002h",
-                    "line": [
-                        "mov",
-                        "ah",
-                        "002h"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Operando 'AH 002H' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "lea dx buffer",
-                    "line": [
-                        "lea",
-                        "dx",
-                        "buffer"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
-                    "errores": "Error: La etiqueta 'lea' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 021h",
-                    "line": [
-                        "int",
-                        "021h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "mov ax 04C00h",
-                    "line": [
-                        "mov",
-                        "ax",
-                        "04C00h"
-                    ],
-                    "classification": [
-                        "Instrucci\u00f3n",
-                        "Simbolo",
-                        "No se reconoce"
-                    ],
-                    "codificacion": "Error: Operando 'AX 04C00H' no soportado para la instrucci\u00f3n 'MOV'.",
-                    "errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
-                },
-                {
-                    "cp": "",
-                    "complete": "int 021h",
-                    "line": [
-                        "int",
-                        "021h"
-                    ],
-                    "classification": [
-                        "Simbolo",
-                        "Simbolo"
-                    ],
-                    "codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
-                    "errores": "Error: La etiqueta 'int' ya ha sido declarada"
-                },
-                {
-                    "cp": "",
-                    "complete": "ends",
-                    "line": "ends",
-                    "classification": "Pseudo Instrucci\u00f3n",
-                    "codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
-                    "errores": ": Correcto"
-                }
-            ]
-        ]
-    }
+	},
+	{
+		"filename": "Plantilla1.asm",
+		"segmentos": [
+			[
+				{
+					"cp": "",
+					"complete": ".model small",
+					"line": ".model small",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "",
+					"errores": ""
+				}
+			],
+			[
+				{
+					"cp": "",
+					"complete": ".stack segment",
+					"line": ".stack segment",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n '.STACK' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "dw 256 dup(0)",
+					"line": ["dw", "256", "dup(0)"],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Pseudo Instrucci\u00f3n"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'DW' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "ends",
+					"line": "ends",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"errores": ": Correcto"
+				}
+			],
+			[
+				{
+					"cp": "",
+					"complete": ".data segment",
+					"line": ".data segment",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n '.DATA' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "var1 db 'hola'",
+					"line": ["var1", "db", "'hola'"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'VAR1' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "cad2 db \"programa de prueba\"",
+					"line": ["cad2", "db", "\"programa", "de", "prueba\""],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"No se reconoce"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'CAD2' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "var2 dw 0",
+					"line": ["var2", "dw", "0"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'VAR2' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "tecla db 5",
+					"line": ["tecla", "db", "5"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'TECLA' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "cons1 equ 45",
+					"line": ["cons1", "equ", "45"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'CONS1' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "con2 equ 345",
+					"line": ["con2", "equ", "345"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'CON2' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "simbolo db 045H",
+					"line": ["simbolo", "db", "045H"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'SIMBOLO' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "tecla dw 045H",
+					"line": ["tecla", "dw", "045H"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'TECLA' no soportada.",
+					"errores": "Error: La variable 'tecla' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "sb db 11110000b",
+					"line": ["sb", "db", "11110000b"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'SB' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "edad db 15",
+					"line": ["edad", "db", "15"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'EDAD' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "var2 db 0",
+					"line": ["var2", "db", "0"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'VAR2' no soportada.",
+					"errores": "Error: La variable 'var2' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "mayor db 'ERES MAYOR DE EDAD...''$'",
+					"line": [
+						"mayor",
+						"db",
+						"'ERES",
+						"MAYOR",
+						"DE",
+						"EDAD...''$'"
+					],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"No se reconoce"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'MAYOR' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "menor db 'ERES MENOR DE EDAD...''$'",
+					"line": [
+						"menor",
+						"db",
+						"'ERES",
+						"MENOR",
+						"DE",
+						"EDAD...''$'"
+					],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"No se reconoce"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'MENOR' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "ends",
+					"line": "ends",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"errores": ": Correcto"
+				}
+			],
+			[
+				{
+					"cp": "",
+					"complete": ".code segment",
+					"line": ".code segment",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n '.CODE' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov ax bx",
+					"line": ["mov", "ax", "bx"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "8B C3",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov dsax",
+					"line": ["mov", "dsax"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'DSAX' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "b20:",
+					"line": ["b20:"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'B20:' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov esax",
+					"line": ["mov", "esax"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'ESAX' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "cmp edad18",
+					"line": ["cmp", "edad18"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "jae b20",
+					"line": ["jae", "b20"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'JAE' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah09h",
+					"line": ["mov", "ah09h"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'AH09H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "lea dxmenor",
+					"line": ["lea", "dxmenor"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "b21:",
+					"line": ["b21:"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'B21:' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "int 021h",
+					"line": ["int", "021h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "jmp b21",
+					"line": ["jmp", "b21"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'B21' no soportado para la instrucci\u00f3n 'JMP'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah009h",
+					"line": ["mov", "ah009h"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'AH009H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "lea dxmayor",
+					"line": ["lea", "dxmayor"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
+					"errores": "Error: La etiqueta 'lea' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "mov ax04c00h",
+					"line": ["mov", "ax04c00h"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'AX04C00H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah 1",
+					"line": ["mov", "ah", "1"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AH 1' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "mov tecla al",
+					"line": ["mov", "tecla", "al"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah 2",
+					"line": ["mov", "ah", "2"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AH 2' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov dl simbolo",
+					"line": ["mov", "dl", "simbolo"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'DL SIMBOLO' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "inc tecla",
+					"line": ["inc", "tecla"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'TECLA' no soportado para la instrucci\u00f3n 'INC'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'inc'"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah 7",
+					"line": ["mov", "ah", "7"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AH 7' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov dl tecla",
+					"line": ["mov", "dl", "tecla"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'DL TECLA' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "ret",
+					"line": ["ret"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'RET' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov msg[2] 34H",
+					"line": ["mov", "msg[2]", "34H"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"No se reconoce",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'MSG[2] 34H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov dx offset msg",
+					"line": ["mov", "dx", "offset", "msg"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'DX OFFSET MSG' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah 9",
+					"line": ["mov", "ah", "9"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AH 9' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "ret",
+					"line": ["ret"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'RET' no soportada.",
+					"errores": "Error: La etiqueta 'ret' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "msg db \"hello world $\"",
+					"line": ["msg", "db", "\"hello", "world", "$\""],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'MSG' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "lectura:",
+					"line": ["lectura:"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'LECTURA:' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah7",
+					"line": ["mov", "ah7"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'AH7' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "mov tecla al",
+					"line": ["mov", "tecla", "al"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "cmp al13",
+					"line": ["cmp", "al13"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "jz fin:",
+					"line": ["jz", "fin:"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'JZ' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "cmp tecla 122",
+					"line": ["cmp", "tecla", "122"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "ja fin3",
+					"line": ["ja", "fin3"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'JA' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "cmp tecla96",
+					"line": ["cmp", "tecla96"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "jng fin3",
+					"line": ["jng", "fin3"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'JNG' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "sub tecla 32",
+					"line": ["sub", "tecla", "32"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "fin3:",
+					"line": ["fin3:"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'FIN3:' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah2",
+					"line": ["mov", "ah2"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'AH2' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "add ax var1",
+					"line": ["add", "ax", "var1"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AX VAR1' no soportado para la instrucci\u00f3n 'ADD'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'add'"
+				},
+				{
+					"cp": "",
+					"complete": "mov dltecla",
+					"line": ["mov", "dltecla"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'DLTECLA' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 21h",
+					"line": ["int", "21h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "jmp lectura",
+					"line": ["jmp", "lectura"],
+					"classification": ["Instrucci\u00f3n", "Simbolo"],
+					"codificacion": "Error: Operando 'LECTURA' no soportado para la instrucci\u00f3n 'JMP'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
+				},
+				{
+					"cp": "",
+					"complete": "fin:",
+					"line": ["fin:"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'FIN:' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "ends",
+					"line": "ends",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"errores": ": Correcto"
+				}
+			]
+		],
+		"simbols": []
+	},
+	{
+		"filename": "BaseExample.asm",
+		"segmentos": [
+			[
+				{
+					"cp": "",
+					"complete": ".model small",
+					"line": ".model small",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "",
+					"errores": ""
+				}
+			],
+			[
+				{
+					"cp": "",
+					"complete": ".stack segment",
+					"line": ".stack segment",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n '.STACK' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "dw 120 dup(0)",
+					"line": ["dw", "120", "dup(0)"],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Pseudo Instrucci\u00f3n"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'DW' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "ends",
+					"line": "ends",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"errores": ": Correcto"
+				}
+			],
+			[
+				{
+					"cp": "",
+					"complete": ".data segment",
+					"line": ".data segment",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n '.DATA' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "message dw 'Resultado: $'",
+					"line": ["message", "dw", "'Resultado:", "$'"],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'MESSAGE' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "num1 db 5",
+					"line": ["num1", "db", "5"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'NUM1' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "num2 db 10",
+					"line": ["num2", "db", "10"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'NUM2' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "buffer db 20 dup(0)",
+					"line": ["buffer", "db", "20", "dup(0)"],
+					"classification": [
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Pseudo Instrucci\u00f3n"
+					],
+					"codificacion": "Error: Instrucci\u00f3n 'BUFFER' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "ends",
+					"line": "ends",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"errores": ": Correcto"
+				}
+			],
+			[
+				{
+					"cp": "",
+					"complete": ".code segment",
+					"line": ".code segment",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n '.CODE' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "start:",
+					"line": ["start:"],
+					"classification": ["Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'START:' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov ax @data",
+					"line": ["mov", "ax", "@data"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AX @DATA' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov ds ax",
+					"line": ["mov", "ds", "ax"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'DS AX' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov al byte ptr num1",
+					"line": ["mov", "al", "byte", "ptr", "num1"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AL BYTE PTR NUM1' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "add al byte ptr num2",
+					"line": ["add", "al", "byte", "ptr", "num2"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AL BYTE PTR NUM2' no soportado para la instrucci\u00f3n 'ADD'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'add'"
+				},
+				{
+					"cp": "",
+					"complete": "mov byte ptr buffer al",
+					"line": ["mov", "byte", "ptr", "buffer", "al"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'BYTE PTR BUFFER AL' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah 009h",
+					"line": ["mov", "ah", "009h"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AH 009H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "lea dx message",
+					"line": ["lea", "dx", "message"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "int 021h",
+					"line": ["int", "021h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": ": Correcto"
+				},
+				{
+					"cp": "",
+					"complete": "mov ah 002h",
+					"line": ["mov", "ah", "002h"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"Simbolo"
+					],
+					"codificacion": "Error: Operando 'AH 002H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "lea dx buffer",
+					"line": ["lea", "dx", "buffer"],
+					"classification": ["Simbolo", "Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
+					"errores": "Error: La etiqueta 'lea' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "int 021h",
+					"line": ["int", "021h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "mov ax 04C00h",
+					"line": ["mov", "ax", "04C00h"],
+					"classification": [
+						"Instrucci\u00f3n",
+						"Simbolo",
+						"No se reconoce"
+					],
+					"codificacion": "Error: Operando 'AX 04C00H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+				},
+				{
+					"cp": "",
+					"complete": "int 021h",
+					"line": ["int", "021h"],
+					"classification": ["Simbolo", "Simbolo"],
+					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
+				},
+				{
+					"cp": "",
+					"complete": "ends",
+					"line": "ends",
+					"classification": "Pseudo Instrucci\u00f3n",
+					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"errores": ": Correcto"
+				}
+			]
+		]
+	}
 ]
