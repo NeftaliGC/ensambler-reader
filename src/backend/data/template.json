@@ -994,7 +994,63 @@
 				}
 			]
 		],
-		"simbols": []
+		"simbols": [
+			{
+				"simbolo":"pkey",
+				"tipo":"variable",
+				"valor":"press any key...$",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"var1",
+				"tipo":"variable",
+				"valor":"hola",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"var2",
+				"tipo":"variable",
+				"valor":"0",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"tecla",
+				"tipo":"variable",
+				"valor":"0",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"simbolo",
+				"tipo":"variable",
+				"valor":"045H",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"ss1",
+				"tipo":"variable",
+				"valor":"000011111b",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"ss2",
+				"tipo":"variable",
+				"valor":"10101010b",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"ss3",
+				"tipo":"variable",
+				"valor":"00000000b",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"ss2",
+				"tipo":"variable",
+				"valor":"10101010b",
+				"tamaño":"db"
+			}
+			
+		]
 	},
 	{
 		"filename": "Template.asm",
@@ -1101,7 +1157,7 @@
 					"line": ["w_dec_b", "d", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "Error: Instrucci\u00f3n 'W_DEC_B' no soportada.",
-					"errores": ": Correcto"
+					"errores": ": Error en definicion de tamaño"
 				},
 				{
 					"cp": "",
@@ -1109,7 +1165,7 @@
 					"line": ["w_dec_w", "=", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "Error: Instrucci\u00f3n 'W_DEC_W' no soportada.",
-					"errores": ": Correcto"
+					"errores": ": Error en definicion de tamaño"
 				},
 				{
 					"cp": "",
@@ -1117,7 +1173,7 @@
 					"line": ["w_bin_b", "dw", "01010101b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "Error: Instrucci\u00f3n 'W_BIN_B' no soportada.",
-					"errores": ": Correcto"
+					"errores": ": Error en valor de tamaño"
 				},
 				{
 					"cp": "",
@@ -1125,7 +1181,7 @@
 					"line": ["w_bin_w", "db", "0110100101100110b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "Error: Instrucci\u00f3n 'W_BIN_W' no soportada.",
-					"errores": ": Correcto"
+					"errores": ": Error en valor de tamaño"
 				},
 				{
 					"cp": "",
@@ -1133,7 +1189,7 @@
 					"line": ["equ", "w_constant", "12"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
 					"codificacion": "Error: Instrucci\u00f3n 'EQU' no soportada.",
-					"errores": ": Correcto"
+					"errores": ": Error sintactico"
 				},
 				{
 					"cp": "",
@@ -1539,7 +1595,50 @@
 				}
 			]
 		],
-		"simbols": []
+		"simbols": [
+			{
+				"simbolo":"dec_b",
+				"tipo":"variable",
+				"valor":"10",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"dec_w",
+				"tipo":"variable",
+				"valor":"10",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"bin_b",
+				"tipo":"variable",
+				"valor":"01010101b",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"bin_w",
+				"tipo":"variable",
+				"valor":"0110100101100110b",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"hex_b",
+				"tipo":"variable",
+				"valor":"024h",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"hex_w",
+				"tipo":"variable",
+				"valor":"024fah",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"cons",
+				"tipo":"constante",
+				"valor":"12",
+				"tamaño":"dw"
+			}
+		]
 	},
 	{
 		"filename": "Plantilla1.asm",
