@@ -1,154 +1,127 @@
 import json
-from pathlib import Path
+import os
 
-class Codificador:
-    def __init__(self):
-        # Ruta al archivo JSON con las instrucciones
-        self.json_path = Path(__file__).parent / "data" / "instrucciones_completas.json"
-        # Cargar las instrucciones desde el archivo JSON
-        self.instrucciones = self.cargar_instrucciones()
+class OpcodeMapper:
+    def __init__(self, instruction_data):
+        self.instruction_data = instruction_data
 
-    def cargar_instrucciones(self):
+    def get_opcode(self, instruction, operands):
         """
-        Carga las instrucciones desde el archivo JSON y las devuelve.
+        Dado el nombre de la instrucción y los operandos, devuelve el código de operación en binario.
         """
-        with open(self.json_path, 'r', encoding='utf-8') as file:
-            return json.load(file)["Instrucciones"]
-
-    def procesar_linea(self, linea):
-        """
-        Recibe una línea de código en ensamblador, separa la instrucción y los operandos,
-        y luego genera el código de máquina correspondiente.
-        """
-        # Normalizamos la línea eliminando espacios extra y comentarios
-        linea = linea.strip()
-        if ';' in linea:
-            linea = linea.split(';')[0].strip()  # Elimina los comentarios
-
-        # Dividimos la línea en la instrucción y los operandos
-        partes = linea.split()
-        if len(partes) == 0:
-            raise ValueError("La línea está vacía o no es válida.")
+        if instruction not in self.instruction_data:
+            raise ValueError(f"Instrucción {instruction} no encontrada en el archivo JSON.")
         
-        instruccion = partes[0].upper()  # La instrucción es la primera palabra
-        operandos = [op.strip(',') for op in partes[1:]]  # Eliminar comas al final de cada operando
+        instruction_details = self.instruction_data[instruction]
+        
+        # Ahora analizamos los operandos de la instrucción
+        # Las claves de los operandos serán del tipo 'Reg/Mem, Reg', 'Reg, Reg/Mem', etc.
+        for operand_pattern, details in instruction_details.items():
+            # Verificar si la instrucción y los operandos coinciden
+            # Simplemente tomamos la codificación binaria de ejemplo
+            # Aquí necesitarás un mapeo más sofisticado dependiendo de la instrucción.
+            if self.match_operands(operand_pattern, operands):
+                return details['codigo']
+        
+        raise ValueError(f"No se encontró un código para los operandos {operands} con la instrucción {instruction}.")
 
-        # Codificamos la instrucción con los operandos
-        return self.codificar_instruccion(instruccion, operandos)
-
-    def obtener_instruccion(self, nombre_instruccion):
+    def match_operands(self, pattern, operands):
         """
-        Devuelve la estructura de la instrucción con base en el nombre.
+        Función simple para comprobar si el patrón de operandos se ajusta a los operandos dados.
+        Este es un lugar donde puedes implementar reglas más complejas si es necesario.
         """
-        for instr_set in self.instrucciones:
-            if nombre_instruccion in instr_set:
-                return instr_set[nombre_instruccion]
-        return None
+        # Comprobamos de manera muy sencilla si los operandos coinciden (esto es simplificable).
+        operand_parts = pattern.split(', ')
+        return all(operand in operands for operand in operand_parts)
 
-    def codificar_instruccion(self, instruccion, operandos):
+
+class InstructionEncoder:
+    def __init__(self, instruction_data):
+        self.mapper = OpcodeMapper(instruction_data)
+
+    def encode_instruction(self, instruction_line):
         """
-        Recibe el nombre de una instrucción y sus operandos para generar el código de máquina.
+        Codifica la instrucción recibida en el formato requerido, en hexadecimal.
         """
-        # Se obtiene la estructura de la instrucción del JSON.
-        instruccion_info = self.obtener_instruccion(instruccion)
+        # Parseamos la instrucción y operandos
+        instruction, operands = self.parse_instruction(instruction_line)
+        
+        # Obtenemos el código binario
+        bin_opcode = self.mapper.get_opcode(instruction, operands)
+        
+        # Convertimos el código binario a hexadecimal (Little Endian)
+        hex_opcode = self.bin_to_hex(bin_opcode)
+        
+        return hex_opcode
 
-        if not instruccion_info:
-            raise ValueError(f"Instrucción '{instruccion}' no encontrada en el archivo JSON.")
-
-        # Dependiendo del tipo de instrucción, procesamos los operandos
-        for tipo_operando, detalles in instruccion_info.items():
-            if ',' in tipo_operando:  # Instrucciones con 2 operandos
-                if len(operandos) != 2:
-                    raise ValueError(f"La instrucción '{instruccion}' requiere 2 operandos.")
-                return self.codificar_reg_mem_reg(detalles, operandos)
-            elif 'Sin operandos' in tipo_operando:  # Instrucciones sin operandos
-                return self.bin_a_hex(detalles["base"])
-
-        return None
-
-    def codificar_reg_mem_reg(self, detalles, operandos):
+    def parse_instruction(self, instruction_line):
         """
-        Codifica una instrucción del tipo 'Reg/Mem, Reg'.
+        Parsea la línea de la instrucción, dividiéndola en el nombre de la instrucción y los operandos.
+        Ejemplo: "MOV AX, BX" -> ("MOV", ["AX", "BX"])
         """
-        # Extraemos la información de la estructura del JSON
-        base = detalles["base"]
-        mod = "00"  # Suponemos 'Memoria sin desplazamiento' por defecto
+        instruction_parts = instruction_line.split(' ')
+        instruction = instruction_parts[0]
+        operands = instruction_parts[1].split(',')
+        operands = [operand.strip() for operand in operands]  # Limpiar espacios
 
-        # Procesamos el primer operando (reg)
-        reg = operandos[0]
-        reg_bin = self.obtener_registro_bin(reg)
+        return instruction, operands
 
-        # Procesamos el segundo operando (rm)
-        rm = operandos[1]
-        rm_bin = self.obtener_rm_bin(rm)
-
-        # Codificación binaria completa
-        codificacion_bin = base + mod + reg_bin + rm_bin
-
-        # Convertimos la codificación binaria a hexadecimal
-        return self.bin_a_hex(codificacion_bin)
-
-    def obtener_registro_bin(self, reg):
+    def bin_to_hex(self, bin_string):
         """
-        Convierte el nombre de un registro a su valor binario correspondiente.
+        Convierte una cadena binaria en su representación hexadecimal, asegurando que esté en Little Endian.
         """
-        registros = {
-            "AX": "000",
-            "CX": "001",
-            "DX": "010",
-            "BX": "011",
-            "SP": "100",
-            "BP": "101",
-            "SI": "110",
-            "DI": "111"
-        }
+        # Convertimos de binario a entero
+        bin_value = int(bin_string, 2)
+        
+        # Convertimos el valor entero a hexadecimal
+        hex_value = hex(bin_value)[2:].upper()
+        
+        # Aseguramos que la longitud del hexadecimal sea correcta (dos dígitos por byte)
+        if len(hex_value) % 2 != 0:
+            hex_value = '0' + hex_value
+        
+        return hex_value
 
-        if reg in registros:
-            return registros[reg]
-        else:
-            raise ValueError(f"Registro '{reg}' no reconocido.")
 
-    def obtener_rm_bin(self, rm):
+class InstructionParser:
+    def __init__(self):
+        # Ruta fija al archivo JSON con las instrucciones
+        self.json_file_path = '/backend/data/instrucciones.json'  # Asegúrate de que esta ruta sea correcta
+        
+        # Cargar el archivo JSON
+        self.instruction_data = self.load_json_data()
+        self.encoder = InstructionEncoder(self.instruction_data)
+
+    def load_json_data(self):
         """
-        Convierte el valor de un operando 'r/m' a su valor binario.
+        Carga los datos del archivo JSON.
         """
-        # Aquí definimos los operandos comunes para los registros y memoria
-        r_m_values = {
-            "BX+SI": "000",
-            "BX+DI": "001",
-            "BP+SI": "010",
-            "BP+DI": "011",
-            "SI": "100",
-            "DI": "101",
-            "BP": "110",
-            "BX": "111"
-        }
+        if not os.path.exists(self.json_file_path):
+            raise FileNotFoundError(f"El archivo {self.json_file_path} no fue encontrado.")
+        
+        with open(self.json_file_path, 'r') as file:
+            data = json.load(file)
+        
+        return data["Instrucciones"]
 
-        if rm in r_m_values:
-            return r_m_values[rm]
-        else:
-            raise ValueError(f"Operando 'r/m' '{rm}' no reconocido.")
-
-    def bin_a_hex(self, binario):
+    def process_instruction(self, instruction_line):
         """
-        Convierte una cadena binaria a su representación hexadecimal.
+        Procesa una línea de instrucción y devuelve su codificación en hexadecimal.
         """
-        # Aseguramos que la longitud de la cadena binaria sea múltiplo de 4
-        binario_completo = binario.zfill(len(binario) + (4 - len(binario) % 4) % 4)
+        return self.encoder.encode_instruction(instruction_line)
 
-        # Convertimos binario a hexadecimal
-        hexadecimal = hex(int(binario_completo, 2))[2:].upper()  # Convertimos a hex y eliminamos el '0x' inicial
-        return hexadecimal
 
-# Ejemplo de uso
+def main():
+    # Crear el objeto que maneja las instrucciones
+    parser = InstructionParser()
+    
+    # Instrucción que deseas codificar
+    instruction_line = "MOV AX, BX"
+    
+    # Procesamos la instrucción y obtenemos la codificación hexadecimal
+    hex_output = parser.process_instruction(instruction_line)
+    
+    print(f"Codificación hexadecimal: {hex_output}")
+
 if __name__ == "__main__":
-    codificador = Codificador()
-
-    # Línea de código en ensamblador
-    linea = "MOV AX, BX+SI"
-
-    # Procesar la línea
-    codigo_maquina = codificador.procesar_linea(linea)
-
-    # Mostrar el código de máquina en hexadecimal
-    print(f"Código de máquina para '{linea}': {codigo_maquina}")
+    main()
