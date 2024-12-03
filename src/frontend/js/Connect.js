@@ -52,11 +52,12 @@ function showSegments(idSegment) {
 	const segmentos = RESPONSE.segmentos;
 	// Referencia a la tabla donde se agregarán las filas
 
-	populateTable(segmentos);
+	populateTableSegment(segmentos);
+	populateTableSimbols(segmentos);
 }
 
 // Función para agregar datos a la tabla
-function populateTable(data) {
+function populateTableSegment(data) {
 	// Referencia a la tabla donde se agregarán las filas
 	const tableBody = document.querySelector('#IdElementos tbody');
 	// Iteramos sobre cada segmento
@@ -112,6 +113,48 @@ function populateTable(data) {
 			row.innerHTML += `
                 ${codificacionCell}
                 ${erroresCell}
+            `;
+
+			// Agregamos la fila al cuerpo de la tabla
+			tableBody.appendChild(row);
+		});
+	});
+}
+
+function populateTableSimbols(data) {
+	// Referencia a la tabla donde se agregarán las filas
+	const tableBody = document.querySelector('#Simbolos tbody');
+	// Iteramos sobre los segmentos
+	data.forEach((segment) => {
+		// Iteramos sobre cada línea dentro del segmento
+		segment.forEach((line) => {
+			// Verificar si no hay errores en la línea, es decir, si el error es "correcto"
+			const errores = line.errores || '';
+			if (errores !== 'Correcto') return; // Si hay un error, no agregar la línea a la tabla
+
+			// Crear una nueva fila para la tabla de símbolos
+			const row = document.createElement('tr');
+
+			// Extraemos los datos necesarios
+			const simbolo = line.line[0] || ''; // Se toma el valor de la línea como símbolo
+			const tipo = Array.isArray(line.classification)
+				? line.classification.join(', ')
+				: line.line[1] || ''; // El tipo puede ser un arreglo de clasificaciones o el segundo valor de la línea
+			const valor = line.complete || ''; // El valor es el contenido completo de la línea
+			const tamano = line.codificacion || ''; // El tamaño (codificación) de la línea
+
+			// Creamos las celdas de la fila
+			const simboloCell = `<td>${simbolo}</td>`;
+			const tipoCell = `<td>${tipo}</td>`;
+			const valorCell = `<td>${valor}</td>`;
+			const tamanoCell = `<td>${tamano}</td>`;
+
+			// Añadimos las celdas a la fila
+			row.innerHTML = `
+                ${simboloCell}
+                ${tipoCell}
+                ${valorCell}
+                ${tamanoCell}
             `;
 
 			// Agregamos la fila al cuerpo de la tabla
