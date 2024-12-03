@@ -18,7 +18,7 @@ def procesar_linea(linea):
     partes = linea.strip().split(" ", 1)
     
     if len(partes) != 2:
-        return f"Error: La línea '{linea}' no tiene el formato esperado (instrucción operandos)."
+        return partes[0], ""  # Si no hay operandos, devolvemos una cadena vacía
     
     instruccion = partes[0]
     operando = partes[1]
@@ -28,7 +28,10 @@ def procesar_linea(linea):
 # Función para codificar la instrucción
 def codificar_instruccion(instruccion, operando, opcodes):
     if instruccion in opcodes:
-        if operando in opcodes[instruccion]:
+        if operando == "" and instruccion in ["JNS", "JG", "JMP", "JNBE"]:
+            # Instrucciones como JMP, JNS, JG y JNBE no requieren operandos explícitos
+            return opcodes[instruccion][""]  # En el JSON, estos opcodes tienen la clave vacía
+        elif operando in opcodes[instruccion]:
             return opcodes[instruccion][operando]
         else:
             return f"Error: Operando '{operando}' no soportado para la instrucción '{instruccion}'."
@@ -50,9 +53,8 @@ if __name__ == "__main__":
     opcodes = cargar_opcodes()
 
     # Entrada del usuario (se puede cambiar por un input())
-    entrada = "IMUL AX, BX" # Ejemplo de entrada
+    entrada = "REP LODSB"  # Ejemplo de entrada, puedes probar con "JMP", "JG", etc.
     
     # Procesar la instrucción y mostrar el código de máquina
     resultado = procesar_instruccion(entrada, opcodes)
     print(f"Resultado para '{entrada}': {resultado}")
-
