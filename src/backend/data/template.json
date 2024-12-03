@@ -9,7 +9,7 @@
 					"complete": ".stack segment",
 					"line": ".stack segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -17,7 +17,7 @@
 					"complete": ".stacks segment",
 					"line": [".stacks", "segment"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: Instrucci\u00f3n de inicio del segmento de pila incorrecta"
 				},
 				{
@@ -29,7 +29,7 @@
 						"Simbolo",
 						"Pseudo Instrucci\u00f3n"
 					],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -37,7 +37,7 @@
 					"complete": "dw 128 dupy(0)",
 					"line": ["dw", "128", "dupy(0)"],
 					"classification": ["Simbolo", "Simbolo", "No se reconoce"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: Instrucci\u00f3n 'dup' no v\u00e1lida"
 				},
 				{
@@ -45,7 +45,7 @@
 					"complete": "120 db dup('a')",
 					"line": ["120", "db", "dup('a')"],
 					"classification": ["Simbolo", "Simbolo", "No se reconoce"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: Instrucci\u00f3n 'dup' no v\u00e1lida"
 				},
 				{
@@ -57,7 +57,7 @@
 						"Simbolo",
 						"Pseudo Instrucci\u00f3n"
 					],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -65,7 +65,7 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -73,7 +73,7 @@
 					"complete": "data segment",
 					"line": ["data", "segment"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: Instrucci\u00f3n no reconocida"
 				},
 				{
@@ -81,7 +81,7 @@
 					"complete": "datasegment",
 					"line": ["datasegment"],
 					"classification": ["Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: Instrucci\u00f3n no reconocida"
 				}
 			],
@@ -91,7 +91,7 @@
 					"complete": ".data segment",
 					"line": ".data segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -105,7 +105,7 @@
 						"Simbolo",
 						"No se reconoce"
 					],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -113,7 +113,7 @@
 					"complete": "var1 db 'hola'",
 					"line": ["var1", "db", "'hola'"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -135,7 +135,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La variable 'pkey' ya ha sido declarada"
 				},
 				{
@@ -148,7 +148,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Error sintactico"
 				},
 				{
@@ -156,7 +156,7 @@
 					"complete": "var2 dw 0",
 					"line": ["var2", "dw", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -164,7 +164,7 @@
 					"complete": "tecla db 0",
 					"line": ["tecla", "db", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -172,7 +172,7 @@
 					"complete": "Vtecla BD 0",
 					"line": ["Vtecla", "BD", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La variable 'Vtecla' no tiene un tipo de dato v\u00e1lido"
 				},
 				{
@@ -180,7 +180,7 @@
 					"complete": "7tecla Wd 0",
 					"line": ["7tecla", "Wd", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Error: La variable 'Vtecla' no tiene un tipo de dato v\u00e1lido"
 				},
 				{
@@ -188,7 +188,7 @@
 					"complete": "tecla db 0",
 					"line": ["tecla", "db", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La variable 'tecla' ya ha sido declarada"
 				},
 				{
@@ -196,7 +196,7 @@
 					"complete": "simbolo db 045H",
 					"line": ["simbolo", "db", "045H"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -204,7 +204,7 @@
 					"complete": "simbolo db 45H",
 					"line": ["simbolo", "db", "45H"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La variable 'simbolo' ya ha sido declarada"
 				},
 				{
@@ -212,7 +212,7 @@
 					"complete": "simbolo db 45",
 					"line": ["simbolo", "db", "45"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La variable 'simbolo' ya ha sido declarada"
 				},
 				{
@@ -220,7 +220,7 @@
 					"complete": "ss1 db 000011111b",
 					"line": ["ss1", "db", "000011111b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -228,7 +228,7 @@
 					"complete": "ss2 db 10101010b",
 					"line": ["ss2", "db", "10101010b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -236,7 +236,7 @@
 					"complete": "ss3 dw 00000000b",
 					"line": ["ss3", "dw", "00000000b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -244,7 +244,7 @@
 					"complete": "ss3 dw 1111000011110000b",
 					"line": ["ss3", "dw", "1111000011110000b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La variable 'ss3' ya ha sido declarada"
 				},
 				{
@@ -252,7 +252,7 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			],
@@ -262,7 +262,7 @@
 					"complete": ".code segment",
 					"line": ".code segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -270,7 +270,7 @@
 					"complete": "code",
 					"line": ["code"],
 					"classification": ["Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'code' ya ha sido declarada"
 				},
 				{
@@ -282,7 +282,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -290,7 +290,7 @@
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "CD 21",
 					"errores": ": Correcto"
 				},
 				{
@@ -302,7 +302,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -314,8 +314,8 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'AH 2' no soportado para la instrucci\u00f3n 'MOV'.",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+					"codificacion": "B4 02",
+					"errores": "Correcto"
 				},
 				{
 					"cp": "0014",
@@ -326,7 +326,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'DL SIMBOLO' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -334,7 +334,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -354,7 +354,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'AH 7' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -366,7 +366,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'DL TECLA' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -374,7 +374,7 @@
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -382,7 +382,7 @@
 					"complete": "ret",
 					"line": ["ret"],
 					"classification": ["Simbolo"],
-					"codificacion": "Instrucci\u00f3n 'RET' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -394,7 +394,7 @@
 						"No se reconoce",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'MSG[2] 034H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -407,7 +407,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'DX OFFSET MSG' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -419,7 +419,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'AH 9' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -427,7 +427,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -435,7 +435,7 @@
 					"complete": "ret",
 					"line": ["ret"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'RET' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'ret' ya ha sido declarada"
 				},
 				{
@@ -449,7 +449,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Instrucci\u00f3n 'MSG' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -457,7 +457,7 @@
 					"complete": "lectura:",
 					"line": ["lectura:"],
 					"classification": ["etiqueta"],
-					"codificacion": "Instrucci\u00f3n 'LECTURA:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -465,7 +465,7 @@
 					"complete": "mov ah7",
 					"line": ["mov", "ah7"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Operando 'AH7' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -473,7 +473,7 @@
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -485,7 +485,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -501,7 +501,7 @@
 					"complete": "jz fin:",
 					"line": ["jz", "fin:"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Instrucci\u00f3n 'JZ' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -509,7 +509,7 @@
 					"complete": "cmp tecla 122d",
 					"line": ["cmp", "tecla", "122d"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
 				},
 				{
@@ -517,7 +517,7 @@
 					"complete": "ja fin3",
 					"line": ["ja", "fin3"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -525,7 +525,7 @@
 					"complete": "cmp tecla00001111b",
 					"line": ["cmp", "tecla00001111b"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
 				},
 				{
@@ -533,7 +533,7 @@
 					"complete": "jng fin3",
 					"line": ["jng", "fin3"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNG' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -541,7 +541,7 @@
 					"complete": "sub tecla 32",
 					"line": ["sub", "tecla", "32"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -549,7 +549,7 @@
 					"complete": "fin3:",
 					"line": ["fin3:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'FIN3:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -557,7 +557,7 @@
 					"complete": "mov ah2",
 					"line": ["mov", "ah2"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AH2' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -569,7 +569,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AX VAR1' no soportado para la instrucci\u00f3n 'ADD'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'add'"
 				},
 				{
@@ -577,7 +577,7 @@
 					"complete": "mov dltecla",
 					"line": ["mov", "dltecla"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'DLTECLA' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -585,7 +585,7 @@
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -593,7 +593,7 @@
 					"complete": "jmp lectura",
 					"line": ["jmp", "lectura"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'LECTURA' no soportado para la instrucci\u00f3n 'JMP'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
 				},
 				{
@@ -601,7 +601,7 @@
 					"complete": "jmp nex",
 					"line": ["jmp", "nex"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'NEX' no soportado para la instrucci\u00f3n 'JMP'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
 				},
 				{
@@ -609,7 +609,7 @@
 					"complete": "fin:",
 					"line": ["fin:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'FIN:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -617,7 +617,7 @@
 					"complete": "cld",
 					"line": ["cld"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLD' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -625,7 +625,7 @@
 					"complete": "cld ax",
 					"line": ["cld", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLD' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cld' ya ha sido declarada"
 				},
 				{
@@ -633,7 +633,7 @@
 					"complete": "cli",
 					"line": ["cli"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLI' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -641,7 +641,7 @@
 					"complete": "cli 0x10",
 					"line": ["cli", "0x10"],
 					"classification": ["Simbolo", "No se reconoce"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLI' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cli' ya ha sido declarada"
 				},
 				{
@@ -649,7 +649,7 @@
 					"complete": "movsb",
 					"line": ["movsb"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: etiqueta desconocida"
 				},
 				{
@@ -657,7 +657,7 @@
 					"complete": "movsb ax bx",
 					"line": ["movsb", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'movsb' ya ha sido declarada"
 				},
 				{
@@ -665,7 +665,7 @@
 					"complete": "movsw",
 					"line": ["movsw"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSW' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -673,7 +673,7 @@
 					"complete": "movsw bx ax",
 					"line": ["movsw", "bx", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSW' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'movsw' ya ha sido declarada"
 				},
 				{
@@ -681,7 +681,7 @@
 					"complete": "xlatb",
 					"line": ["xlatb"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XLATB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -689,7 +689,7 @@
 					"complete": "xlatb bx",
 					"line": ["xlatb", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XLATB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'xlatb' ya ha sido declarada"
 				},
 				{
@@ -697,7 +697,7 @@
 					"complete": "aaa",
 					"line": ["aaa"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'AAA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -705,7 +705,7 @@
 					"complete": "aaa ax bx",
 					"line": ["aaa", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'AAA' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'aaa' ya ha sido declarada"
 				},
 				{
@@ -713,7 +713,7 @@
 					"complete": "pop ax",
 					"line": ["pop", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'POP' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -721,7 +721,7 @@
 					"complete": "pop bx cx",
 					"line": ["pop", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'POP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'pop' ya ha sido declarada"
 				},
 				{
@@ -733,7 +733,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AX 10' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -745,15 +745,15 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'BX 2' no soportado para la instrucci\u00f3n 'MOV'.",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+					"codificacion": "BB 02 00",
+					"errores": "Correcto"
 				},
 				{
 					"cp": "002A",
 					"complete": "idiv bx",
 					"line": ["idiv", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'IDIV' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -761,7 +761,7 @@
 					"complete": "idiv ax bx",
 					"line": ["idiv", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'IDIV' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'idiv' ya ha sido declarada"
 				},
 				{
@@ -769,7 +769,7 @@
 					"complete": "push ax",
 					"line": ["push", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'PUSH' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -777,7 +777,7 @@
 					"complete": "push bx cx",
 					"line": ["push", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'PUSH' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'push' ya ha sido declarada"
 				},
 				{
@@ -785,7 +785,7 @@
 					"complete": "dec ax",
 					"line": ["dec", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'DEC' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -793,7 +793,7 @@
 					"complete": "dec",
 					"line": ["dec"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'DEC' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'dec' ya ha sido declarada"
 				},
 				{
@@ -806,14 +806,14 @@
 						"Simbolo"
 					],
 					"codificacion": "D1 C8",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'ror'"
+					"errores": "Correcto"
 				},
 				{
 					"cp": "002C",
 					"complete": "ror ax",
 					"line": ["ror", "ax"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AX' no soportado para la instrucci\u00f3n 'ROR'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'ror'"
 				},
 				{
@@ -821,7 +821,7 @@
 					"complete": "sub ax bx",
 					"line": ["sub", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'sub' ya ha sido declarada"
 				},
 				{
@@ -829,7 +829,7 @@
 					"complete": "sub ax",
 					"line": ["sub", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'sub' ya ha sido declarada"
 				},
 				{
@@ -837,7 +837,7 @@
 					"complete": "xor ax ax",
 					"line": ["xor", "ax", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XOR' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -845,7 +845,7 @@
 					"complete": "xor ax",
 					"line": ["xor", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XOR' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'xor' ya ha sido declarada"
 				},
 				{
@@ -853,7 +853,7 @@
 					"complete": "and ax bx",
 					"line": ["and", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'AND' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -861,7 +861,7 @@
 					"complete": "and ax",
 					"line": ["and", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'AND' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'and' ya ha sido declarada"
 				},
 				{
@@ -869,7 +869,7 @@
 					"complete": "jae label",
 					"line": ["jae", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JAE' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -877,7 +877,7 @@
 					"complete": "jae",
 					"line": ["jae"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JAE' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jae' ya ha sido declarada"
 				},
 				{
@@ -885,7 +885,7 @@
 					"complete": "jcxz label",
 					"line": ["jcxz", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JCXZ' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -893,7 +893,7 @@
 					"complete": "jcxz",
 					"line": ["jcxz"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JCXZ' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jcxz' ya ha sido declarada"
 				},
 				{
@@ -901,7 +901,7 @@
 					"complete": "jl label",
 					"line": ["jl", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JL' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -909,7 +909,7 @@
 					"complete": "jl",
 					"line": ["jl"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JL' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jl' ya ha sido declarada"
 				},
 				{
@@ -917,7 +917,7 @@
 					"complete": "jnge label",
 					"line": ["jnge", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNGE' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -925,7 +925,7 @@
 					"complete": "jnge",
 					"line": ["jnge"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNGE' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jnge' ya ha sido declarada"
 				},
 				{
@@ -933,7 +933,7 @@
 					"complete": "jnp label",
 					"line": ["jnp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNP' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -941,15 +941,15 @@
 					"complete": "jnp",
 					"line": ["jnp"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNP' no soportada.",
-					"errores": "Error: La etiqueta 'jnp' ya ha sido declarada"
+					"codificacion": "-",
+					"errores": "-"
 				},
 				{
 					"cp": "0034",
 					"complete": "jp label",
 					"line": ["jp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JP' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -957,7 +957,7 @@
 					"complete": "jp",
 					"line": ["jp"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jp' ya ha sido declarada"
 				},
 				{
@@ -965,7 +965,7 @@
 					"complete": "label:",
 					"line": ["label:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'LABEL:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -977,7 +977,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'EAX 1' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -985,7 +985,7 @@
 					"complete": "int 0x80",
 					"line": ["int", "0x80"],
 					"classification": ["Simbolo", "No se reconoce"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -993,7 +993,7 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			]
@@ -1066,7 +1066,7 @@
 					"complete": ".stack segment",
 					"line": ".stack segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n '.STACK' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1078,7 +1078,7 @@
 						"Simbolo",
 						"Pseudo Instrucci\u00f3n"
 					],
-					"codificacion": "Error: Instrucci\u00f3n 'DB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1086,7 +1086,7 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			],
@@ -1096,7 +1096,7 @@
 					"complete": ".data segment",
 					"line": ".data segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n '.DATA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1104,7 +1104,7 @@
 					"complete": "dec_b db 10",
 					"line": ["dec_b", "db", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'DEC_B' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1112,7 +1112,7 @@
 					"complete": "dec_w dw 10",
 					"line": ["dec_w", "dw", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'DEC_W' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1120,7 +1120,7 @@
 					"complete": "bin_b db 01010101b",
 					"line": ["bin_b", "db", "01010101b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'BIN_B' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1128,7 +1128,7 @@
 					"complete": "bin_w dw 0110100101100110b",
 					"line": ["bin_w", "dw", "0110100101100110b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'BIN_W' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1136,7 +1136,7 @@
 					"complete": "hex_b db 024h",
 					"line": ["hex_b", "db", "024h"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'HEX_B' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1144,7 +1144,7 @@
 					"complete": "hex_w dw 024fah",
 					"line": ["hex_w", "dw", "024fah"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'HEX_W' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1152,7 +1152,7 @@
 					"complete": "cons equ 12",
 					"line": ["cons", "equ", "12"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CONS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1160,7 +1160,7 @@
 					"complete": "w_dec_b d 10",
 					"line": ["w_dec_b", "d", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'W_DEC_B' no soportada.",
+					"codificacion": "-",
 					"errores": ": Error en definicion de tamaño"
 				},
 				{
@@ -1168,7 +1168,7 @@
 					"complete": "w_dec_w = 10",
 					"line": ["w_dec_w", "=", "10"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'W_DEC_W' no soportada.",
+					"codificacion": "-",
 					"errores": ": Error en definicion de tamaño"
 				},
 				{
@@ -1176,7 +1176,7 @@
 					"complete": "w_bin_b dw 01010101b",
 					"line": ["w_bin_b", "dw", "01010101b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'W_BIN_B' no soportada.",
+					"codificacion": "-",
 					"errores": ": Error en valor de tamaño"
 				},
 				{
@@ -1184,7 +1184,7 @@
 					"complete": "w_bin_w db 0110100101100110b",
 					"line": ["w_bin_w", "db", "0110100101100110b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'W_BIN_W' no soportada.",
+					"codificacion": "-",
 					"errores": ": Error en valor de tamaño"
 				},
 				{
@@ -1192,7 +1192,7 @@
 					"complete": "equ w_constant 12",
 					"line": ["equ", "w_constant", "12"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'EQU' no soportada.",
+					"codificacion": "-",
 					"errores": ": Error sintactico"
 				},
 				{
@@ -1200,7 +1200,7 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			],
@@ -1210,7 +1210,7 @@
 					"complete": ".code segment",
 					"line": ".code segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n '.CODE' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1218,7 +1218,7 @@
 					"complete": "cld",
 					"line": ["cld"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLD' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1226,7 +1226,7 @@
 					"complete": "cld ax",
 					"line": ["cld", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLD' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cld' ya ha sido declarada"
 				},
 				{
@@ -1234,7 +1234,7 @@
 					"complete": "cli",
 					"line": ["cli"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLI' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1242,7 +1242,7 @@
 					"complete": "cli 0x10",
 					"line": ["cli", "0x10"],
 					"classification": ["Simbolo", "No se reconoce"],
-					"codificacion": "Error: Instrucci\u00f3n 'CLI' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cli' ya ha sido declarada"
 				},
 				{
@@ -1250,7 +1250,7 @@
 					"complete": "movsb",
 					"line": ["movsb"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1258,7 +1258,7 @@
 					"complete": "movsb ax bx",
 					"line": ["movsb", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'movsb' ya ha sido declarada"
 				},
 				{
@@ -1266,7 +1266,7 @@
 					"complete": "movsw",
 					"line": ["movsw"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSW' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1274,7 +1274,7 @@
 					"complete": "movsw bx ax",
 					"line": ["movsw", "bx", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'MOVSW' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'movsw' ya ha sido declarada"
 				},
 				{
@@ -1282,7 +1282,7 @@
 					"complete": "xlatb",
 					"line": ["xlatb"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XLATB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1290,7 +1290,7 @@
 					"complete": "xlatb bx",
 					"line": ["xlatb", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XLATB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'xlatb' ya ha sido declarada"
 				},
 				{
@@ -1298,7 +1298,7 @@
 					"complete": "aaa",
 					"line": ["aaa"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'AAA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1306,7 +1306,7 @@
 					"complete": "aaa ax bx",
 					"line": ["aaa", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'AAA' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'aaa' ya ha sido declarada"
 				},
 				{
@@ -1314,7 +1314,7 @@
 					"complete": "pop ax",
 					"line": ["pop", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'POP' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1322,7 +1322,7 @@
 					"complete": "pop bx cx",
 					"line": ["pop", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'POP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'pop' ya ha sido declarada"
 				},
 				{
@@ -1334,7 +1334,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AX 10' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -1346,15 +1346,15 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'BX 2' no soportado para la instrucci\u00f3n 'MOV'.",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+					"codificacion": "BB 02 00",
+					"errores": "Correcto"
 				},
 				{
 					"cp": "0016",
 					"complete": "idiv bx",
 					"line": ["idiv", "bx"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'IDIV' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1362,7 +1362,7 @@
 					"complete": "idiv ax bx",
 					"line": ["idiv", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'IDIV' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'idiv' ya ha sido declarada"
 				},
 				{
@@ -1370,7 +1370,7 @@
 					"complete": "push ax",
 					"line": ["push", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'PUSH' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1378,7 +1378,7 @@
 					"complete": "push bx cx",
 					"line": ["push", "bx", "cx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'PUSH' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'push' ya ha sido declarada"
 				},
 				{
@@ -1386,7 +1386,7 @@
 					"complete": "dec ax",
 					"line": ["dec", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'DEC' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1394,7 +1394,7 @@
 					"complete": "dec",
 					"line": ["dec"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'DEC' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'dec' ya ha sido declarada"
 				},
 				{
@@ -1414,7 +1414,7 @@
 					"complete": "ror ax",
 					"line": ["ror", "ax"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AX' no soportado para la instrucci\u00f3n 'ROR'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'ror'"
 				},
 				{
@@ -1422,7 +1422,7 @@
 					"complete": "sub ax bx",
 					"line": ["sub", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1430,7 +1430,7 @@
 					"complete": "sub ax",
 					"line": ["sub", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'sub' ya ha sido declarada"
 				},
 				{
@@ -1438,7 +1438,7 @@
 					"complete": "xor ax ax",
 					"line": ["xor", "ax", "ax"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XOR' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1446,7 +1446,7 @@
 					"complete": "xor ax",
 					"line": ["xor", "ax"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'XOR' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'xor' ya ha sido declarada"
 				},
 				{
@@ -1454,7 +1454,7 @@
 					"complete": "and ax bx",
 					"line": ["and", "ax", "bx"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'AND' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1470,7 +1470,7 @@
 					"complete": "jae label",
 					"line": ["jae", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JAE' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1478,7 +1478,7 @@
 					"complete": "jae",
 					"line": ["jae"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JAE' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jae' ya ha sido declarada"
 				},
 				{
@@ -1486,7 +1486,7 @@
 					"complete": "jcxz label",
 					"line": ["jcxz", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JCXZ' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1494,7 +1494,7 @@
 					"complete": "jcxz",
 					"line": ["jcxz"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JCXZ' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jcxz' ya ha sido declarada"
 				},
 				{
@@ -1502,7 +1502,7 @@
 					"complete": "jl label",
 					"line": ["jl", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JL' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1510,7 +1510,7 @@
 					"complete": "jl",
 					"line": ["jl"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JL' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jl' ya ha sido declarada"
 				},
 				{
@@ -1518,7 +1518,7 @@
 					"complete": "jnge label",
 					"line": ["jnge", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNGE' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1526,7 +1526,7 @@
 					"complete": "jnge",
 					"line": ["jnge"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNGE' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jnge' ya ha sido declarada"
 				},
 				{
@@ -1534,7 +1534,7 @@
 					"complete": "jnp label",
 					"line": ["jnp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNP' no soportada.",
+					"codificacion": "E-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1542,7 +1542,7 @@
 					"complete": "jnp",
 					"line": ["jnp"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jnp' ya ha sido declarada"
 				},
 				{
@@ -1550,7 +1550,7 @@
 					"complete": "jp label",
 					"line": ["jp", "label"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JP' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1558,7 +1558,7 @@
 					"complete": "jp",
 					"line": ["jp"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'jp' ya ha sido declarada"
 				},
 				{
@@ -1566,7 +1566,7 @@
 					"complete": "label:",
 					"line": ["label:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'LABEL:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1578,7 +1578,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'EAX 1' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -1586,7 +1586,7 @@
 					"complete": "int 0x80",
 					"line": ["int", "0x80"],
 					"classification": ["Simbolo", "No se reconoce"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1594,7 +1594,7 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			]
@@ -1653,7 +1653,7 @@
 					"complete": ".model small",
 					"line": ".model small",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "",
+					"codificacion": "-",
 					"errores": ""
 				}
 			],
@@ -1663,7 +1663,7 @@
 					"complete": ".stack segment",
 					"line": ".stack segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n '.STACK' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1675,15 +1675,15 @@
 						"Simbolo",
 						"Pseudo Instrucci\u00f3n"
 					],
-					"codificacion": "Error: Instrucci\u00f3n 'DW' no soportada.",
-					"errores": ": Correcto"
+					"codificacion": "-",
+					"errores": ": Error sintactico"
 				},
 				{
 					"cp": "",
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			],
@@ -1693,7 +1693,7 @@
 					"complete": ".data segment",
 					"line": ".data segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n '.DATA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1701,7 +1701,7 @@
 					"complete": "var1 db 'hola'",
 					"line": ["var1", "db", "'hola'"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'VAR1' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1715,7 +1715,7 @@
 						"Simbolo",
 						"No se reconoce"
 					],
-					"codificacion": "Error: Instrucci\u00f3n 'CAD2' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1723,7 +1723,7 @@
 					"complete": "var2 dw 0",
 					"line": ["var2", "dw", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'VAR2' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1731,7 +1731,7 @@
 					"complete": "tecla db 5",
 					"line": ["tecla", "db", "5"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'TECLA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1739,7 +1739,7 @@
 					"complete": "cons1 equ 45",
 					"line": ["cons1", "equ", "45"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CONS1' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1747,7 +1747,7 @@
 					"complete": "con2 equ 345",
 					"line": ["con2", "equ", "345"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CON2' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1755,7 +1755,7 @@
 					"complete": "simbolo db 045H",
 					"line": ["simbolo", "db", "045H"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SIMBOLO' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1763,7 +1763,7 @@
 					"complete": "tecla dw 045H",
 					"line": ["tecla", "dw", "045H"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'TECLA' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La variable 'tecla' ya ha sido declarada"
 				},
 				{
@@ -1771,7 +1771,7 @@
 					"complete": "sb db 11110000b",
 					"line": ["sb", "db", "11110000b"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1779,7 +1779,7 @@
 					"complete": "edad db 15",
 					"line": ["edad", "db", "15"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'EDAD' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1787,7 +1787,7 @@
 					"complete": "var2 db 0",
 					"line": ["var2", "db", "0"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'VAR2' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La variable 'var2' ya ha sido declarada"
 				},
 				{
@@ -1809,7 +1809,7 @@
 						"Simbolo",
 						"No se reconoce"
 					],
-					"codificacion": "Error: Instrucci\u00f3n 'MAYOR' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1831,7 +1831,7 @@
 						"Simbolo",
 						"No se reconoce"
 					],
-					"codificacion": "Error: Instrucci\u00f3n 'MENOR' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1839,7 +1839,7 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			],
@@ -1849,7 +1849,7 @@
 					"complete": ".code segment",
 					"line": ".code segment",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n '.CODE' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1862,14 +1862,14 @@
 						"Simbolo"
 					],
 					"codificacion": "8B C3",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+					"errores": "Correcto"
 				},
 				{
 					"cp": "",
 					"complete": "mov dsax",
 					"line": ["mov", "dsax"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'DSAX' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -1877,7 +1877,7 @@
 					"complete": "b20:",
 					"line": ["b20:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'B20:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1885,7 +1885,7 @@
 					"complete": "mov esax",
 					"line": ["mov", "esax"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'ESAX' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -1893,15 +1893,15 @@
 					"complete": "cmp edad18",
 					"line": ["cmp", "edad18"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
-					"errores": ": Correcto"
+					"codificacion": "-",
+					"errores": ": Error La variable 'edad18' no existe"
 				},
 				{
 					"cp": "",
 					"complete": "jae b20",
 					"line": ["jae", "b20"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JAE' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1909,7 +1909,7 @@
 					"complete": "mov ah09h",
 					"line": ["mov", "ah09h"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AH09H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -1917,7 +1917,7 @@
 					"complete": "lea dxmenor",
 					"line": ["lea", "dxmenor"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1925,7 +1925,7 @@
 					"complete": "b21:",
 					"line": ["b21:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'B21:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1933,7 +1933,7 @@
 					"complete": "int 021h",
 					"line": ["int", "021h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -1941,8 +1941,8 @@
 					"complete": "jmp b21",
 					"line": ["jmp", "b21"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'B21' no soportado para la instrucci\u00f3n 'JMP'.",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
+					"codificacion": "-",
+					"errores": "-"
 				},
 				{
 					"cp": "",
@@ -1950,14 +1950,14 @@
 					"line": ["mov", "ah009h"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
 					"codificacion": "Error: Operando 'AH009H' no soportado para la instrucci\u00f3n 'MOV'.",
-					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
+					"errores": "-"
 				},
 				{
 					"cp": "",
 					"complete": "lea dxmayor",
 					"line": ["lea", "dxmayor"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'LEA' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'lea' ya ha sido declarada"
 				},
 				{
@@ -1965,7 +1965,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -1973,7 +1973,7 @@
 					"complete": "mov ax04c00h",
 					"line": ["mov", "ax04c00h"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AX04C00H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -1981,7 +1981,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -1993,7 +1993,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AH 1' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2001,7 +2001,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -2013,7 +2013,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2025,7 +2025,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AH 2' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2037,7 +2037,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'DL SIMBOLO' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2045,7 +2045,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -2053,7 +2053,7 @@
 					"complete": "inc tecla",
 					"line": ["inc", "tecla"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'TECLA' no soportado para la instrucci\u00f3n 'INC'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'inc'"
 				},
 				{
@@ -2065,7 +2065,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AH 7' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2077,7 +2077,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'DL TECLA' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2085,7 +2085,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -2093,7 +2093,7 @@
 					"complete": "ret",
 					"line": ["ret"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'RET' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2105,7 +2105,7 @@
 						"No se reconoce",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'MSG[2] 34H' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2118,7 +2118,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'DX OFFSET MSG' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2130,7 +2130,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AH 9' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2138,7 +2138,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -2146,7 +2146,7 @@
 					"complete": "ret",
 					"line": ["ret"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'RET' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'ret' ya ha sido declarada"
 				},
 				{
@@ -2160,7 +2160,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Instrucci\u00f3n 'MSG' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2168,7 +2168,7 @@
 					"complete": "lectura:",
 					"line": ["lectura:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'LECTURA:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2176,7 +2176,7 @@
 					"complete": "mov ah7",
 					"line": ["mov", "ah7"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AH7' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2184,7 +2184,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -2196,7 +2196,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'TECLA AL' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2204,7 +2204,7 @@
 					"complete": "cmp al13",
 					"line": ["cmp", "al13"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
 				},
 				{
@@ -2212,7 +2212,7 @@
 					"complete": "jz fin:",
 					"line": ["jz", "fin:"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JZ' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2220,7 +2220,7 @@
 					"complete": "cmp tecla 122",
 					"line": ["cmp", "tecla", "122"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
 				},
 				{
@@ -2228,7 +2228,7 @@
 					"complete": "ja fin3",
 					"line": ["ja", "fin3"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JA' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2236,7 +2236,7 @@
 					"complete": "cmp tecla96",
 					"line": ["cmp", "tecla96"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'CMP' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'cmp' ya ha sido declarada"
 				},
 				{
@@ -2244,7 +2244,7 @@
 					"complete": "jng fin3",
 					"line": ["jng", "fin3"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'JNG' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2252,7 +2252,7 @@
 					"complete": "sub tecla 32",
 					"line": ["sub", "tecla", "32"],
 					"classification": ["Simbolo", "Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'SUB' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2260,7 +2260,7 @@
 					"complete": "fin3:",
 					"line": ["fin3:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'FIN3:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2268,7 +2268,7 @@
 					"complete": "mov ah2",
 					"line": ["mov", "ah2"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'AH2' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2280,7 +2280,7 @@
 						"Simbolo",
 						"Simbolo"
 					],
-					"codificacion": "Error: Operando 'AX VAR1' no soportado para la instrucci\u00f3n 'ADD'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'add'"
 				},
 				{
@@ -2288,7 +2288,7 @@
 					"complete": "mov dltecla",
 					"line": ["mov", "dltecla"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'DLTECLA' no soportado para la instrucci\u00f3n 'MOV'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'mov'"
 				},
 				{
@@ -2296,7 +2296,7 @@
 					"complete": "int 21h",
 					"line": ["int", "21h"],
 					"classification": ["Simbolo", "Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'INT' no soportada.",
+					"codificacion": "-",
 					"errores": "Error: La etiqueta 'int' ya ha sido declarada"
 				},
 				{
@@ -2304,7 +2304,7 @@
 					"complete": "jmp lectura",
 					"line": ["jmp", "lectura"],
 					"classification": ["Instrucci\u00f3n", "Simbolo"],
-					"codificacion": "Error: Operando 'LECTURA' no soportado para la instrucci\u00f3n 'JMP'.",
+					"codificacion": "-",
 					"errores": "Error: Sintaxis incorrecta para la instrucci\u00f3n 'jmp'"
 				},
 				{
@@ -2312,7 +2312,7 @@
 					"complete": "fin:",
 					"line": ["fin:"],
 					"classification": ["Simbolo"],
-					"codificacion": "Error: Instrucci\u00f3n 'FIN:' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				},
 				{
@@ -2320,12 +2320,79 @@
 					"complete": "ends",
 					"line": "ends",
 					"classification": "Pseudo Instrucci\u00f3n",
-					"codificacion": "Error: Instrucci\u00f3n 'ENDS' no soportada.",
+					"codificacion": "-",
 					"errores": ": Correcto"
 				}
 			]
 		],
-		"simbols": []
+		"simbols": [
+			{
+				"simbolo":"var1",
+				"tipo":"variable",
+				"valor":"hola",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"cad2",
+				"tipo":"variable",
+				"valor":"programa de prueba",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"var2",
+				"tipo":"variable",
+				"valor":"0",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"tecla",
+				"tipo":"variable",
+				"valor":"5",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"cons1",
+				"tipo":"constante",
+				"valor":"345",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"cons2",
+				"tipo":"constante",
+				"valor":"345",
+				"tamaño":"dw"
+			},
+			{
+				"simbolo":"simbolo",
+				"tipo":"variable",
+				"valor":"045h",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"sb",
+				"tipo":"variable",
+				"valor":"11110000b",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"edad",
+				"tipo":"variable",
+				"valor":"15",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"mayor",
+				"tipo":"variable",
+				"valor":"111ERES MAYOR DE EDAD...'$'",
+				"tamaño":"db"
+			},
+			{
+				"simbolo":"menor",
+				"tipo":"variable",
+				"valor":"ERES MENOR DE EDAD...'$'",
+				"tamaño":"db"
+			}
+		]
 	},
 	{
 		"filename": "BaseExample.asm",
