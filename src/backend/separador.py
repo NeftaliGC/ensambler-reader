@@ -190,3 +190,21 @@ class separator:
 
     def getCompleteSegments(self):
         return self.completeSegments
+
+def add_program_counter(code_segment):
+    cp = 0  # Inicialización del contador del programa
+    for line in code_segment:
+        if isinstance(line, dict):
+            if "Instrucción" in line["classification"]:
+                line["cp"] = hex(cp)  # Asigna el CP actual en formato hexadecimal
+                cp += 2  # Incrementa por el tamaño de la instrucción (2 bytes por defecto)
+    return code_segment
+
+def add_symbol_addresses(data_segment):
+    address = 0x1000  # Dirección inicial en hexadecimal
+    for line in data_segment:
+        if isinstance(line, dict):
+            if "Simbolo" in line["classification"]:
+                line["direccion"] = hex(address)  # Asigna la dirección en hexadecimal
+                address += 2  # Incrementa según el tamaño del dato (2 bytes por defecto)
+    return data_segment

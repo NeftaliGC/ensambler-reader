@@ -12,10 +12,10 @@ document.getElementById('file').addEventListener('change', async function () {
 	const file = fileInput.files[0];
 	const fileName = file ? file.name : '';
 
-	// Verificar que el archivo tenga la extensión .asm
+	// Verificar que el archivo tenga la extensión .ens
 	if (!fileName.endsWith('.ens')) {
 		alert('Por favor, selecciona un archivo con extensión .ens');
-		return; // Detener el proceso si el archivo no es .asm
+		return; // Detener el proceso si el archivo no es .ens
 	}
 	document.getElementById('file-name').textContent = fileName;
 
@@ -34,6 +34,7 @@ document.getElementById('file').addEventListener('change', async function () {
 			RESPONSE = data;
 			console.log('Archivo cargado con éxito:', RESPONSE);
 			showSegments(); // Mostrar los segmentos en la tabla
+			showSymbols(); // Mostrar los símbolos en la tabla de símbolos
 		} else {
 			console.error(
 				'Error en la carga del archivo:',
@@ -143,4 +144,32 @@ function showSegments() {
 			updateTableVisibility();
 		}
 	});
+}
+
+// Mostrar símbolos en la tabla de símbolos
+function showSymbols() {
+	const simbolos = RESPONSE.simbols;
+
+	// Llenar la tabla de símbolos
+	populateSymbolTable(simbolos);
+
+	// Función para llenar la tabla de símbolos
+	function populateSymbolTable(data) {
+		const tableBody = document.querySelector('#Simbolos tbody');
+		tableBody.innerHTML = ''; // Limpiar la tabla antes de actualizar
+
+		// Iteramos sobre los datos de los símbolos
+		data.forEach((symbol) => {
+			const row = document.createElement('tr');
+
+			const nombre = symbol.simbolo || '';
+			const tipo = symbol.tipo || '';
+			const direccion = symbol.valor || '';
+			const valor = symbol.tamano || '';
+
+			row.innerHTML = `<td>${nombre}</td><td>${tipo}</td><td>${direccion}</td><td>${valor}</td>`;
+
+			tableBody.appendChild(row);
+		});
+	}
 }

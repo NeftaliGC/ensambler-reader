@@ -1,6 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from backend.separador import separator
+import json
 
 app = FastAPI()
 
@@ -25,20 +26,20 @@ async def upload_file(file: UploadFile = File(...)):
         with open(f"archives/{file.filename}", "wb") as f:
             f.write(contents)
 
-        if file.filename == "moodle.ens" or file.filename == "Template.ens":
-            
+        if file.filename.startswith("moodle.ens") or file.filename.startswith("Template.ens"):
+            print("entro")
             # abrir y extraer los datos del json template.json
             with open("data/template.json", "r") as file:
                 data = json.load(file)
 
             for dict in data:
-                if dict["name"] == "moodle":
+                if dict["filename"] == "moodle.ens" or dict["filename"] == "Template.ens":
                     datos = dict
             
             segmentos = datos["segmentos"]
             simbols = datos["simbols"]
-
-            return {"filename": file.filename, "segmentos": segmentos, "simbols": simbols}
+            print("salio")
+            return {"filename": "prue", "segmentos": segmentos, "simbols": simbols}
 
         segmentos = proccesSeparador(file.filename)
 
