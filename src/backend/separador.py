@@ -1,4 +1,5 @@
 from pathlib import Path
+from backend.Errorlin import ErrorLin
 import re
 import json
 
@@ -37,7 +38,6 @@ class separator:
                             current_segment = segment
                         break  # Salir del bucle al encontrar un segmento
 
-                
                 # Agregar la línea al segmento correspondiente
                 if current_segment:
                     self.segment_map[current_segment].append(line)
@@ -70,11 +70,14 @@ class separator:
         self.completeSegments = [self.metaSegment.copy(), self.stakSegment.copy(), self.dataSegment.copy(), self.codeSegment.copy()]
 
     def indentificador(self):
+
+        verificarError = ErrorLin()
+
         for segment in self.segment_map:
             i = 0  # Explicit index counter, as we'll be modifying the list in-place
+
             while i < len(self.segment_map[segment]):
                 line = self.segment_map[segment][i]
-                
                 # Check if the whole line is a pseudo instruction
                 if self.isPsuedoInstruction(line):
                     classification = "Pseudo Instrucción"
@@ -116,7 +119,19 @@ class separator:
                         j += 1
                     # Una vez procesada la línea, insertamos el diccionario completo
                     self.segment_map[segment].insert(i, segment_data)
-                    i += 1  # Move to the next position for the next word
+                    i += 1  # Move to the next position for the next line
+
+        
+        for segment in self.segment_map:
+            if segment != "meta":
+                segmentos = self.segment_map
+                verificarError.setSegments(segmentos)
+                verificarError.setSegment(segment)
+                lineasSegmento = self.segment_map[segment]
+                verificarError.setLines(lineasSegmento)
+                newLines = verificarError.identidyError()
+                self.segment_map[segment] = newLines
+
 
 
     def isPsuedoInstruction(self, instruction):

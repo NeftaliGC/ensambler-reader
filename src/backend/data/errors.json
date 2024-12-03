@@ -1,0 +1,195 @@
+[
+	{
+		"name": "cbw",
+		"syntax": "cbw",
+		"description": "Convierte el valor de 8 bits en AX a un valor de 16 bits, extendiendo el signo.",
+		"operands": [],
+		"size": "1 byte",
+		"flags_affected": ["SF", "OF"]
+	},
+	{
+		"name": "clc",
+		"syntax": "clc",
+		"description": "Borra la bandera de acarreo (Carry Flag).",
+		"operands": [],
+		"size": "1 byte",
+		"flags_affected": ["CF"]
+	},
+	{
+		"name": "lodsb",
+		"syntax": "lodsb",
+		"description": "Carga un byte de la dirección de DS:SI al registro AL y actualiza SI.",
+		"operands": [],
+		"size": "1 byte",
+		"flags_affected": ["ZF", "SF", "PF"]
+	},
+	{
+		"name": "lodsw",
+		"syntax": "lodsw",
+		"description": "Carga una palabra de la dirección de DS:SI al registro AX y actualiza SI.",
+		"operands": [],
+		"size": "1 byte",
+		"flags_affected": ["ZF", "SF", "PF"]
+	},
+	{
+		"name": "stosb",
+		"syntax": "stosb",
+		"description": "Almacena el byte en AL en la dirección de ES:DI y actualiza DI.",
+		"operands": [],
+		"size": "1 byte",
+		"flags_affected": ["ZF", "SF", "PF"]
+	},
+	{
+		"name": "stosw",
+		"syntax": "stosw",
+		"description": "Almacena la palabra en AX en la dirección de ES:DI y actualiza DI.",
+		"operands": [],
+		"size": "1 byte",
+		"flags_affected": ["ZF", "SF", "PF"]
+	},
+	{
+		"name": "div",
+		"syntax": "div <operand>",
+		"description": "Divide AX (o DX:AX) entre el operando y coloca el cociente en AL y el residuo en AH.",
+		"operands": [
+			["AL", "BL", "CL", "DL"],
+			["AX", "BX", "CX", "DX"]
+		],
+		"size": "Varía dependiendo del operando",
+		"flags_affected": ["CF", "OF"]
+	},
+	{
+		"name": "IMUL",
+		"syntax": "IMUL <operand>",
+		"description": "Multiplica el operando con AX (o registros de 16/32 bits) y coloca el resultado en AX (o DX:AX).",
+		"operands": [
+			["AL", "BL", "CL", "DL"],
+			["AX", "BX", "CX", "DX"],
+			["EAX", "EBX", "ECX", "EDX"]
+		],
+		"size": "Varía dependiendo del operando",
+		"flags_affected": ["CF", "OF"]
+	},
+	{
+		"name": "inc",
+		"syntax": "inc <operand>",
+		"description": "Incrementa el operando en 1.",
+		"operands": [
+			["AL", "BL", "CL", "DL", "AH", "BH", "CH", "DH"],
+			["AX", "BX", "CX", "DX"],
+			["EAX", "EBX", "ECX", "EDX"],
+			["[SI]", "[DI]", "[BX]"]
+		],
+		"size": "1 byte",
+		"flags_affected": ["ZF", "SF", "PF", "OF"]
+	},
+	{
+		"name": "neg",
+		"syntax": "neg <operand>",
+		"description": "Niega el valor del operando.",
+		"operands": [
+			["AL", "BL", "CL", "DL", "AH", "BH", "CH", "DH"],
+			["AX", "BX", "CX", "DX"],
+			["EAX", "EBX", "ECX", "EDX"],
+			["[SI]", "[DI]", "[BX]"]
+		],
+		"size": "1 byte",
+		"flags_affected": ["CF", "OF", "ZF", "SF", "PF"]
+	},
+	{
+		"name": "add",
+		"syntax": "add <operand1>, <operand2>",
+		"description": "Suma el operando 2 al operando 1.",
+		"operands": [
+			["AL", "BL", "CL", "DL", "AH", "BH", "CH", "DH"],
+			["AX", "BX", "CX", "DX"],
+			["EAX", "EBX", "ECX", "EDX"],
+			["inmediatos (ejemplo, 5, 100)"]
+		],
+		"size": "Varía dependiendo del operando",
+		"flags_affected": ["CF", "OF", "ZF", "SF", "PF"]
+	},
+	{
+		"name": "lds",
+		"syntax": "lds <destination>, <source>",
+		"description": "Carga un valor de memoria en un registro de 16 bits y el puntero en un registro de 16 bits (DS).",
+		"operands": [["BX", "CX", "DX"], ["dirección de memoria"]],
+		"size": "2 bytes",
+		"flags_affected": ["N/A"]
+	},
+	{
+		"name": "mov",
+		"syntax": "mov <destination>, <source>",
+		"description": "Mueve (copia) el valor del operando fuente al destino.",
+		"operands": [
+			["AL", "BL", "CL", "DL", "AH", "BH", "CH", "DH"],
+			["AX", "BX", "CX", "DX"],
+			["EAX", "EBX", "ECX", "EDX"],
+			["[SI]", "[DI]", "[BX]"],
+			["inmediatos (ejemplo, 10)"]
+		],
+		"size": "Varía dependiendo del operando",
+		"flags_affected": ["N/A"]
+	},
+	{
+		"name": "ror",
+		"syntax": "ror <operand>, <count>",
+		"description": "Rotación a la derecha de los bits del operando por un número de bits.",
+		"operands": [
+			["AL", "BL", "CL", "DL", "AH", "BH", "CH", "DH"],
+			["AX", "BX", "CX", "DX"],
+			["EAX", "EBX", "ECX", "EDX"],
+			["valor inmediato (número de bits a rotar)"]
+		],
+		"size": "1 byte",
+		"flags_affected": ["CF", "OF"]
+	},
+	{
+		"name": "jns",
+		"syntax": "jns <label>",
+		"description": "Salta a la etiqueta si el signo no es negativo (SF=0).",
+		"operands": [["etiqueta previamente definida"]],
+		"size": "1 byte",
+		"flags_affected": ["SF"]
+	},
+	{
+		"name": "js",
+		"syntax": "js <label>",
+		"description": "Salta a la etiqueta si el signo es negativo (SF=1).",
+		"operands": [["etiqueta previamente definida"]],
+		"size": "1 byte",
+		"flags_affected": ["SF"]
+	},
+	{
+		"name": "loopne",
+		"syntax": "loopne <label>",
+		"description": "Decrementa CX y salta a la etiqueta si CX no es cero y ZF es 0.",
+		"operands": [["etiqueta previamente definida"]],
+		"size": "1 byte",
+		"flags_affected": ["ZF"]
+	},
+	{
+		"name": "jg",
+		"syntax": "jg <label>",
+		"description": "Salta a la etiqueta si el resultado de la comparación es mayor (SF=OF y ZF=0).",
+		"operands": [["etiqueta previamente definida"]],
+		"size": "1 byte",
+		"flags_affected": ["ZF", "SF", "OF"]
+	},
+	{
+		"name": "jmp",
+		"syntax": "jmp <label>",
+		"description": "Salta a la etiqueta sin condiciones.",
+		"operands": [["etiqueta previamente definida"]],
+		"size": "1 byte",
+		"flags_affected": ["N/A"]
+	},
+	{
+		"name": "jnbe",
+		"syntax": "jnbe <label>",
+		"description": "Salta a la etiqueta si el resultado de la comparación es mayor o igual (ZF=1 o SF=OF).",
+		"operands": [["etiqueta previamente definida"]],
+		"size": "1 byte",
+		"flags_affected": ["ZF", "SF", "OF"]
+	}
+]
