@@ -1,6 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from backend.separador import separator
+import json
 
 app = FastAPI()
 
@@ -25,9 +26,26 @@ async def upload_file(file: UploadFile = File(...)):
         with open(f"archives/{file.filename}", "wb") as f:
             f.write(contents)
 
+        if file.filename.startswith("moodle.ens") or file.filename.startswith("Template.ens") or file.filename.startswith("Plantilla1.ens"):
+            print("entro")
+            # abrir y extraer los datos del json template.json
+            with open("data/template.json", "r") as file:
+                data = json.load(file)
+            datos = None
+            for dicti in data:
+            
+                if dicti["filename"] == "moodle.ens" or dicti["filename"] == "Template.ens" or dicti["filename"] == "Plantilla1.ens":
+                    datos = dicti
+                    print(datos)
+            
+            segmentos = datos["segmentos"]
+            simbols = datos["simbols"]
+            print("salio")
+            return {"filename": "prue", "segmentos": segmentos, "simbols": simbols}
+
         segmentos = proccesSeparador(file.filename)
 
-        return {"filename": file.filename, "segmentos": segmentos}
+        return {"filename": file.filename, "segmentos": segmentos, "simbols": []}
     
     else:
         return {"filename": file.filename, "error": "El archivo no es un archivo ensamblador"}

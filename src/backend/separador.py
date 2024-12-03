@@ -1,4 +1,6 @@
 from pathlib import Path
+from backend.Errorlin import ErrorLin
+from backend.Codificador import procesar_instruccion, cargar_opcodes
 import re
 import json
 
@@ -37,7 +39,6 @@ class separator:
                             current_segment = segment
                         break  # Salir del bucle al encontrar un segmento
 
-                
                 # Agregar la línea al segmento correspondiente
                 if current_segment:
                     self.segment_map[current_segment].append(line)
@@ -70,11 +71,14 @@ class separator:
         self.completeSegments = [self.metaSegment.copy(), self.stakSegment.copy(), self.dataSegment.copy(), self.codeSegment.copy()]
 
     def indentificador(self):
+
+        verificarError = ErrorLin()
+
         for segment in self.segment_map:
             i = 0  # Explicit index counter, as we'll be modifying the list in-place
+
             while i < len(self.segment_map[segment]):
                 line = self.segment_map[segment][i]
-                
                 # Check if the whole line is a pseudo instruction
                 if self.isPsuedoInstruction(line):
                     classification = "Pseudo Instrucción"
@@ -116,7 +120,32 @@ class separator:
                         j += 1
                     # Una vez procesada la línea, insertamos el diccionario completo
                     self.segment_map[segment].insert(i, segment_data)
-                    i += 1  # Move to the next position for the next word
+                    i += 1  # Move to the next position for the next line
+
+        
+        for segment in self.segment_map:
+            if segment != "meta":
+                segmentos = self.segment_map
+                verificarError.setSegments(segmentos)
+                verificarError.setSegment(segment)
+                lineasSegmento = self.segment_map[segment]
+                verificarError.setLines(lineasSegmento)
+                newLines = verificarError.identidyError()
+                self.segment_map[segment] = newLines
+
+        opcodes = cargar_opcodes()
+        
+        for segment in self.segment_map:
+            if segment != "meta":
+                lines = self.segment_map[segment]
+                for i, line in enumerate(lines):
+                    # Procesar la instrucción y mostrar el código de máquina
+                    resultado = procesar_instruccion(line["complete"].upper(), opcodes)
+                    line["codificacion"] = resultado
+                    lines[i] = line
+            
+
+
 
 
     def isPsuedoInstruction(self, instruction):
@@ -161,3 +190,21 @@ class separator:
 
     def getCompleteSegments(self):
         return self.completeSegments
+
+def add_program_counter(code_segment):
+    cp = 0  # Inicialización del contador del programa
+    for line in code_segment:
+        if isinstance(line, dict):
+            if "Instrucción" in line["classification"]:
+                line["cp"] = hex(cp)  # Asigna el CP actual en formato hexadecimal
+                cp += 2  # Incrementa por el tamaño de la instrucción (2 bytes por defecto)
+    return code_segment
+
+def add_symbol_addresses(data_segment):
+    address = 0x1000  # Dirección inicial en hexadecimal
+    for line in data_segment:
+        if isinstance(line, dict):
+            if "Simbolo" in line["classification"]:
+                line["direccion"] = hex(address)  # Asigna la dirección en hexadecimal
+                address += 2  # Incrementa según el tamaño del dato (2 bytes por defecto)
+    return data_segment

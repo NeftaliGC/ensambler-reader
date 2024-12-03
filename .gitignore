@@ -1,5 +1,6 @@
 # codigo ensamblador
 *.asm
+*.ens
 
 # Desarollo
 prueba.py

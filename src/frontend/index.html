@@ -9,15 +9,18 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
-			rel="stylesheet" />
+			rel="stylesheet"
+		/>
 		<title>Ensambler - Reader</title>
 	</head>
 	<body>
 		<header>
 			<h1 class="titulo">Ensambler - Reader</h1>
 			<div class="button-upload">
-				<input type="file" id="file" accept=".asm" />
-				<label for="file" class="custom-file-upload">Elegir archivo</label>
+				<input type="file" id="file" accept=".ens" />
+				<label for="file" class="custom-file-upload"
+					>Elegir archivo</label
+				>
 				<div id="file-name" class="file-name"></div>
 				<!-- Aquí se mostrará el nombre del archivo -->
 			</div>
@@ -49,6 +52,12 @@
 				</table>
 			</div>
 
+			<!---Botones adelante atras con simbolos-->
+			<div class="botones">
+				<button id="atras"><--</button>
+				<button id="adelante">--></button>
+			</div>
+
 			<div class="code-editor">
 				<div class="code-header">
 					<span class="dot red"></span>
@@ -59,24 +68,17 @@
 				<table class="code-table" id="Simbolos">
 					<thead>
 						<tr>
-							<th class="codigo-header">Nombre</th>
+							<th class="codigo-header">Simbolo</th>
 							<th class="separacion-header">Tipo</th>
-							<th class="identificacion-header">Dirección</th>
-							<th class="codificacion-header">Valor</th>
-							<th class="cp-header">Comentario</th>
+							<th class="identificacion-header">Valor</th>
+							<th class="codificacion-header">Tamaño</th>
 						</tr>
 					</thead>
 					<tbody></tbody>
 				</table>
 			</div>
 		</main>
-		<footer>
-			<!---Botones adelante atras con simbolos-->
-			<div class="botones">
-				<button id="atras"><--</button>
-				<button id="adelante">--></button>
-			</div>
-		</footer>
+		<footer></footer>
 		<script src="js/Lineas.js"></script>
 		<script src="js/Connect.js"></script>
 	</body>
